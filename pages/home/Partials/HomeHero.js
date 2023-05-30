@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Hero = () => {
+const HomeHero = () => {
   return (
-    <section className={'hero'}>
-      <div className={'hero-container'}>
-        <div className={'hero-container-left'}>
-          <h1 className={'hero-container-left-title black'}>
+    <section className={'home-hero'}>
+      <div className={'home-hero-container'}>
+        <div className={'home-hero-container-left'}>
+          <h1 className={'home-hero-container-left-title black'}>
             Avec un pour cent, soutenez des projets humanitaires jusqu'à leurs
             réalisations
           </h1>
@@ -16,13 +16,13 @@ const Hero = () => {
             Paris et de distribuer des paniers repas aux plus nécessitants.
           </p>
 
-          <div className={'hero-container-left-button'}>
-            <button className={'hero-container-left-button-donate'}>
+          <div className={'home-hero-container-left-button'}>
+            <button className={'home-hero-container-left-button-donate'}>
               Découvrir le projet du moment
             </button>
           </div>
         </div>
-        <div className={'hero-container-right'}>
+        <div className={'home-hero-container-right'}>
           <img src="./illustrations/hero-1pourcent-2.png" alt="hero" />
         </div>
       </div>
@@ -30,4 +30,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default HomeHero;

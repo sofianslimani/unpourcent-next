@@ -464,54 +464,54 @@ html::selection {
   margin-right: 6px;
 }
 
-.hero {
+.home-hero {
   position: relative;
   width: 100%;
   height: 80vh;
   background-color: #4685ff;
 }
 @media (max-width: 1024px) {
-  .hero {
+  .home-hero {
     height: 100%;
   }
 }
-.hero-container {
+.home-hero-container {
   display: grid;
   grid-template-columns: 0.731fr 1fr;
   color: #ffffff;
 }
 @media (max-width: 1024px) {
-  .hero-container {
+  .home-hero-container {
     grid-template-columns: 1fr;
     grid-auto-flow: dense;
   }
 }
-.hero-container-left {
+.home-hero-container-left {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100%;
 }
-.hero-container-left h1 {
+.home-hero-container-left h1 {
   font-weight: 900;
   font-size: 38px;
   line-height: 47px;
 }
-.hero-container-left p {
+.home-hero-container-left p {
   font-size: 16px;
   line-height: 24px;
 }
-.hero-container-right {
+.home-hero-container-right {
   width: 100%;
   height: 80vh;
 }
 @media (max-width: 1024px) {
-  .hero-container-right {
+  .home-hero-container-right {
     height: 100%;
   }
 }
-.hero-container-right img {
+.home-hero-container-right img {
   width: 100%;
   height: 100%;
   object-fit: cover;
