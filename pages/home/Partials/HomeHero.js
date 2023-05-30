@@ -17,13 +17,13 @@ const HomeHero = () => {
           </p>
 
           <div className={'home-hero-container-left-button'}>
-            <button className={'home-hero-container-left-button-donate'}>
+            <a href={"#"} className={'button-classic button-classic-white home-hero-container-left-button-donate'}>
               Découvrir le projet du moment
-            </button>
+            </a>
           </div>
         </div>
         <div className={'home-hero-container-right'}>
-          <img src="./illustrations/hero-1pourcent-2.png" alt="hero" />
+          <img src="./illustrations/hero-1pourcent.svg" alt="hero" />
         </div>
       </div>
     </section>

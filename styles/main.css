@@ -145,6 +145,18 @@ html::selection {
   background: yellow;
 }
 
+.container-xl {
+  padding-inline: 4%;
+}
+
+.container-l, .home-hero-container {
+  padding-inline: 6%;
+}
+
+.container-s {
+  padding-inline: 8%;
+}
+
 /**
  * @license
  *
@@ -361,10 +373,6 @@ html::selection {
   font-family: "Satoshi-Italic";
 }
 
-.semibold {
-  font-family: "Satoshi-SemiBold";
-}
-
 .bold {
   font-family: "Satoshi-Bold";
 }
@@ -379,6 +387,16 @@ html::selection {
 
 .text-100 {
   font-size: clamp(5vw, 100px, 120px);
+}
+
+.button-classic {
+  padding: 12px 20px;
+  background: #FFFFFF;
+  color: #4685ff;
+  font-size: 16px;
+  font-family: "Satoshi-Bold";
+  border: none;
+  border-radius: 100px;
 }
 
 .header {
@@ -414,6 +432,7 @@ html::selection {
   font-size: 16px;
   font-weight: 500;
   text-decoration: none;
+  transition: color 0.2s ease-in-out;
 }
 .header-container-left-nav-list-item a:hover, .header-container-right-nav-list-item a:hover {
   color: #4685ff;
@@ -442,6 +461,7 @@ html::selection {
   text-decoration: none;
   display: flex;
   align-items: center;
+  transition: color 0.2s ease-in-out;
 }
 .header-container-left-list-item a:hover, .header-container-right-list-item a:hover {
   color: #4685ff;
@@ -476,9 +496,8 @@ html::selection {
   }
 }
 .home-hero-container {
-  display: grid;
-  grid-template-columns: 0.731fr 1fr;
   color: #ffffff;
+  height: 100%;
 }
 @media (max-width: 1024px) {
   .home-hero-container {
@@ -490,8 +509,12 @@ html::selection {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  gap: 25px;
   height: 100%;
+  width: 40%;
+}
+.home-hero-container-left-button {
+  display: flex;
 }
 .home-hero-container-left h1 {
   font-weight: 900;
@@ -503,8 +526,11 @@ html::selection {
   line-height: 24px;
 }
 .home-hero-container-right {
-  width: 100%;
-  height: 80vh;
+  width: 60%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 @media (max-width: 1024px) {
   .home-hero-container-right {
@@ -513,8 +539,9 @@ html::selection {
 }
 .home-hero-container-right img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  position: absolute;
+  bottom: 0;
 }
 
 /*# sourceMappingURL=main.css.map */
