@@ -1,37 +1,22 @@
-.btn {
-  padding: 12px 30px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0.1px;
-
-  cursor: pointer;
-
-  transition: all 0.2s ease-in-out;
-
-  border-radius: 50px;
-
-  border: none;
-}
-
-/* THEMES */
-
-.btn--primary {
-  background-color: $white;
+.button-classic {
+  padding: 12px 20px;
+  background: #ffffff;
   color: $primary;
+  font-size: 16px;
+  font-family: 'Satoshi-Bold';
   border: none;
+  border-radius: 100px;
 }
-
 /* HOVER */
 
-.btn--primary:hover {
+.button-classic:hover {
   background-color: rgba(255, 255, 255, 0.9);
   transition: all 0.2s ease-in-out;
 }
 
 /* ACTIVE */
 
-.btn--primary:active {
+.button-classic:active {
   background-color: $white;
 
   transition: all 0.2s ease-in-out;

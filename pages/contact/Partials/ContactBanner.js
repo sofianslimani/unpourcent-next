@@ -14,10 +14,10 @@ const ContactBanner = () => {
             des nouvelles de l'avancement de ce projet jusqu'à sa réalisation.
           </p>
 
-          <div className={'contact-banner-cta'}>
-            <button className={'btn btn--primary'}>
+          <div className={'contact-banner-container-cta'}>
+            <a href={'#'} className={'button-classic button-classic-white'}>
               Découvrir le projet du moment
-            </button>
+            </a>
           </div>
         </div>
       </MaxWidth>
