@@ -5,11 +5,11 @@ const HomeHero = () => {
     <section className={'home-hero'}>
       <div className={'home-hero-container'}>
         <div className={'home-hero-container-left'}>
-          <h1 className={'home-hero-container-left-title black'}>
+          <h1 className={'home-hero-container-left-title color-white black text-38'}>
             Avec un pour cent, soutenez des projets humanitaires jusqu'à leurs
             réalisations
           </h1>
-          <p>
+          <p className={"text-16 color-white"}>
             Cette semaine, le projet que un pour cent soutient est celui de
             l'association Amatullah. Cette association a pour objectif durant le
             prochain mois de réalisé des maraudes humanitaires dans les rues de
