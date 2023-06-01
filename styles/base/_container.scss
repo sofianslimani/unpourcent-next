@@ -1,10 +1,21 @@
 
 .container-xl{
   padding-inline: 4%;
+  box-sizing: border-box;
 }
 .container-l{
   padding-inline: 6%;
+  box-sizing: border-box;
 }
 .container-s{
   padding-inline: 8%;
+  box-sizing: border-box;
+}
+
+
+.margin-bottom-section-100{
+  margin-bottom: 100px;
+  @include tablet {
+    margin-bottom: 50px;
+  }
 }
