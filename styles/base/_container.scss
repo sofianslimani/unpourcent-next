@@ -2,14 +2,23 @@
 .container-xl{
   padding-inline: 4%;
   box-sizing: border-box;
+  @media (max-width: 991px){
+    padding-inline: 4%;
+  }
 }
 .container-l{
   padding-inline: 6%;
   box-sizing: border-box;
+  @media (max-width: 991px){
+    padding-inline: 4%;
+  }
 }
 .container-s{
   padding-inline: 8%;
   box-sizing: border-box;
+  @media (max-width: 991px){
+    padding-inline: 4%;
+  }
 }
 
 

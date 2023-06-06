@@ -62,3 +62,9 @@ $colors: (
   font-size: clamp(2vw, 2vw , 14px);
   line-height: initial;
 }
+
+
+
+span.red{
+  color: $secondary;
+}
