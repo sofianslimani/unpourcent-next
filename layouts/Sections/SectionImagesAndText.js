@@ -23,7 +23,8 @@ const SectionImgaesAndText = ({data, greyBackground, customClasses}) => {
 								<img className={"item-img"} key={index} src={itemImg}/>
 							)
 						})
-						: ""
+						: content.images && content.images[0] &&
+						<img className={"item-img"} src={content.images[0]}/>
 					}
 				</div>
 				<div className={"section-images-and-text-container-text"}>

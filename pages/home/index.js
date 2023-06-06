@@ -29,7 +29,7 @@ const HomePage = () => {
 	
 	const [dataSectionGrid, setDataSectionGrid] = useState(
 			{
-				isGrid: true,
+				isGrid: false,
 				title: <h2 class='text-30 color-black bold'>L’association du moment <span class='red'>Amatullah</span></h2>,
 				text: "Amatullah en 2022 c'est 47 566 repas distribués, 4 943 colis alimentaires distribués dans le but de venir en aide aux plus démunis en leur offrant notamment des repas de qualité, des colis alimentaires ainsi qu’une présence bienveillante et une oreille attentive. La mission d’Amatullah est de tendre la main aux plus nécessiteux et pour cela, des centaines de bénévoles se mobilisent chaque jour sur le terrain afin de mener à bien cet objectif.",
 				images : [
@@ -45,8 +45,8 @@ const HomePage = () => {
 	return (<>
 			<HomeHero/>
 			<SectionThreeKpis color={"green"} data={dataSectionThreeKpis}/>
-			<SectionImgaesAndText greyBackground={true} data={dataSectionGrid}/>
 			<HomeThreeCardsInformations/>
+			<SectionImgaesAndText greyBackground={true} data={dataSectionGrid}/>
 		</>);
 };
 
