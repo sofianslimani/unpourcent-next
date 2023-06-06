@@ -6,11 +6,17 @@
     padding-block: 5%;
   }
   &-container{
+  &.inverse{
+    flex-direction: row-reverse !important;
+    @include tablet{
+      flex-direction: column-reverse !important;
+    }
+  }
   @extend .margin-bottom-section-100;
     display: flex;
     gap: 85px;
     align-items: center;
-    @media (max-width: 991px){
+    @include tablet{
       flex-direction: column-reverse;
       gap: 20px;
     }
@@ -19,6 +25,9 @@
       display: flex;
       flex-direction: column;
       gap: 20px;
+      a{
+        width: fit-content;
+      }
       @media (max-width: 991px){
           width: 100%;
       }
@@ -56,7 +65,7 @@
           &:nth-child(1){
             grid-area: 1 / 1 / 2 / 3;
             width: 100%;
-            object-position: 0 -200px;
+            object-position: 0% 31%;
             @media (max-width: 991px){
               object-position: initial !important;
             }
