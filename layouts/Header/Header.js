@@ -20,7 +20,7 @@ const Header = () => {
                 <Link href="/">Les précédents projets</Link>
               </li>
               <li className={'header-container-left-nav-list-item'}>
-                <Link href="/">Contact</Link>
+                <Link href="/contact">Contact</Link>
               </li>
             </ul>
           </nav>

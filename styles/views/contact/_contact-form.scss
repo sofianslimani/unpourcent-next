@@ -1,0 +1,62 @@
+.contact-form {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  padding-top: 74px;
+
+  @include tablet {
+    height: 100%;
+  }
+
+  &-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100%;
+
+    color: $black;
+
+    @include tablet {
+      grid-template-columns: 1fr;
+
+      grid-auto-flow: dense;
+    }
+    &-left {
+      width: 100%;
+      height: 100%;
+      text-align: center;
+
+      img {
+        width: 100%;
+        height: 100%;
+
+        max-width: 500px;
+        max-height: 500px;
+        object-fit: cover;
+      }
+    }
+
+    &-right {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      height: 100%;
+
+      h2 {
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 49px;
+      }
+      p {
+        font-weight: 400;
+        font-size: 14.7737px;
+        line-height: 20px;
+      }
+
+      h2 + p {
+        margin-top: 6px;
+      }
+    }
+  }
+}
