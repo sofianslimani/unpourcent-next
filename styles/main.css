@@ -413,6 +413,12 @@ span.green {
   border-radius: 100px;
 }
 
+.max-width {
+  max-width: 1224px;
+  padding: 0 24px;
+  margin: 0 auto;
+}
+
 .header {
   position: fixed;
   top: 0;
