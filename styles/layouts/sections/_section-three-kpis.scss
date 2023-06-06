@@ -1,0 +1,36 @@
+.section-three-kpis{
+  width: 100%;
+  @extend .margin-bottom-section-100;
+  &-container{
+    &.green{
+      background-color: $green;
+    }
+    border-radius: 8px;
+    width: 100%;
+    padding: 5vw 10vw;
+    box-sizing: border-box;
+    display: flex;
+    justify-content:space-between;
+    gap: 30px;
+    @include tablet{
+      flex-direction: column;
+    }
+    &-item{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      width: 15vw;
+      @include desktop-mini{
+        width: 20vw;
+      }
+      @include tablet{
+        width:60%;
+        margin: 0 auto;
+      }
+      p{
+        text-align: center;
+      }
+    }
+  }
+}
