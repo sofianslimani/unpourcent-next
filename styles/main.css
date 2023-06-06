@@ -389,6 +389,10 @@ span.red {
   color: #FF667A;
 }
 
+span.green {
+  color: #6AB938;
+}
+
 .button-classic {
   padding: 12px 20px;
   background: #FFFFFF;
@@ -397,6 +401,22 @@ span.red {
   font-family: "Satoshi-Bold";
   border: none;
   border-radius: 100px;
+}
+
+.button-secondary {
+  padding: 12px 20px;
+  background: #FF667A;
+  color: #ffffff;
+  font-size: 16px;
+  font-family: "Satoshi-Bold";
+  border: none;
+  border-radius: 100px;
+}
+
+.max-width {
+  max-width: 1224px;
+  padding: 0 24px;
+  margin: 0 auto;
 }
 
 .header {
@@ -535,7 +555,15 @@ span.red {
   gap: 85px;
   align-items: center;
 }
-@media (max-width: 991px) {
+.section-images-and-text-container.inverse {
+  flex-direction: row-reverse !important;
+}
+@media (max-width: 1024px) {
+  .section-images-and-text-container.inverse {
+    flex-direction: column-reverse !important;
+  }
+}
+@media (max-width: 1024px) {
   .section-images-and-text-container {
     flex-direction: column-reverse;
     gap: 20px;
@@ -546,6 +574,9 @@ span.red {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+.section-images-and-text-container-text a {
+  width: fit-content;
 }
 @media (max-width: 991px) {
   .section-images-and-text-container-text {
@@ -592,7 +623,7 @@ span.red {
 .section-images-and-text-container-img.grid .item-img:nth-child(1) {
   grid-area: 1/1/2/3;
   width: 100%;
-  object-position: 0 -200px;
+  object-position: 0% 31%;
 }
 @media (max-width: 991px) {
   .section-images-and-text-container-img.grid .item-img:nth-child(1) {
