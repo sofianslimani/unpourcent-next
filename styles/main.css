@@ -356,32 +356,32 @@ html::selection {
 }
 
 .text-38 {
-  font-size: clamp(2vw, 5vw, 38px);
+  font-size: 38px;
   line-height: initial;
 }
 
 .text-30 {
-  font-size: clamp(2vw, 4.5vw, 30px);
+  font-size: 30px;
   line-height: initial;
 }
 
 .text-26 {
-  font-size: clamp(2vw, 4.2vw, 30px);
+  font-size: 26px;
   line-height: initial;
 }
 
 .text-20 {
-  font-size: clamp(2vw, 4vw, 30px);
+  font-size: 20px;
   line-height: initial;
 }
 
 .text-16 {
-  font-size: clamp(1vw, 3vw, 16px);
+  font-size: 16px;
   line-height: initial;
 }
 
 .text-14 {
-  font-size: clamp(2vw, 2vw, 14px);
+  font-size: 14px;
   line-height: initial;
 }
 
@@ -564,6 +564,7 @@ span.red {
   width: 100%;
   border-radius: 8px;
   height: 50vh;
+  object-fit: cover;
 }
 .section-images-and-text-container-img .item-img img {
   object-fit: cover;
@@ -676,7 +677,7 @@ span.red {
 }
 .home-three-cards-informations-container .card-item {
   width: 33.33333%;
-  min-height: 400px;
+  height: auto;
   background-color: white;
   border-radius: 10px;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.05);
@@ -708,10 +709,10 @@ span.red {
 .home-three-cards-informations-container .card-item.green .card-item-container-picto::after {
   background: #6AB938;
 }
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
   .home-three-cards-informations-container .card-item {
     width: 100%;
-    min-height: fit-content;
+    height: auto;
   }
 }
 .home-three-cards-informations-container .card-item-container {
