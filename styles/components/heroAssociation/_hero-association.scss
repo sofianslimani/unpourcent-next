@@ -1,0 +1,61 @@
+.hero-association {
+  --icon-size: 42px;
+
+  position: relative;
+  background-color: black;
+
+  .max-width {
+    position: relative;
+    padding: 137px 0 155px 0;
+  }
+
+  .hero-association__background,
+  .hero-association__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .hero-association__background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .hero-association__overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .hero-association__content {
+    position: relative;
+    text-align: center;
+
+    .hero-association__content__logo {
+      height: var(--icon-size);
+      width: var(--icon-size);
+      border-radius: 8px;
+    }
+
+    h1 {
+      color: white;
+      font-weight: 900;
+      font-size: 38px;
+      line-height: 47px;
+    }
+
+    p {
+      font-family: 'Poppins', sans-serif;
+      color: white;
+      font-weight: 400;
+      font-size: 13px;
+
+      span {
+        font-family: 'Satoshi-Black', sans-serif;
+        font-weight: 700;
+        padding: 0 12px;
+      }
+    }
+  }
+}
