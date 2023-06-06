@@ -1,4 +1,6 @@
 .social-section {
+  overflow: hidden;
+
   * + & {
     margin-top: 86px;
   }
