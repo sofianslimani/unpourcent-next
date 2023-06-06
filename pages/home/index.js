@@ -58,6 +58,7 @@ const HomePage = () => {
 	);
 	
 	
+	
 	return (<>
 			<HomeHero/>
 			<SectionThreeKpis color={"green"} data={dataSectionThreeKpis}/>
