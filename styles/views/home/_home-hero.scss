@@ -4,7 +4,7 @@
   height: 80vh;
   background-color: $primary;
   @extend .margin-bottom-section-100;
-  @include tablet{
+  @include tablet {
     height: auto;
   }
   &-container {
@@ -23,10 +23,10 @@
       gap: 25px;
       height: 100%;
       width: 40%;
-      @include tablet{
+      @include tablet {
         width: 100%;
       }
-      &-button{
+      &-button {
         display: flex;
       }
     }
@@ -38,7 +38,7 @@
       right: 0;
       bottom: 0;
 
-      @include tablet{
+      @include tablet {
         display: none;
       }
       img {

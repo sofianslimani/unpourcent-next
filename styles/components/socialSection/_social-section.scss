@@ -1,0 +1,84 @@
+.social-section {
+  overflow: hidden;
+
+  * + & {
+    margin-top: 86px;
+  }
+
+  h2 {
+    text-align: center;
+    color: #252525;
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 52px;
+
+    span {
+      color: #ff667a;
+    }
+  }
+
+  .socials__cards {
+    * + & {
+      margin-top: 45px;
+    }
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    @include tablet() {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include mobile() {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    gap: 20px;
+
+    .socials__card {
+      display: flex;
+      justify-content: center;
+      padding: 50px;
+      border-radius: 8px;
+
+      &.socials__card--twitter {
+        background: #1d9bf0;
+      }
+
+      &.socials__card--facebook {
+        background: linear-gradient(94.45deg, #046de4 -4.61%, #18adfe 95.47%);
+      }
+
+      &.socials__card--instagram {
+        background: radial-gradient(
+          92.18% 99.11% at 26.56% 107.7%,
+          #ffdd55 0%,
+          #ffdd55 10%,
+          #ff543e 50%,
+          #c837ab 100%
+        );
+      }
+
+      &.socials__card--linkedin {
+        background: #007ebb;
+      }
+
+      h3 {
+        * + & {
+          margin-left: 10px;
+        }
+
+        font-family: 'Satoshi', sans-serif;
+        color: white;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 24px;
+
+        letter-spacing: 0.1px;
+
+        transform: translateY(10px);
+      }
+    }
+  }
+}
