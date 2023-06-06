@@ -1,5 +1,6 @@
 $mobile: 768px;
 $tablet: 1024px;
+$desktop-mini: 1200px;
 
 @mixin mobile {
   @media (max-width: $mobile) {
@@ -13,8 +14,8 @@ $tablet: 1024px;
   }
 }
 
-@mixin desktop {
-  @media (min-width: $tablet) {
+@mixin desktop-mini {
+  @media (max-width: $desktop-mini) {
     @content;
   }
 }
