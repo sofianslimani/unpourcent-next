@@ -9,14 +9,16 @@ const FAQ_INDEX_ATTRIBUTE_NAME = 'faq-index';
 const ContactFaq = () => {
   const [faqIndex, setFaqIndex] = useState(null);
 
-  const handleClick = (index) => {
+  const handleClick = (index, event) => {
+    event.preventDefault();
     setFaqIndex(index !== faqIndex ? index : null);
   };
 
   const items = [
     {
       question: 'Comment puis-je faire un don sur Un Pour Cent ?',
-      answer: 'lorem ipsum',
+      answer:
+        'lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum',
     },
     {
       question: 'Comment puis-je savoir ce qui est fait avec mon don ?',
@@ -32,21 +34,38 @@ const ContactFaq = () => {
   const halfLength = Math.ceil(items.length / 2);
 
   const renderFaqItem = (item, index) => (
-    <div className="faq__content__item" key={index}>
-      <div className="faq__content__item__header">
-        <div className="faq__content__item__header__title">
+    <div
+      className={'contact-faq-container-bottom-wrapper-content-item'}
+      key={index}
+    >
+      <div
+        className={'contact-faq-container-bottom-wrapper-content-item-header'}
+      >
+        <div
+          className={
+            'contact-faq-container-bottom-wrapper-content-item-header-title'
+          }
+        >
           <Link
-            className="faq__content__item__header__title__link"
+            className={
+              'contact-faq-container-bottom-wrapper-content-item-header-title-link'
+            }
             href="#"
-            onClick={() => handleClick(index)}
+            onClick={(event) => handleClick(index, event)}
             {...{
               [FAQ_INDEX_ATTRIBUTE_NAME]: index,
             }}
-          ></Link>
+          >
+            {item.question}
+          </Link>
         </div>
-        <div className="faq__content__item__header__icon">
+        <div
+          className={
+            'contact-faq-container-bottom-wrapper-content-item-header-icon'
+          }
+        >
           {index === faqIndex ? (
-            <img src="./icons/arrow-down.svg" />
+            <img src="./icons/arrow-bottom.svg" />
           ) : (
             <img src="./icons/arrow-right.svg" />
           )}
@@ -58,13 +77,17 @@ const ContactFaq = () => {
           height: index === faqIndex ? 'auto' : 0,
         }}
         transition={{ duration: 0.3, ease: 'easeOut' }}
-        className={classnames('faq__content__item__content', {
-          'faq__content__item__content--current': index === faqIndex,
-        })}
+        className={classnames(
+          'contact-faq-container-bottom-wrapper-content-item-content',
+          {
+            'contact-faq-container-bottom-wrapper-content-item-content--current':
+              index === faqIndex,
+          }
+        )}
       >
         <div style={{ paddingBottom: '16px' }}>
-          <div className={''}>
-            <p className={'bold'}>{item.question}</p>
+          <div>
+            <p className={'bold'}>{item.answer}</p>
           </div>
         </div>
       </motion.div>
@@ -79,18 +102,18 @@ const ContactFaq = () => {
             <h2 className={'bold'}>FAQ</h2>
             <p className={'bold'}>Nous répondons à toutes vos questions</p>
           </div>
-          <div className={'contact-form-container-bottom'}>
+          <div className={'contact-faq-container-bottom'}>
             <motion.div
               initial={{ height: 0 }}
               animate={{ height: 'auto' }}
               transition={{ duration: 0.3, ease: 'easeOut' }}
-              className={'faq__content__container'}
+              className={'contact-faq-container-bottom-wrapper'}
             >
-              <div className="faq__content">
+              <div className={'contact-faq-container-bottom-wrapper-content'}>
                 {items.slice(0, halfLength).map(renderFaqItem)}
               </div>
 
-              <div className="faq__content">
+              <div className={'contact-faq-container-bottom-wrapper-content'}>
                 {items
                   .slice(halfLength)
                   .map((item, index) =>
