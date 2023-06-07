@@ -87,7 +87,7 @@ const ContactFaq = () => {
       >
         <div style={{ paddingBottom: '16px' }}>
           <div>
-            <p className={'bold'}>{item.answer}</p>
+            <p>{item.answer}</p>
           </div>
         </div>
       </motion.div>
