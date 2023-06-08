@@ -175,11 +175,11 @@ html::selection {
   }
 }
 
-.margin-bottom-section-100, .home-three-cards-informations, .home-hero, .section-images-and-text-container, .section-images-and-text, .section-three-kpis {
+.margin-bottom-section-100, .home-three-cards-informations, .home-hero, .section-images-and-text-container, .section-images-and-text, .section-three-kpis, .hero-association {
   margin-bottom: 100px;
 }
 @media (max-width: 1024px) {
-  .margin-bottom-section-100, .home-three-cards-informations, .home-hero, .section-images-and-text-container, .section-images-and-text, .section-three-kpis {
+  .margin-bottom-section-100, .home-three-cards-informations, .home-hero, .section-images-and-text-container, .section-images-and-text, .section-three-kpis, .hero-association {
     margin-bottom: 50px;
   }
 }
@@ -417,6 +417,124 @@ span.green {
   max-width: 1224px;
   padding: 0 24px;
   margin: 0 auto;
+}
+
+.hero-association {
+  --icon-size: 42px;
+  position: relative;
+  background-color: black;
+}
+.hero-association .max-width {
+  position: relative;
+  padding: 137px 0 155px 0;
+}
+.hero-association .hero-association__background,
+.hero-association .hero-association__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.hero-association .hero-association__background {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero-association .hero-association__overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.hero-association .hero-association__content {
+  position: relative;
+  text-align: center;
+}
+.hero-association .hero-association__content .hero-association__content__logo {
+  height: var(--icon-size);
+  width: var(--icon-size);
+  border-radius: 8px;
+}
+.hero-association .hero-association__content h1 {
+  color: white;
+  font-weight: 900;
+  font-size: 38px;
+  line-height: 47px;
+}
+.hero-association .hero-association__content p {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-weight: 400;
+  font-size: 13px;
+}
+.hero-association .hero-association__content p span {
+  font-family: "Satoshi-Black", sans-serif;
+  font-weight: 700;
+  padding: 0 12px;
+}
+
+.social-section {
+  overflow: hidden;
+}
+* + .social-section {
+  margin-top: 86px;
+}
+.social-section h2 {
+  text-align: center;
+  color: #252525;
+  font-family: "Satoshi", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 52px;
+}
+.social-section h2 span {
+  color: #ff667a;
+}
+.social-section .socials__cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+* + .social-section .socials__cards {
+  margin-top: 45px;
+}
+@media (max-width: 1024px) {
+  .social-section .socials__cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .social-section .socials__cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.social-section .socials__cards .socials__card {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+  border-radius: 8px;
+}
+.social-section .socials__cards .socials__card.socials__card--twitter {
+  background: #1d9bf0;
+}
+.social-section .socials__cards .socials__card.socials__card--facebook {
+  background: linear-gradient(94.45deg, #046de4 -4.61%, #18adfe 95.47%);
+}
+.social-section .socials__cards .socials__card.socials__card--instagram {
+  background: radial-gradient(92.18% 99.11% at 26.56% 107.7%, #ffdd55 0%, #ffdd55 10%, #ff543e 50%, #c837ab 100%);
+}
+.social-section .socials__cards .socials__card.socials__card--linkedin {
+  background: #007ebb;
+}
+.social-section .socials__cards .socials__card h3 {
+  font-family: "Satoshi", sans-serif;
+  color: white;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  transform: translateY(10px);
+}
+* + .social-section .socials__cards .socials__card h3 {
+  margin-left: 10px;
 }
 
 .header {
@@ -779,6 +897,22 @@ span.green {
   z-index: 9999;
   position: relative;
   margin-top: 5px;
+}
+
+.section-how-un-pour-cent-use-donation .section-images-and-text-container-img {
+  position: relative;
+}
+.section-how-un-pour-cent-use-donation .section-images-and-text-container-img::after {
+  content: url("../../../assets/decoration-gift-green.svg");
+  position: absolute;
+  top: -20%;
+  right: -10%;
+}
+.section-how-un-pour-cent-use-donation .section-images-and-text-container-img::before {
+  content: url("../../../assets/decoration-gift-red.svg");
+  position: absolute;
+  bottom: -10%;
+  left: -3%;
 }
 
 /*# sourceMappingURL=main.css.map */
