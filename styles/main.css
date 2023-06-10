@@ -323,7 +323,7 @@ html::selection {
   color: #ffffff;
 }
 
-.color-black {
+.color-black, .footer-container > div ul li, .input-custom {
   color: #252525;
 }
 
@@ -339,7 +339,7 @@ html::selection {
   font-family: "Satoshi-Medium";
 }
 
-.regular {
+.regular, .footer-container > div ul li, .input-custom {
   font-family: "Satoshi-Regular";
 }
 
@@ -375,12 +375,12 @@ html::selection {
   line-height: initial;
 }
 
-.text-16 {
+.text-16, .input-custom {
   font-size: 16px;
   line-height: initial;
 }
 
-.text-14 {
+.text-14, .footer-container > div ul li {
   font-size: 14px;
   line-height: initial;
 }
@@ -411,6 +411,15 @@ span.green {
   font-family: "Satoshi-Bold";
   border: none;
   border-radius: 100px;
+}
+
+.input-custom {
+  border: none;
+  border-bottom: 1px solid #252525;
+  background-color: #F0F0F0;
+  padding-block: 10px;
+  background-color: white;
+  padding-inline: 2px;
 }
 
 .max-width {
@@ -757,6 +766,33 @@ span.green {
   width: 100%;
 }
 
+.footer {
+  padding-block: 5%;
+  box-sizing: border-box;
+  background-color: #F0F0F0;
+}
+.footer-container {
+  display: flex;
+  gap: 75px;
+  justify-content: space-between;
+}
+.footer-container > div {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 25%;
+}
+.footer-container > div:first-child {
+  width: 13%;
+}
+.footer-container > div:first-child img {
+  width: 45px;
+}
+.footer-container > div ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
 .home-hero {
   position: relative;
   width: 100%;

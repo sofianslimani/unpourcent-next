@@ -1,0 +1,11 @@
+.input-custom{
+  @extend .text-16;
+  @extend .regular;
+  @extend .color-black;
+  border: none;
+  border-bottom: 1px solid $black;
+  background-color: $grey;
+  padding-block: 10px;
+  background-color: white;
+  padding-inline: 2px;
+}

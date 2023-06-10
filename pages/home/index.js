@@ -4,6 +4,7 @@ import SectionThreeKpis from "../../layouts/Sections/SectionThreeKpis";
 import SectionImgaesAndText from "../../layouts/Sections/SectionImagesAndText";
 import HomeThreeCardsInformations from "./Partials/HomeThreeCardsInformations";
 import Link from "next/link";
+import HomeTabSection from "./Partials/HomeTabSection";
 
 const HomePage = () => {
 	
@@ -56,7 +57,6 @@ const HomePage = () => {
 		},
 	
 	);
-	
 	
 	
 	return (<>
