@@ -1,0 +1,35 @@
+.footer {
+  padding-block: 5%;
+  box-sizing: border-box;
+  background-color: $grey;
+  &-container {
+    display: flex;
+    gap: 75px;
+    justify-content: space-between;
+    > div {
+      &:first-child {
+        width: 13%;
+        img {
+          width: 45px;
+        }
+      }
+
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      width: 25%;
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        li {
+          @extend .text-14;
+          @extend .color-black;
+          @extend .regular;
+        }
+      }
+    }
+  }
+}

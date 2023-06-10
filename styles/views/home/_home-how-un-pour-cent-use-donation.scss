@@ -1,0 +1,17 @@
+.section-how-un-pour-cent-use-donation{
+  .section-images-and-text-container-img{
+    position: relative;
+    &::after{
+      content: url('../../../assets/decoration-gift-green.svg');
+      position: absolute;
+      top: -20%;
+      right: -10%;
+    }
+    &::before{
+      content: url('../../../assets/decoration-gift-red.svg');
+      position: absolute;
+      bottom: -10%;
+      left: -3%;
+    }
+  }
+}
