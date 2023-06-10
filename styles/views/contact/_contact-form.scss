@@ -25,6 +25,10 @@
       width: 100%;
       height: 100%;
       text-align: center;
+      justify-content: center;
+
+      display: flex;
+      flex-direction: column;
 
       img {
         width: 100%;
@@ -56,6 +60,105 @@
 
       h2 + p {
         margin-top: 6px;
+      }
+
+      &-bottom {
+        margin-top: 25px;
+        form {
+          width: 100%;
+
+          display: flex;
+          flex-direction: column;
+          .contact-form-container-right-bottom-inputs {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            gap: 26px;
+            .contact-form-container-right-bottom-inputs-input {
+              display: flex;
+              flex-direction: column;
+
+              width: 100%;
+
+              label {
+                position: relative;
+                font-weight: 600;
+                font-size: 12.6632px;
+                line-height: 15px;
+
+                background-color: #fff;
+
+                top: 7px;
+                left: 12px;
+
+                max-width: fit-content;
+                padding: 0 5px;
+              }
+
+              input {
+                padding: 16px;
+                font-weight: 400;
+                font-size: 14.7737px;
+                line-height: 18px;
+
+                border: 1.05526px solid #d2d5da;
+                border-radius: 8.44211px;
+              }
+            }
+          }
+
+          .contact-form-container-right-bottom-input {
+            display: flex;
+            flex-direction: column;
+
+            width: 100%;
+            label {
+              position: relative;
+              font-weight: 600;
+              font-size: 12.6632px;
+              line-height: 15px;
+
+              background-color: #fff;
+
+              top: 7px;
+              left: 12px;
+
+              max-width: fit-content;
+              padding: 0 5px;
+            }
+
+            input,
+            textarea {
+              padding: 16px;
+
+              font-weight: 400;
+              font-size: 14.7737px;
+              line-height: 18px;
+
+              border: 1.05526px solid #d2d5da;
+              border-radius: 8.44211px;
+
+              font-family: 'Satoshi-Regular';
+            }
+
+            textarea {
+              resize: vertical;
+              min-height: 160px;
+            }
+          }
+
+          .contact-form-container-right-bottom-inputs
+            + .contact-form-container-right-bottom-input,
+          .contact-form-container-right-bottom-input
+            + .contact-form-container-right-bottom-input {
+            margin-top: 26px;
+          }
+
+          .contact-form-container-right-bottom-input + button {
+            margin-top: 29px;
+          }
+        }
       }
     }
   }

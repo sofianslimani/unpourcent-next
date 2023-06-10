@@ -17,11 +17,28 @@
   border-radius: 100px;
 }
 
+.button-primary {
+  padding: 12px 20px;
+  background: $primary;
+  color: $white;
+  font-size: 16px;
+  font-family: 'Satoshi-Bold';
+  border: none;
+  border-radius: 8.44211px;
+}
+
 /* HOVER */
 
 .button-classic:hover {
   background-color: rgba(255, 255, 255, 0.9);
   transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.button-primary:hover {
+  background-color: rgba(70, 133, 255, 0.9);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
 }
 
 /* ACTIVE */
