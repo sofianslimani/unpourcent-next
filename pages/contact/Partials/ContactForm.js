@@ -38,13 +38,13 @@ const ContactForm = () => {
                 <div className="contact-form-container-right-bottom-inputs">
                   <div className="contact-form-container-right-bottom-inputs-input">
                     <label className={'bold'} htmlFor="firstName">
-                      First Name <span className="red">*</span>
+                      Prénom <span className="red">*</span>
                     </label>
 
                     <input
                       id="firstName"
                       name="firstName"
-                      placeholder="First Name"
+                      placeholder="Prénom"
                       type="text"
                       onChange={formik.handleChange}
                       value={formik.values.firstName}
@@ -53,13 +53,13 @@ const ContactForm = () => {
                   </div>
                   <div className="contact-form-container-right-bottom-inputs-input">
                     <label className={'bold'} htmlFor="lastName">
-                      Last Name <span className="red">*</span>
+                      Nom <span className="red">*</span>
                     </label>
 
                     <input
                       id="lastName"
                       name="lastName"
-                      placeholder="Last Name"
+                      placeholder="Nom"
                       type="text"
                       onChange={formik.handleChange}
                       value={formik.values.lastName}
@@ -76,7 +76,7 @@ const ContactForm = () => {
                   <input
                     id="email"
                     name="email"
-                    placeholder="yourmail@gmail.com"
+                    placeholder="votremail@gmail.com"
                     type="email"
                     onChange={formik.handleChange}
                     value={formik.values.email}
@@ -86,7 +86,7 @@ const ContactForm = () => {
 
                 <div className="contact-form-container-right-bottom-input">
                   <label className={'bold'} htmlFor="phone">
-                    Phone <span className="red">*</span>
+                    Téléphone <span className="red">*</span>
                   </label>
 
                   <input
@@ -108,7 +108,7 @@ const ContactForm = () => {
                   <textarea
                     id="message"
                     name="message"
-                    placeholder="Your message"
+                    placeholder="Votre message"
                     type="text"
                     onChange={formik.handleChange}
                     value={formik.values.message}
