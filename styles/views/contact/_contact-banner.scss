@@ -7,6 +7,10 @@
 
   background-color: $primary;
 
+  @include tablet {
+    margin-top: 40px;
+  }
+
   &-container {
     display: flex;
     flex-direction: column;
@@ -14,25 +18,28 @@
     width: 100%;
 
     padding: 66px 0;
-
     color: $white;
 
     text-align: center;
-
     gap: 32px;
-
     max-width: 60ch;
-
     margin: auto;
+
+    @include tablet {
+      padding: 40px 0;
+    }
 
     h2 {
       font-weight: 700;
       font-size: 40px;
       line-height: 48px;
-      /* or 120% */
-
       text-align: center;
       letter-spacing: -0.5px;
+
+      @include tablet {
+        font-size: 26px;
+        line-height: 32px;
+      }
     }
 
     p {
