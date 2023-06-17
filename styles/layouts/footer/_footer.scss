@@ -6,6 +6,11 @@
     display: flex;
     gap: 75px;
     justify-content: space-between;
+
+    @include tablet {
+      flex-direction: column;
+      gap: 30px;
+    }
     > div {
       &:first-child {
         width: 13%;

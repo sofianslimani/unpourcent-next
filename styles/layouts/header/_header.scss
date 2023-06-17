@@ -11,6 +11,10 @@
     display: flex;
     justify-content: space-between;
 
+    @include tablet {
+      padding-inline: 20px;
+    }
+
     &-left,
     &-right {
       display: flex;
@@ -22,6 +26,10 @@
           align-items: center;
           margin-inline: 20px;
           list-style: none;
+
+          @include tablet {
+            margin-inline: 10px;
+          }
           &-item {
             position: relative;
             margin-inline: 10px;
@@ -90,6 +98,16 @@
 
           &-icon {
             margin-right: 6px;
+          }
+        }
+      }
+    }
+
+    &-left {
+      &-logo {
+        @include tablet {
+          img {
+            width: 45px;
           }
         }
       }
