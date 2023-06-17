@@ -4,6 +4,7 @@ import { SocialSection } from '../components/SocialSection';
 import SectionThreeKpis from '../layouts/Sections/SectionThreeKpis';
 import SectionImagesAndText from '../layouts/Sections/SectionImagesAndText';
 import Link from 'next/link';
+import { DonateSection } from '../components/DonateSection';
 
 function Association() {
   const [dataSectionThreeKpis, setDataSectionThreeKpis] = useState([
@@ -55,6 +56,7 @@ function Association() {
         data={dataSectionGrid}
       />
       <SocialSection />
+      <DonateSection />
     </div>
   );
 }
