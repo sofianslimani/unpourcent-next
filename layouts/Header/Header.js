@@ -17,9 +17,6 @@ const Header = () => {
                 <Link href="/">Le projet du mois</Link>
               </li>
               <li className={'header-container-left-nav-list-item'}>
-                <Link href="/">Les précédents projets</Link>
-              </li>
-              <li className={'header-container-left-nav-list-item'}>
                 <Link href="/contact">Contact</Link>
               </li>
             </ul>
@@ -27,14 +24,14 @@ const Header = () => {
         </div>
         <div className={'header-container-right'}>
           <ul className={'header-container-right-list'}>
-            <li className={'header-container-right-list-item'}>
+            {/*  <li className={'header-container-right-list-item'}>
               <Link href="/">
                 <div className={'header-container-right-list-item-icon'}>
                   <img src="/icons/user.svg" alt="user" />
                 </div>
                 Connexion
               </Link>
-            </li>
+            </li> */}
             <li className={'header-container-right-list-item'}>
               <Link href="/">
                 <div className={'header-container-right-list-item-icon'}>
