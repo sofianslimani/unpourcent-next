@@ -6,7 +6,6 @@ $colors: (
   'green': $green,
 );
 
-
 @each $name, $color in $colors {
   .color-#{$name} {
     color: $color;
@@ -35,6 +34,10 @@ $colors: (
 .text-38 {
   font-size: 38px;
   line-height: initial;
+
+  @include tablet {
+    font-size: 36px;
+  }
 }
 
 .text-30 {
@@ -57,18 +60,15 @@ $colors: (
   line-height: initial;
 }
 
-
 .text-14 {
   font-size: 14px;
   line-height: initial;
 }
 
-
-
-span.red{
+span.red {
   color: $secondary;
 }
 
-span.green{
+span.green {
   color: $green;
 }

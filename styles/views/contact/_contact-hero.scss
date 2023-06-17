@@ -34,7 +34,6 @@
 
       h1 {
         font-weight: 900;
-        font-size: 38px;
         line-height: 47px;
       }
       p {
@@ -44,6 +43,10 @@
 
       h1 + p {
         margin-top: 24px;
+
+        @include tablet {
+          margin-top: 12px;
+        }
       }
     }
 
