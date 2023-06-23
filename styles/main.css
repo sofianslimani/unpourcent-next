@@ -330,6 +330,10 @@ html::selection {
   color: #6ab938;
 }
 
+.color-red {
+  color: #FF0000;
+}
+
 .light {
   font-family: "Satoshi-Light";
 }
@@ -411,12 +415,17 @@ span.green {
 
 .button-secondary {
   padding: 12px 20px;
-  background: #ff667a;
+  background-color: #ff667a;
   color: #ffffff;
   font-size: 16px;
   font-family: "Satoshi-Bold";
   border: none;
   border-radius: 100px;
+  color: white !important;
+  transition: background-color 0.3s ease-in-out !important;
+}
+.button-secondary:hover {
+  background-color: #ea5b6e;
 }
 
 .button-primary {
@@ -753,7 +762,7 @@ span.green {
   bottom: 0;
   left: 0;
 }
-.header-container-right-button-burgeur {
+.header-container-right-button-burger {
   display: none;
   width: 35px;
   height: 25px;
@@ -765,27 +774,27 @@ span.green {
   padding: 0;
   box-sizing: border-box;
 }
-.header-container-right-button-burgeur:focus {
+.header-container-right-button-burger:focus {
   outline: none;
 }
-.header-container-right-button-burgeur.open div {
+.header-container-right-button-burger.open div {
   display: none;
 }
-.header-container-right-button-burgeur.open img {
+.header-container-right-button-burger.open img {
   display: block;
   width: 100%;
 }
 @media (max-width: 700px) {
-  .header-container-right-button-burgeur {
+  .header-container-right-button-burger {
     display: flex;
   }
 }
-.header-container-right-button-burgeur div {
+.header-container-right-button-burger div {
   width: 100%;
   height: 3px;
   background: #4685ff;
 }
-.header-container-right-button-burgeur img {
+.header-container-right-button-burger img {
   display: none;
 }
 @media (max-width: 700px) {
@@ -1254,8 +1263,13 @@ span.green {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: left;
+  width: 40%;
   padding: 87.5px 0 87.5px 0;
+}
+@media (max-width: 1356px) {
+  .contact-hero-container-left {
+    width: 90%;
+  }
 }
 @media (max-width: 1024px) {
   .contact-hero-container-left {
@@ -1285,7 +1299,7 @@ span.green {
   width: 100%;
   height: 303px;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1356px) {
   .contact-hero-container-right {
     display: none;
   }
@@ -1387,6 +1401,7 @@ span.green {
 .contact-form-container-right-bottom form .contact-form-container-right-bottom-inputs .contact-form-container-right-bottom-inputs-input {
   display: flex;
   flex-direction: column;
+  gap: 10px;
   width: 100%;
 }
 .contact-form-container-right-bottom form .contact-form-container-right-bottom-inputs .contact-form-container-right-bottom-inputs-input label {
@@ -1411,6 +1426,7 @@ span.green {
 .contact-form-container-right-bottom form .contact-form-container-right-bottom-input {
   display: flex;
   flex-direction: column;
+  gap: 10px;
   width: 100%;
 }
 .contact-form-container-right-bottom form .contact-form-container-right-bottom-input label {

@@ -9,7 +9,11 @@ import ContactFaq from '../contact/Partials/ContactFaq';
 import Head from 'next/head';
 
 const HomePage = () => {
-  const [title, setTitle] = useState('Un Pour Cent');
+  const [seo, setSeo] = useState({
+    title: 'Un Pour Cent',
+    description:
+      "Avec Un Pour Cent, soutenez des projets qui font du bien. Chaques mois, découvrez et soutenez un nouveau projet et recevez des nouvelles de l'avancement du projet.",
+  });
 
   const [dataSectionThreeKpis, setDataSectionThreeKpis] = useState([
     {
@@ -31,7 +35,7 @@ const HomePage = () => {
 
   const [dataSectionGrid, setDataSectionGrid] = useState({
     cta: (
-      <Link className={'button-secondary'} href={'/association'}>
+      <Link className={'button-secondary'} href={'/projet-du-mois'}>
         Découvrir le projet
       </Link>
     ),
@@ -64,7 +68,8 @@ const HomePage = () => {
   return (
     <>
       <Head>
-        <title>{title}</title>
+        <title>{seo.title}</title>
+        <meta name="description" content={seo.description} />
       </Head>
       <HomeHero />
       <SectionThreeKpis color={'green'} data={dataSectionThreeKpis} />
@@ -82,7 +87,7 @@ const HomePage = () => {
         description={
           'Découvrez dès maintenant le projet associatif mis en avant ce mois-ci sur notre plateforme. Soyez inspiré par son impact et participez à cette belle aventure de solidarité.'
         }
-        link={'/association'}
+        link={'/projet-du-mois'}
         linkText={'Découvrir le projet'}
         isExternal={false}
       />

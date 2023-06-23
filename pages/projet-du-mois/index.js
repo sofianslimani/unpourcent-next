@@ -1,15 +1,18 @@
-import React, { useEffect, useState } from 'react';
-import { HeroAssociation } from '../components/HeroAssociation';
-import { SocialSection } from '../components/SocialSection';
-import SectionThreeKpis from '../layouts/Sections/SectionThreeKpis';
-import SectionImagesAndText from '../layouts/Sections/SectionImagesAndText';
+import React, { useState } from 'react';
 import Link from 'next/link';
-import { DonateSection } from '../components/DonateSection';
+import { HeroAssociation } from '../../components/HeroAssociation';
+import { SocialSection } from '../../components/SocialSection';
+import SectionThreeKpis from '../../layouts/Sections/SectionThreeKpis';
+import SectionImagesAndText from '../../layouts/Sections/SectionImagesAndText';
+import { DonateSection } from '../../components/DonateSection';
+import Head from 'next/head';
 
-function Association() {
-  useEffect(() => {
-    document.title = 'Un Pour Cent - Amatullah';
-  }, []);
+const ProjetDuMois = () => {
+  const [seo, setSeo] = useState({
+    title: 'Un Pour Cent - Soutenez des projets qui font du bien',
+    description:
+      "Avec Un Pour Cent, soutenez des projets qui font du bien. Chaques mois, découvrez et soutenez un nouveau projet et recevez des nouvelles de l'avancement du projet.",
+  });
 
   const [dataSectionThreeKpis, setDataSectionThreeKpis] = useState([
     {
@@ -51,7 +54,7 @@ function Association() {
 
   const [dataSectionGridTwo, setDataSectionGridTwo] = useState({
     cta: (
-      <Link className={'button-secondary'} href={'/association'}>
+      <Link className={'button-secondary'} href={'/projet-du-mois'}>
         Soutenir le projet
       </Link>
     ),
@@ -70,7 +73,11 @@ function Association() {
   });
 
   return (
-    <div>
+    <>
+      <Head>
+        <title>{seo.title}</title>
+        <meta name="description" content={seo.description} />
+      </Head>
       <HeroAssociation />
       <SectionThreeKpis color={'green'} data={dataSectionThreeKpis} />
       <SectionImagesAndText greyBackground={false} data={dataSectionGrid} />
@@ -91,8 +98,8 @@ function Association() {
         linkText={'Soutenir le projet'}
         isExternal={true}
       />
-    </div>
+    </>
   );
-}
+};
 
-export default Association;
+export default ProjetDuMois;
