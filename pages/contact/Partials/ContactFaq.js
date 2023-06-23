@@ -47,7 +47,7 @@ const ContactFaq = () => {
         >
           <button
             className={
-              'contact-faq-container-bottom-wrapper-content-item-header-title-link'
+              'contact-faq-container-bottom-wrapper-content-item-header-title-link text-16'
             }
             onClick={(event) => handleClick(index, event)}
             {...{

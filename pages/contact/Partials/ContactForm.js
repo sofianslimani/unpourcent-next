@@ -3,6 +3,11 @@ import { MaxWidth } from '../../../components/MaxWidth';
 import { useFormik } from 'formik';
 import Airtable from 'airtable';
 import dotenv from 'dotenv';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import * as Yup from 'yup';
+
+
 dotenv.config();
 
 const base = new Airtable({
@@ -18,6 +23,13 @@ const ContactForm = () => {
       phone: '',
       message: '',
     },
+    validationSchema: Yup.object().shape({
+      firstName: Yup.string().required('Le prénom est requis'),
+      lastName: Yup.string().required('Le nom est requis'),
+      email: Yup.string().email('Format d\'email invalide').required('L\'email est requis'),
+      phone: Yup.string().optional(),
+      message: Yup.string().required('Le message est requis'),
+    }),
     onSubmit: (values) => {
       base(process.env.NEXT_PUBLIC_AIRTABLE_TABLE_NAME_CONTACT).create(
         [
@@ -33,9 +45,11 @@ const ContactForm = () => {
         ],
         function (err, records) {
           if (err) {
-            console.error(err);
+            toast.error('❌ Une erreur est survenue lors de l\'envoi de votre message.');
             return;
-          }
+          }else{
+            toast.success('👍Votre message a été envoyé avec succès.');
+            }
           console.log(records);
         }
       );
@@ -73,8 +87,10 @@ const ContactForm = () => {
                       type="text"
                       onChange={contactForm.handleChange}
                       value={contactForm.values.firstName}
-                      required
                     />
+                    {contactForm.touched.firstName && contactForm.errors.firstName && (
+                        <p className="error-message text-16 regular color-red">{contactForm.errors.firstName}</p>
+                    )}
                   </div>
                   <div className="contact-form-container-right-bottom-inputs-input">
                     <label className={'bold'} htmlFor="lastName">
@@ -88,8 +104,10 @@ const ContactForm = () => {
                       type="text"
                       onChange={contactForm.handleChange}
                       value={contactForm.values.lastName}
-                      required
                     />
+                    {contactForm.touched.lastName && contactForm.errors.lastName && (
+                        <p className="error-message text-16 regular color-red">{contactForm.errors.lastName}</p>
+                    )}
                   </div>
                 </div>
 
@@ -105,8 +123,10 @@ const ContactForm = () => {
                     type="email"
                     onChange={contactForm.handleChange}
                     value={contactForm.values.email}
-                    required
                   />
+                  {contactForm.touched.email && contactForm.errors.email && (
+                      <p className="error-message text-16 regular color-red">{contactForm.errors.email}</p>
+                  )}
                 </div>
 
                 <div className="contact-form-container-right-bottom-input">
@@ -122,8 +142,10 @@ const ContactForm = () => {
                     onChange={contactForm.handleChange}
                     value={contactForm.values.phone}
                   />
+                  {contactForm.touched.phone && contactForm.errors.phone && (
+                      <p className="error-message text-16 regular color-red">{contactForm.errors.phone}</p>
+                  )}
                 </div>
-
                 <div className="contact-form-container-right-bottom-input">
                   <label className={'bold'} htmlFor="message">
                     Message <span className="red">*</span>
@@ -136,8 +158,10 @@ const ContactForm = () => {
                     type="text"
                     onChange={contactForm.handleChange}
                     value={contactForm.values.message}
-                    required
                   />
+                  {contactForm.touched.message && contactForm.errors.message && (
+                      <p className="error-message text-16 regular color-red">{contactForm.errors.message}</p>
+                  )}
                 </div>
 
                 <button type="submit" className={'button-primary'}>
@@ -148,6 +172,7 @@ const ContactForm = () => {
           </div>
         </div>
       </MaxWidth>
+      <ToastContainer/>
     </section>
   );
 };
