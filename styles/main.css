@@ -173,11 +173,11 @@ html::selection {
   }
 }
 
-.margin-bottom-section-100, .home-three-cards-informations, .home-hero, .section-images-and-text-container, .section-images-and-text, .section-three-kpis, .hero-association {
+.margin-bottom-section-100, .home-three-cards-informations, .home-hero, .section-images-and-text, .section-three-kpis, .hero-association {
   margin-bottom: 100px;
 }
 @media (max-width: 1024px) {
-  .margin-bottom-section-100, .home-three-cards-informations, .home-hero, .section-images-and-text-container, .section-images-and-text, .section-three-kpis, .hero-association {
+  .margin-bottom-section-100, .home-three-cards-informations, .home-hero, .section-images-and-text, .section-three-kpis, .hero-association {
     margin-bottom: 50px;
   }
 }
@@ -895,6 +895,12 @@ span.green {
 .section-images-and-text.grey-background {
   background-color: #f0f0f0;
   padding-block: 5%;
+  padding-bottom: 3%;
+}
+@media (max-width: 768px) {
+  .section-images-and-text.grey-background {
+    padding-bottom: 5%;
+  }
 }
 .section-images-and-text-container {
   display: flex;
@@ -1199,7 +1205,7 @@ span.green {
   top: -20%;
   right: -10%;
 }
-@media (max-width: 991Px) {
+@media (max-width: 768px) {
   .section-how-un-pour-cent-use-donation .section-images-and-text-container-img::after {
     display: none;
   }
@@ -1207,10 +1213,10 @@ span.green {
 .section-how-un-pour-cent-use-donation .section-images-and-text-container-img::before {
   content: url("../../../assets/decoration-gift-red.svg");
   position: absolute;
-  bottom: -10%;
+  bottom: -18%;
   left: -3%;
 }
-@media (max-width: 991Px) {
+@media (max-width: 768px) {
   .section-how-un-pour-cent-use-donation .section-images-and-text-container-img::before {
     display: none;
   }
