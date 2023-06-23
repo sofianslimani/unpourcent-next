@@ -1534,6 +1534,7 @@ span.green {
 }
 .contact-faq-container-bottom .contact-faq-container-bottom-wrapper-content-item-header-title-link {
   color: #252525;
+  font-family: "Satoshi-Medium";
 }
 .contact-faq-container-bottom .contact-faq-container-bottom-wrapper-content-item-header-title-link:hover {
   cursor: pointer;
@@ -1557,6 +1558,9 @@ span.green {
   .contact-faq-container-bottom .contact-faq-container-bottom-wrapper-content-item-header-title {
     font-size: 16px;
   }
+}
+.contact-faq-container-bottom .contact-faq-container-bottom-wrapper-content-item-content p {
+  font-family: "Satoshi-Regular";
 }
 @media (max-width: 1024px) {
   .contact-faq-container-bottom .contact-faq-container-bottom-wrapper-content-item-content p {
