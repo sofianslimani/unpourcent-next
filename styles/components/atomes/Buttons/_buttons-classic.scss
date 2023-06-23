@@ -9,12 +9,18 @@
 }
 .button-secondary {
   padding: 12px 20px;
-  background: $secondary;
+  background-color: $secondary;
   color: $white;
   font-size: 16px;
   font-family: 'Satoshi-Bold';
   border: none;
   border-radius: 100px;
+  color: white !important;
+  transition: background-color 0.3s ease-in-out !important;
+
+  &:hover {
+    background-color: #ea5b6e;
+  }
 }
 
 .button-primary {
