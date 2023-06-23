@@ -120,6 +120,7 @@
 
       .contact-faq-container-bottom-wrapper-content-item-header-title-link {
         color: $black;
+        font-family: "Satoshi-Medium";
       }
 
       .contact-faq-container-bottom-wrapper-content-item-header-title-link:hover {
@@ -149,6 +150,7 @@
       }
 
       .contact-faq-container-bottom-wrapper-content-item-content p {
+        font-family: "Satoshi-Regular";
         @include tablet {
           font-size: 14px;
         }

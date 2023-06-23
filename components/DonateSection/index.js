@@ -1,13 +1,26 @@
 import React from 'react';
+import Link from 'next/link';
 import { MaxWidth } from '../MaxWidth';
 
-export const DonateSection = () => {
+export const DonateSection = ({
+  title, description, isExternal, link, linkText
+}) => {
   return (
     <section className="donate-section">
       <MaxWidth>
-        <h2>Découvrez dès maintenant le projet du moment</h2>
-        <p>Découvrez dès maintenant le projet associatif mis en avant ce mois-ci sur notre plateforme. Soyez inspiré par son impact et participez à cette belle aventure de solidarité.</p>
-        <a href="">Découvrir le projet</a>
+        <h2>{ title }</h2>
+        <p>{ description }</p>
+        {
+          isExternal ? (
+            <a target='_blank' href={link}>
+              { linkText }
+            </a>
+          ) : (
+            <Link href={link}>
+              { linkText }
+            </Link>
+          )
+        }
       </MaxWidth>
     </section>
   );

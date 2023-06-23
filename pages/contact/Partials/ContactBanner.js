@@ -9,7 +9,7 @@ const ContactBanner = () => {
           <h2 className={'bold'}>
             Découvrez dès maintenant le projet du moment
           </h2>
-          <p>
+          <p className={"regular"}>
             Soutenez ce projet en réalisant un don dès aujourd'hui et recevez
             des nouvelles de l'avancement de ce projet jusqu'à sa réalisation.
           </p>

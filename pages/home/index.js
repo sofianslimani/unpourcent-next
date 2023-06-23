@@ -35,15 +35,15 @@ const HomePage = () => {
     ),
     isGrid: true,
     title: (
-      <h2 class="text-30 color-black bold">
-        L’association du moment <span class="red">Amatullah</span>
+      <h2 className="text-30 color-black bold">
+        L’association du moment <span className="red">Amatullah</span>
       </h2>
     ),
-    text: "Amatullah en 2022 c'est 47 566 repas distribués, 4 943 colis alimentaires distribués dans le but de venir en aide aux plus démunis en leur offrant notamment des repas de qualité, des colis alimentaires ainsi qu’une présence bienveillante et une oreille attentive. La mission d’Amatullah est de tendre la main aux plus nécessiteux et pour cela, des centaines de bénévoles se mobilisent chaque jour sur le terrain afin de mener à bien cet objectif.",
+    text: "Amatullah, fondée par une jeune femme en quête de justice et d'égalité sociale, est une association humanitaire engagée depuis 2006 pour soutenir les plus démunis en France et à l'international. Depuis sa création, Amatullah s'engage à fournir une assistance aux personnes en situation précaire en offrant des repas, des colis alimentaires aux familles et une présence réconfortante aux personnes touchées par la solitude. Aujourd'hui, l'association étend ses actions à travers le monde grâce à des projets humanitaires visant à combattre la précarité, les injustices et les inégalités.",
     images: [
-      'images/Amatullah1.png',
-      'images/Amatullah2.png',
-      'images/Amatullah3.png',
+      'images/amatullah/amatullah-1.png',
+      'images/amatullah/amatullah-2.png',
+      'images/amatullah/amatullah-3.png',
     ],
   });
 
@@ -72,7 +72,13 @@ const HomePage = () => {
       />
       <SectionImagesAndText greyBackground={false} data={dataSectionGrid} />
       <ContactFaq />
-      <DonateSection />
+      <DonateSection
+        title={'Découvrez dès maintenant le projet du moment'}
+        description={'Découvrez dès maintenant le projet associatif mis en avant ce mois-ci sur notre plateforme. Soyez inspiré par son impact et participez à cette belle aventure de solidarité.'}
+        link={'/association'}
+        linkText={'Découvrir le projet'}
+        isExternal={false}
+      />
     </>
   );
 };

@@ -1,23 +1,24 @@
-.section-how-un-pour-cent-use-donation{
-  .section-images-and-text-container-img{
+.section-how-un-pour-cent-use-donation {
+  .section-images-and-text-container-img {
     position: relative;
-    &::after{
-      @media (max-width: 991Px){
-        display: none;
-      }
+    &::after {
       content: url('../../../assets/decoration-gift-green.svg');
       position: absolute;
       top: -20%;
       right: -10%;
-    }
-    &::before{
-      @media (max-width: 991Px){
+
+      @include tablet{
         display: none;
       }
+    }
+    &::before {
       content: url('../../../assets/decoration-gift-red.svg');
       position: absolute;
-      bottom: -10%;
+      bottom: -18%;
       left: -3%;
+      @include tablet {
+        display: none;
+      }
     }
   }
 }

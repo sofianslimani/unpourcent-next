@@ -173,11 +173,11 @@ html::selection {
   }
 }
 
-.margin-bottom-section-100, .home-three-cards-informations, .home-hero, .section-images-and-text-container, .section-images-and-text, .section-three-kpis, .hero-association {
+.margin-bottom-section-100, .home-three-cards-informations, .home-hero, .section-images-and-text, .section-three-kpis, .hero-association {
   margin-bottom: 100px;
 }
 @media (max-width: 1024px) {
-  .margin-bottom-section-100, .home-three-cards-informations, .home-hero, .section-images-and-text-container, .section-images-and-text, .section-three-kpis, .hero-association {
+  .margin-bottom-section-100, .home-three-cards-informations, .home-hero, .section-images-and-text, .section-three-kpis, .hero-association {
     margin-bottom: 50px;
   }
 }
@@ -668,6 +668,9 @@ span.green {
     padding-inline: 20px;
   }
 }
+.header-container li.active a {
+  color: #4685ff !important;
+}
 .header-container-left, .header-container-right {
   display: flex;
   align-items: center;
@@ -892,6 +895,12 @@ span.green {
 .section-images-and-text.grey-background {
   background-color: #f0f0f0;
   padding-block: 5%;
+  padding-bottom: 3%;
+}
+@media (max-width: 768px) {
+  .section-images-and-text.grey-background {
+    padding-bottom: 5%;
+  }
 }
 .section-images-and-text-container {
   display: flex;
@@ -921,7 +930,7 @@ span.green {
 .section-images-and-text-container-text a {
   width: fit-content;
 }
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
   .section-images-and-text-container-text {
     width: 100%;
   }
@@ -929,7 +938,7 @@ span.green {
 .section-images-and-text-container-img {
   width: 50%;
 }
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
   .section-images-and-text-container-img {
     width: 100%;
   }
@@ -952,7 +961,7 @@ span.green {
   grid-row-gap: 20px;
   position: relative;
 }
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
   .section-images-and-text-container-img.grid {
     width: 100%;
   }
@@ -968,7 +977,7 @@ span.green {
   width: 100%;
   object-position: 0% 31%;
 }
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
   .section-images-and-text-container-img.grid .item-img:nth-child(1) {
     object-position: initial !important;
   }
@@ -1196,7 +1205,7 @@ span.green {
   top: -20%;
   right: -10%;
 }
-@media (max-width: 991Px) {
+@media (max-width: 1024px) {
   .section-how-un-pour-cent-use-donation .section-images-and-text-container-img::after {
     display: none;
   }
@@ -1204,10 +1213,10 @@ span.green {
 .section-how-un-pour-cent-use-donation .section-images-and-text-container-img::before {
   content: url("../../../assets/decoration-gift-red.svg");
   position: absolute;
-  bottom: -10%;
+  bottom: -18%;
   left: -3%;
 }
-@media (max-width: 991Px) {
+@media (max-width: 1024px) {
   .section-how-un-pour-cent-use-donation .section-images-and-text-container-img::before {
     display: none;
   }
@@ -1534,6 +1543,7 @@ span.green {
 }
 .contact-faq-container-bottom .contact-faq-container-bottom-wrapper-content-item-header-title-link {
   color: #252525;
+  font-family: "Satoshi-Medium";
 }
 .contact-faq-container-bottom .contact-faq-container-bottom-wrapper-content-item-header-title-link:hover {
   cursor: pointer;
@@ -1557,6 +1567,9 @@ span.green {
   .contact-faq-container-bottom .contact-faq-container-bottom-wrapper-content-item-header-title {
     font-size: 16px;
   }
+}
+.contact-faq-container-bottom .contact-faq-container-bottom-wrapper-content-item-content p {
+  font-family: "Satoshi-Regular";
 }
 @media (max-width: 1024px) {
   .contact-faq-container-bottom .contact-faq-container-bottom-wrapper-content-item-content p {

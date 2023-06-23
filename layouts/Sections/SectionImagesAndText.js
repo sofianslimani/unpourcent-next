@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 
 const SectionImagesAndText = ({data, greyBackground, customClasses, inverse}) => {
 	

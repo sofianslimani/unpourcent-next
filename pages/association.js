@@ -26,22 +26,42 @@ function Association() {
   ]);
 
   const [dataSectionGrid, setDataSectionGrid] = useState({
+    // cta: (
+    //   <Link className={'button-secondary'} href={'/association'}>
+    //     Découvrir le projet
+    //   </Link>
+    // ),
+    isGrid: true,
+    title: (
+      <h2 className="text-30 color-black bold">
+        L'association du moment <span className="red">Amatullah</span>
+      </h2>
+    ),
+    text: "Amatullah, fondée par une jeune femme en quête de justice et d'égalité sociale, est une association humanitaire engagée depuis 2006 pour soutenir les plus démunis en France et à l'international. Depuis sa création, Amatullah s'engage à fournir une assistance aux personnes en situation précaire en offrant des repas, des colis alimentaires aux familles et une présence réconfortante aux personnes touchées par la solitude. Aujourd'hui, l'association étend ses actions à travers le monde grâce à des projets humanitaires visant à combattre la précarité, les injustices et les inégalités.",
+    images: [
+      'images/amatullah/amatullah-1.png',
+      'images/amatullah/amatullah-2.png',
+      'images/amatullah/amatullah-3.png',
+    ],
+  });
+  
+  const [dataSectionGridTwo, setDataSectionGridTwo] = useState({
     cta: (
-      <Link className={'button-secondary'} href={'/home'}>
-        Découvrir le projet
+      <Link className={'button-secondary'} href={'/association'}>
+        Soutenir le projet
       </Link>
     ),
     isGrid: true,
     title: (
       <h2 className="text-30 color-black bold">
-        L’association du moment <span className="red">Amatullah</span>
+        Soutenez le projet <span className="red">Amatullah</span>
       </h2>
     ),
-    text: "Amatullah en 2022 c'est 47 566 repas distribués, 4 943 colis alimentaires distribués dans le but de venir en aide aux plus démunis en leur offrant notamment des repas de qualité, des colis alimentaires ainsi qu’une présence bienveillante et une oreille attentive. La mission d’Amatullah est de tendre la main aux plus nécessiteux et pour cela, des centaines de bénévoles se mobilisent chaque jour sur le terrain afin de mener à bien cet objectif.",
+    text: "Amatullah en 2022 c'est 47 566 repas distribués, 4 943 colis alimentaires distribués dans le but de venir en aide aux plus démunis en leur offrant notamment des repas de qualité, des colis alimentaires ainsi qu’une présence bienveillante et une oreille attentive. Tous les fonds récoltés durant cette période permettront de financer ce projet et de nourrir des familles.",
     images: [
-      'images/Amatullah1.png',
-      'images/Amatullah2.png',
-      'images/Amatullah3.png',
+      'images/amatullah/amatullah-4.jpg',
+      'images/amatullah/amatullah-5.jpg',
+      'images/amatullah/amatullah-6.jpg',
     ],
   });
 
@@ -53,10 +73,16 @@ function Association() {
       <SectionImagesAndText
         inverse={true}
         greyBackground={false}
-        data={dataSectionGrid}
+        data={dataSectionGridTwo}
       />
       <SocialSection />
-      <DonateSection />
+      <DonateSection
+        title={'Soutenir ce projet maintenant'}
+        description={'Faites une réelle différence en soutenant ce projet associatif. Votre contribution compte et contribuera à changer des vies.'}
+        link={'https://checkout.stripe.com/c/pay/cs_live_a1QkAwlcmDOM3wWJvnaPkrlW1cFmt2Wj2LjlMZRRMcHBwLm6y7CkQhFaul#fidkdWxOYHwnPyd1blppbHNgWjA0SHF%2FXGRCbVNTTjVUT2pNf2BDPFNpQ3ZpNnVVSHA8TmZiRGpEU1c2MjFNVHdsRz1zSk9ccWxLPExOaEFjNUZLY3xnQGxPd3R2YXYySlI2VHJzRl01cnR0NTVQfzEyZ0l2fycpJ3VpbGtuQH11anZgYUxhJz8nZks3YVZqMXNSMTBEM2lsMG5uJ3gl'}
+        linkText={'Soutenir le projet'}
+        isExternal={true}
+      />
     </div>
   );
 }
