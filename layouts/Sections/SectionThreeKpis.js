@@ -55,12 +55,11 @@ const SectionThreeKpis = ({ dataKpis, color }) => {
                 className={
                   'section-three-kpis-container-price bold text-38 color-white'
                 }
-              >
+                >
                 {data[0].donations_number}
               </h2>
               <p className={'text-16 color-white regular'}>
-                Collectée pour les différentes associations partenaire de un
-                pour cent
+                dons collectés jusqu'à présent par Un Pour Cent
               </p>
             </div>
 
@@ -70,11 +69,10 @@ const SectionThreeKpis = ({ dataKpis, color }) => {
                   'section-three-kpis-container-price bold text-38 color-white'
                 }
               >
-                {data[0].donations_amount} €
+              {data[0].donations_amount} €
               </h2>
               <p className={'text-16 color-white regular'}>
-                Collectée pour les différentes associations partenaire de un
-                pour cent
+                projets associatifs aidés par Un Pour Cent
               </p>
             </div>
 
@@ -87,8 +85,7 @@ const SectionThreeKpis = ({ dataKpis, color }) => {
                 {data[0].projects_number}
               </h2>
               <p className={'text-16 color-white regular'}>
-                Collectée pour les différentes associations partenaire de un
-                pour cent
+                projets associatifs aidés par Un Pour Cent
               </p>
             </div>
           </>
