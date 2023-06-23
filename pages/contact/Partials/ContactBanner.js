@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 import { MaxWidth } from '../../../components/MaxWidth';
 
@@ -15,12 +16,12 @@ const ContactBanner = () => {
           </p>
 
           <div className={'contact-banner-container-cta'}>
-            <a
+            <Link
               href={'/association'}
               className={'button-classic button-classic-white'}
             >
               Découvrir le projet du moment
-            </a>
+            </Link>
           </div>
         </div>
       </MaxWidth>

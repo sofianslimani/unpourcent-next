@@ -27,7 +27,7 @@ function Association() {
 
   const [dataSectionGrid, setDataSectionGrid] = useState({
     cta: (
-      <Link className={'button-secondary'} href={'/home'}>
+      <Link className={'button-secondary'} href={'/association'}>
         Découvrir le projet
       </Link>
     ),
