@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import Link from 'next/link';
+import {useRouter} from "next/router";
 
 const Header = () => {
   
@@ -8,6 +9,8 @@ const Header = () => {
   const handleOpenCloseMenu = () =>{
     setMobileMenuOpen(!mobileMenuOpen)
   }
+  
+  const router = useRouter()
   
   
   
@@ -23,10 +26,10 @@ const Header = () => {
           </div>
           <nav className={'header-container-left-nav'}>
             <ul className={'header-container-left-nav-list'}>
-              <li className={'header-container-left-nav-list-item'}>
+              <li className={'header-container-left-nav-list-item ' + (router.pathname === '/association' ? 'active' : '')}>
                 <Link href="/association">Le projet du mois</Link>
               </li>
-              <li className={'header-container-left-nav-list-item'}>
+              <li className={'header-container-left-nav-list-item ' + (router.pathname === '/contact' ? 'active' : '')}>
                 <Link href="/contact">Contact</Link>
               </li>
             </ul>

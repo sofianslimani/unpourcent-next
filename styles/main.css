@@ -668,6 +668,9 @@ span.green {
     padding-inline: 20px;
   }
 }
+.header-container li.active a {
+  color: #4685ff !important;
+}
 .header-container-left, .header-container-right {
   display: flex;
   align-items: center;
