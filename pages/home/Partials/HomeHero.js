@@ -14,11 +14,8 @@ const HomeHero = () => {
             Avec un pour cent, soutenez des projets humanitaires jusqu'à leurs
             réalisations
           </h1>
-          <p className={'text-16 color-white'}>
-            Cette semaine, le projet que un pour cent soutient est celui de
-            l'association Amatullah. Cette association a pour objectif durant le
-            prochain mois de réalisé des maraudes humanitaires dans les rues de
-            Paris et de distribuer des paniers repas aux plus nécessitants.
+          <p className={"text-16 regular color-white"}>
+            Bienvenue sur Un Pour Cent, la plateforme qui met en avant chaque mois un projet associatif inspirant. Rejoignez-nous pour faire une réelle différence dans la vie des autres. Ensemble, créons un monde plus solidaire, un pour cent à la fois.
           </p>
 
           <div className={'home-hero-container-left-button'}>

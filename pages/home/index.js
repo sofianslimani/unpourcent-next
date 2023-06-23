@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import HomeHero from './Partials/HomeHero';
 import SectionThreeKpis from '../../layouts/Sections/SectionThreeKpis';
-import SectionImgaesAndText from '../../layouts/Sections/SectionImagesAndText';
+import SectionImagesAndText from '../../layouts/Sections/SectionImagesAndText';
 import HomeThreeCardsInformations from './Partials/HomeThreeCardsInformations';
 import Link from 'next/link';
 import { DonateSection } from '../../components/DonateSection';
@@ -40,15 +40,15 @@ const HomePage = () => {
     ),
     isGrid: true,
     title: (
-      <h2 class="text-30 color-black bold">
-        L’association du moment <span class="red">Amatullah</span>
+      <h2 className="text-30 color-black bold">
+        L’association du moment <span className="red">Amatullah</span>
       </h2>
     ),
-    text: "Amatullah en 2022 c'est 47 566 repas distribués, 4 943 colis alimentaires distribués dans le but de venir en aide aux plus démunis en leur offrant notamment des repas de qualité, des colis alimentaires ainsi qu’une présence bienveillante et une oreille attentive. La mission d’Amatullah est de tendre la main aux plus nécessiteux et pour cela, des centaines de bénévoles se mobilisent chaque jour sur le terrain afin de mener à bien cet objectif.",
+    text: "Amatullah, fondée par une jeune femme en quête de justice et d'égalité sociale, est une association humanitaire engagée depuis 2006 pour soutenir les plus démunis en France et à l'international. Depuis sa création, Amatullah s'engage à fournir une assistance aux personnes en situation précaire en offrant des repas, des colis alimentaires aux familles et une présence réconfortante aux personnes touchées par la solitude. Aujourd'hui, l'association étend ses actions à travers le monde grâce à des projets humanitaires visant à combattre la précarité, les injustices et les inégalités.",
     images: [
-      'images/Amatullah1.png',
-      'images/Amatullah2.png',
-      'images/Amatullah3.png',
+      'images/amatullah/amatullah-1.png',
+      'images/amatullah/amatullah-2.png',
+      'images/amatullah/amatullah-3.png',
     ],
   });
 
@@ -56,14 +56,11 @@ const HomePage = () => {
     isGrid: false,
     title: (
       <h2 className="text-30 color-black bold">
-        Comment <span className={'red'}>Un Pour Cent</span> utilise votre{' '}
-        <span className={'green'}>donation</span> ?{' '}
+        Comment <span className={'red'}>Un Pour Cent</span> utilise votre <span className={'green'}> donation</span> ?{' '}
       </h2>
     ),
     text:
-      "Chaques euros récolté à partir des donations réalisée à Un Pour Cent est utilisé dans le financement du projet mis en avant au moment du don. Nous sélectionnons avec soin un projet associatif chaque mois, en veillant à ce qu'il ait un impact positif sur la société.Votre don est reversé intégralement à ce projet pour réaliser ses objectifs. " +
-      '' +
-      "Ensemble, nous faisons une différence significative dans la vie des personnes qui ont besoin d'aide.Merci de votre soutien!",
+      "Chaque don effectué à Un Pour Cent est intégralement utilisé pour financer le projet mis en avant. Votre contribution a un impact direct et significatif dans la réalisation des objectifs du projet sélectionné. Votre soutien fait une réelle différence dans la vie des personnes qui ont besoin d'aide. Votre confiance est précieuse pour nous, et nous nous engageons à gérer vos dons de manière responsable et efficiente. Merci de votre précieux soutien !",
     images: ['images/joel-muniz-A4Ax1ApccfA-unsplash 2.png'],
   });
 
@@ -72,15 +69,21 @@ const HomePage = () => {
       <HomeHero />
       <SectionThreeKpis color={'green'} data={dataSectionThreeKpis} />
       <HomeThreeCardsInformations />
-      <SectionImgaesAndText
+      <SectionImagesAndText
         customClasses={'section-how-un-pour-cent-use-donation'}
         inverse={true}
         greyBackground={true}
         data={dataSectionClassic}
       />
-      <SectionImgaesAndText greyBackground={false} data={dataSectionGrid} />
+      <SectionImagesAndText greyBackground={false} data={dataSectionGrid} />
       <ContactFaq />
-      <DonateSection />
+      <DonateSection
+        title={'Découvrez dès maintenant le projet du moment'}
+        description={'Découvrez dès maintenant le projet associatif mis en avant ce mois-ci sur notre plateforme. Soyez inspiré par son impact et participez à cette belle aventure de solidarité.'}
+        link={'/association'}
+        linkText={'Découvrir le projet'}
+        isExternal={false}
+      />
     </>
   );
 };
