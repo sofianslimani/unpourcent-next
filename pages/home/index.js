@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import HomeHero from './Partials/HomeHero';
 import SectionThreeKpis from '../../layouts/Sections/SectionThreeKpis';
 import SectionImgaesAndText from '../../layouts/Sections/SectionImagesAndText';
@@ -8,12 +8,10 @@ import { DonateSection } from '../../components/DonateSection';
 import ContactFaq from '../contact/Partials/ContactFaq';
 
 const HomePage = () => {
-    
-    useEffect(() => {
-        document.title = "Un Pour Cent";
-    }, []);
-    
-    
+  useEffect(() => {
+    document.title = 'Un Pour Cent';
+  }, []);
+
   const [dataSectionThreeKpis, setDataSectionThreeKpis] = useState([
     {
       isPrice: false,
@@ -70,7 +68,7 @@ const HomePage = () => {
   return (
     <>
       <HomeHero />
-      <SectionThreeKpis color={'green'} data={dataSectionThreeKpis} />
+      <SectionThreeKpis color={'green'} dataKpis={dataSectionThreeKpis} />
       <HomeThreeCardsInformations />
       <SectionImgaesAndText
         customClasses={'section-how-un-pour-cent-use-donation'}

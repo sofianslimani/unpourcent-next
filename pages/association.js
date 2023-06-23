@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import { HeroAssociation } from '../components/HeroAssociation';
 import { SocialSection } from '../components/SocialSection';
 import SectionThreeKpis from '../layouts/Sections/SectionThreeKpis';
@@ -7,12 +7,10 @@ import Link from 'next/link';
 import { DonateSection } from '../components/DonateSection';
 
 function Association() {
-    
-    useEffect(() => {
-        document.title = "Un Pour Cent - Amatullah";
-    }, []);
-    
-    
+  useEffect(() => {
+    document.title = 'Un Pour Cent - Amatullah';
+  }, []);
+
   const [dataSectionThreeKpis, setDataSectionThreeKpis] = useState([
     {
       isPrice: false,
@@ -54,7 +52,7 @@ function Association() {
   return (
     <div>
       <HeroAssociation />
-      <SectionThreeKpis color={'green'} data={dataSectionThreeKpis} />
+      <SectionThreeKpis color={'green'} dataKpis={dataSectionThreeKpis} />
       <SectionImagesAndText greyBackground={false} data={dataSectionGrid} />
       <SectionImagesAndText
         inverse={true}
