@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 const HomeHero = () => {
@@ -21,14 +22,14 @@ const HomeHero = () => {
           </p>
 
           <div className={'home-hero-container-left-button'}>
-            <a
+            <Link
               href={'/association'}
               className={
                 'button-classic button-classic-white home-hero-container-left-button-donate'
               }
             >
               Découvrir le projet du moment
-            </a>
+            </Link>
           </div>
         </div>
         <div className={'home-hero-container-right'}>

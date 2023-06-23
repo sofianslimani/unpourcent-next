@@ -46,18 +46,17 @@ const ContactFaq = () => {
             'contact-faq-container-bottom-wrapper-content-item-header-title'
           }
         >
-          <Link
+          <button
             className={
               'contact-faq-container-bottom-wrapper-content-item-header-title-link'
             }
-            href="#"
             onClick={(event) => handleClick(index, event)}
             {...{
               [FAQ_INDEX_ATTRIBUTE_NAME]: index,
             }}
           >
             {item.question}
-          </Link>
+          </button>
         </div>
         <div
           className={
