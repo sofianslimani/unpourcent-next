@@ -3,6 +3,9 @@ import { MaxWidth } from '../../../components/MaxWidth';
 import { useFormik } from 'formik';
 import Airtable from 'airtable';
 import dotenv from 'dotenv';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 dotenv.config();
 
 const base = new Airtable({
@@ -33,9 +36,11 @@ const ContactForm = () => {
         ],
         function (err, records) {
           if (err) {
-            console.error(err);
+            toast.error('❌ Une erreur est survenue lors de l\'envoi de votre message.');
             return;
-          }
+          }else{
+            toast.success('👍Votre message a été envoyé avec succès.');
+            }
           console.log(records);
         }
       );
@@ -149,6 +154,7 @@ const ContactForm = () => {
           </div>
         </div>
       </MaxWidth>
+      <ToastContainer/>
     </section>
   );
 };
