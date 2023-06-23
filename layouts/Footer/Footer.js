@@ -66,7 +66,7 @@ const Footer = () => {
         <div className={'footer-container-newsletter'}>
           <h4 className={'text-16 color-black medium'}>Newsletter</h4>
           <label>
-            <input type="text" placeholder="email" />
+            <input type="text" placeholder="Email" />
             {ICONS.plane}
           </label>
           <p>Join our newsletter to stay up to date on features and releases</p>

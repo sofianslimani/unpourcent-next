@@ -12,7 +12,6 @@ const ContactPage = () => {
       <ContactForm />
       <ContactFaq />
       <ContactBanner />
-      <DonateSection />
     </>
   );
 };
