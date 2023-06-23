@@ -26,13 +26,12 @@ const ContactForm = () => {
             />
           </div>
           <div className={'contact-form-container-right'}>
-            <div className="contact-form-container-right-top">
+            {/* <div className="contact-form-container-right-top">
               <h2 className={'bold'}>Nous contacter</h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam
-                duis vitae curabitur amet, fermentum lorem.
+              Bonjour à toutes les associations et donateurs engagés ! Vous êtes sur la page de contact d'Un Pour Cent, un espace où les cœurs généreux se rencontrent. Que vous soyez une association passionnée ou un donateur prêt à faire une différence, nous sommes là pour vous.
               </p>
-            </div>
+            </div> */}
             <div className="contact-form-container-right-bottom">
               <form onSubmit={formik.handleSubmit}>
                 <div className="contact-form-container-right-bottom-inputs">

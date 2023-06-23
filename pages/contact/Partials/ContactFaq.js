@@ -18,16 +18,15 @@ const ContactFaq = () => {
     {
       question: 'Comment puis-je faire un don sur Un Pour Cent ?',
       answer:
-        'lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum',
+        'Faire un don sur Un Pour Cent est simple et sécurisé. Il vous suffit de vous rendre sur notre site internet et de sélectionner le projet que vous souhaitez soutenir. Vous pouvez ensuite choisir le montant de votre don et régler votre paiement en toute sécurité grâce à nos moyens de paiement en ligne.',
     },
     {
       question: 'Comment puis-je savoir ce qui est fait avec mon don ?',
-      answer: 'lorem ipsum',
+      answer: "Nous vous tiendrons régulièrement informé(e) de l'avancement du projet que vous soutenez. Vous recevrez des mises à jour avec des témoignages et des photos des bénéficiaires pour voir concrètement l'impact de votre don.",
     },
     {
-      question:
-        'Puis-je choisir le projet associatif que je souhaite soutenir ?',
-      answer: 'lorem ipsum',
+      question: 'Puis-je choisir le projet associatif que je souhaite soutenir ?',
+      answer: "Malheureusement, nous ne pouvons pas offrir cette option pour le moment. Nous sélectionnons méticuleusement un projet associatif chaque mois en veillant à ce qu'il ait un impact positif sur la société. Vous pouvez être sûr(e) que votre donation sera utilisée de manière responsable et efficace pour soutenir le projet choisi.",
     },
   ];
 

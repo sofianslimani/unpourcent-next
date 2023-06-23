@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 
-const SectionImgaesAndText = ({data, greyBackground, customClasses, inverse}) => {
+const SectionImagesAndText = ({data, greyBackground, customClasses, inverse}) => {
 	
 	
 	const [content, setContent] = useState({});
@@ -36,4 +36,4 @@ const SectionImgaesAndText = ({data, greyBackground, customClasses, inverse}) =>
 	);
 };
 
-export default SectionImgaesAndText;
+export default SectionImagesAndText;

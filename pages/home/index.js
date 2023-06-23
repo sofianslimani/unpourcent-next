@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import HomeHero from './Partials/HomeHero';
 import SectionThreeKpis from '../../layouts/Sections/SectionThreeKpis';
-import SectionImgaesAndText from '../../layouts/Sections/SectionImagesAndText';
+import SectionImagesAndText from '../../layouts/Sections/SectionImagesAndText';
 import HomeThreeCardsInformations from './Partials/HomeThreeCardsInformations';
 import Link from 'next/link';
 import HomeTabSection from './Partials/HomeTabSection';
@@ -51,14 +51,11 @@ const HomePage = () => {
     isGrid: false,
     title: (
       <h2 className="text-30 color-black bold">
-        Comment <span className={'red'}>Un Pour Cent</span> utilise votre{' '}
-        <span className={'green'}>donation</span> ?{' '}
+        Comment <span className={'red'}>Un Pour Cent</span> utilise votre <span className={'green'}> donation</span> ?{' '}
       </h2>
     ),
     text:
-      "Chaques euros récolté à partir des donations réalisée à Un Pour Cent est utilisé dans le financement du projet mis en avant au moment du don. Nous sélectionnons avec soin un projet associatif chaque mois, en veillant à ce qu'il ait un impact positif sur la société.Votre don est reversé intégralement à ce projet pour réaliser ses objectifs. " +
-      '' +
-      "Ensemble, nous faisons une différence significative dans la vie des personnes qui ont besoin d'aide.Merci de votre soutien!",
+      "Chaque don effectué à Un Pour Cent est intégralement utilisé pour financer le projet mis en avant. Votre contribution a un impact direct et significatif dans la réalisation des objectifs du projet sélectionné. Votre soutien fait une réelle différence dans la vie des personnes qui ont besoin d'aide. Votre confiance est précieuse pour nous, et nous nous engageons à gérer vos dons de manière responsable et efficiente. Merci de votre précieux soutien !",
     images: ['images/joel-muniz-A4Ax1ApccfA-unsplash 2.png'],
   });
 
@@ -67,13 +64,13 @@ const HomePage = () => {
       <HomeHero />
       <SectionThreeKpis color={'green'} data={dataSectionThreeKpis} />
       <HomeThreeCardsInformations />
-      <SectionImgaesAndText
+      <SectionImagesAndText
         customClasses={'section-how-un-pour-cent-use-donation'}
         inverse={true}
         greyBackground={true}
         data={dataSectionClassic}
       />
-      <SectionImgaesAndText greyBackground={false} data={dataSectionGrid} />
+      <SectionImagesAndText greyBackground={false} data={dataSectionGrid} />
       <ContactFaq />
       <DonateSection />
     </>
