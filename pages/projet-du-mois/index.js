@@ -1,18 +1,12 @@
 import React, {useEffect, useState} from 'react';
-import { HeroAssociation } from '../components/HeroAssociation';
-import { SocialSection } from '../components/SocialSection';
-import SectionThreeKpis from '../layouts/Sections/SectionThreeKpis';
-import SectionImagesAndText from '../layouts/Sections/SectionImagesAndText';
 import Link from 'next/link';
-import { DonateSection } from '../components/DonateSection';
+import { HeroAssociation } from '../../components/HeroAssociation';
+import { SocialSection } from '../../components/SocialSection';
+import SectionThreeKpis from '../../layouts/Sections/SectionThreeKpis';
+import SectionImagesAndText from '../../layouts/Sections/SectionImagesAndText';
+import { DonateSection } from '../../components/DonateSection';
 
-function Association() {
-    
-    useEffect(() => {
-        document.title = "Un Pour Cent - Amatullah";
-    }, []);
-    
-    
+const ProjetDuMois = () => {
   const [dataSectionThreeKpis, setDataSectionThreeKpis] = useState([
     {
       isPrice: false,
@@ -53,7 +47,7 @@ function Association() {
   
   const [dataSectionGridTwo, setDataSectionGridTwo] = useState({
     cta: (
-      <Link className={'button-secondary'} href={'/association'}>
+      <Link className={'button-secondary'} href={'/projet-du-mois'}>
         Soutenir le projet
       </Link>
     ),
@@ -91,6 +85,6 @@ function Association() {
       />
     </div>
   );
-}
+} 
 
-export default Association;
+export default ProjetDuMois

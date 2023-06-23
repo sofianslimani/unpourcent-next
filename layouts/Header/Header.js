@@ -25,10 +25,10 @@ const Header = () => {
               <li
                 className={
                   'header-container-left-nav-list-item ' +
-                  (router.pathname === '/association' ? 'active' : '')
+                  (router.pathname === '/projet-du-mois' ? 'active' : '')
                 }
               >
-                <Link href="/association">Le projet du mois</Link>
+                <Link href="projet-du-mois">Le projet du mois</Link>
               </li>
               <li
                 className={
@@ -68,7 +68,7 @@ const Header = () => {
                 href="https://donate.stripe.com/cN2dSo4vW45A6li5kk"
                 className="button-secondary"
               >
-                Soutenir
+                Faire un don
               </Link>
             </li>
           </ul>
@@ -79,7 +79,7 @@ const Header = () => {
           <nav className={'mobile-menu-container-nav'}>
             <ul className={'mobile-menu-container-nav-list'}>
               <li className={'mobile-menu-container-nav-list-item'}>
-                <Link href="/association">Le projet du mois</Link>
+                <Link href="/projet-du-mois">Le projet du mois</Link>
               </li>
               <li className={'mobile-menu-container-nav-list-item'}>
                 <Link href="/contact">Contact</Link>
@@ -89,7 +89,7 @@ const Header = () => {
                   <div className={'mobile-menu-container-nav-list-item-icon'}>
                     <img src="/icons/donation.svg" alt="donation" />
                   </div>
-                  Soutenir
+                  Faire un don
                 </Link>
               </li>
             </ul>

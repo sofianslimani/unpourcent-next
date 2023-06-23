@@ -62,7 +62,7 @@ const Footer = () => {
           <h4 className={'text-16 color-black medium'}>Plan du site</h4>
           <ul>
             <li>
-              <Link href="/association">Le projet du mois</Link>
+              <Link href="/prohet-du-mois">Le projet du mois</Link>
             </li>
             <li>
               <Link href="/contact">Contact</Link>

@@ -20,7 +20,7 @@ const HomeHero = () => {
 
           <div className={'home-hero-container-left-button'}>
             <Link
-              href={'/association'}
+              href={'/projet-du-mois'}
               className={
                 'button-classic button-classic-white home-hero-container-left-button-donate'
               }

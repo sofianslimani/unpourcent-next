@@ -34,7 +34,7 @@ const HomePage = () => {
 
   const [dataSectionGrid, setDataSectionGrid] = useState({
     cta: (
-      <Link className={'button-secondary'} href={'/association'}>
+      <Link className={'button-secondary'} href={'/projet-du-mois'}>
         Découvrir le projet
       </Link>
     ),
@@ -80,7 +80,7 @@ const HomePage = () => {
       <DonateSection
         title={'Découvrez dès maintenant le projet du moment'}
         description={'Découvrez dès maintenant le projet associatif mis en avant ce mois-ci sur notre plateforme. Soyez inspiré par son impact et participez à cette belle aventure de solidarité.'}
-        link={'/association'}
+        link={'/projet-du-mois'}
         linkText={'Découvrir le projet'}
         isExternal={false}
       />

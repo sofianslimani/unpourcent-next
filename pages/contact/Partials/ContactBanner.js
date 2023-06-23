@@ -17,7 +17,7 @@ const ContactBanner = () => {
 
           <div className={'contact-banner-container-cta'}>
             <Link
-              href={'/association'}
+              href={'/projet-du-mois'}
               className={'button-classic button-classic-white'}
             >
               Découvrir le projet du moment
