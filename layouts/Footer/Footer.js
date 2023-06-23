@@ -1,4 +1,9 @@
+import Link from 'next/link';
 import React from 'react';
+import { useFormik } from 'formik';
+import Airtable from 'airtable';
+import dotenv from 'dotenv';
+dotenv.config();
 
 const ICONS = {
   plane: (
@@ -19,7 +24,34 @@ const ICONS = {
   ),
 };
 
+const base = new Airtable({
+  apiKey: process.env.NEXT_PUBLIC_AIRTABLE_API_KEY,
+}).base(process.env.NEXT_PUBLIC_AIRTABLE_BASE_ID);
+
 const Footer = () => {
+  const newsletterForm = useFormik({
+    initialValues: {
+      email: '',
+    },
+    onSubmit: (values) => {
+      base(process.env.NEXT_PUBLIC_AIRTABLE_TABLE_NAME_NEWSLETTER).create(
+        [
+          {
+            fields: {
+              email: values.email,
+            },
+          },
+        ],
+        function (err, records) {
+          if (err) {
+            console.error(err);
+            return;
+          }
+          console.log(records);
+        }
+      );
+    },
+  });
   return (
     <footer className={'footer container-s'}>
       <aside className={'footer-container'}>
@@ -29,8 +61,12 @@ const Footer = () => {
         <div className={'footer-container-plan-du-site'}>
           <h4 className={'text-16 color-black medium'}>Plan du site</h4>
           <ul>
-            <li>Le projet du mois</li>
-            <li>Contact</li>
+            <li>
+              <Link href="/association">Le projet du mois</Link>
+            </li>
+            <li>
+              <Link href="/contact">Contact</Link>
+            </li>
           </ul>
         </div>
         <div className={'footer-container-pages-legales'}>
@@ -44,31 +80,28 @@ const Footer = () => {
           <h4 className={'text-16 color-black medium'}>Réseaux</h4>
           <ul>
             <li>
-              <a href="https://www.instagram.com/association_amatullah/?hl=fr">
+              <Link href="https://www.instagram.com/unpourcent_/">
                 Instagram
-              </a>
-            </li>
-            <li>
-              <a href="https://twitter.com/amatullah_fr?lang=fr">Twitter</a>
-            </li>
-            <li>
-              <a href="https://www.facebook.com/ASSOCIATION.AMATULLAH/?locale=fr_FR">
-                Facebook
-              </a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/company/amatullah-au-service-de-l-humanité/">
-                Linkedin
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
         <div className={'footer-container-newsletter'}>
           <h4 className={'text-16 color-black medium'}>Newsletter</h4>
-          <label>
-            <input type="text" placeholder="Email" />
-            {ICONS.plane}
-          </label>
+          <form onSubmit={newsletterForm.handleSubmit}>
+            <label>
+              <input
+                id="email"
+                name="email"
+                placeholder="Email"
+                type="email"
+                onChange={newsletterForm.handleChange}
+                value={newsletterForm.values.email}
+                required
+              />
+              <button type="submit">{ICONS.plane}</button>
+            </label>
+          </form>
           <p>Join our newsletter to stay up to date on features and releases</p>
         </div>
       </aside>

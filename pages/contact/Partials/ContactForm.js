@@ -1,9 +1,16 @@
 import React from 'react';
 import { MaxWidth } from '../../../components/MaxWidth';
 import { useFormik } from 'formik';
+import Airtable from 'airtable';
+import dotenv from 'dotenv';
+dotenv.config();
+
+const base = new Airtable({
+  apiKey: process.env.NEXT_PUBLIC_AIRTABLE_API_KEY,
+}).base(process.env.NEXT_PUBLIC_AIRTABLE_BASE_ID);
 
 const ContactForm = () => {
-  const formik = useFormik({
+  const contactForm = useFormik({
     initialValues: {
       firstName: '',
       lastName: '',
@@ -12,7 +19,26 @@ const ContactForm = () => {
       message: '',
     },
     onSubmit: (values) => {
-      alert(JSON.stringify(values, null, 2));
+      base(process.env.NEXT_PUBLIC_AIRTABLE_TABLE_NAME_CONTACT).create(
+        [
+          {
+            fields: {
+              Firstname: values.firstName,
+              Lastname: values.lastName,
+              Email: values.email,
+              Phone: values.phone,
+              Message: values.message,
+            },
+          },
+        ],
+        function (err, records) {
+          if (err) {
+            console.error(err);
+            return;
+          }
+          console.log(records);
+        }
+      );
     },
   });
   return (
@@ -33,7 +59,7 @@ const ContactForm = () => {
               </p>
             </div> */}
             <div className="contact-form-container-right-bottom">
-              <form onSubmit={formik.handleSubmit}>
+              <form onSubmit={contactForm.handleSubmit}>
                 <div className="contact-form-container-right-bottom-inputs">
                   <div className="contact-form-container-right-bottom-inputs-input">
                     <label className={'bold'} htmlFor="firstName">
@@ -45,8 +71,8 @@ const ContactForm = () => {
                       name="firstName"
                       placeholder="Prénom"
                       type="text"
-                      onChange={formik.handleChange}
-                      value={formik.values.firstName}
+                      onChange={contactForm.handleChange}
+                      value={contactForm.values.firstName}
                       required
                     />
                   </div>
@@ -60,8 +86,8 @@ const ContactForm = () => {
                       name="lastName"
                       placeholder="Nom"
                       type="text"
-                      onChange={formik.handleChange}
-                      value={formik.values.lastName}
+                      onChange={contactForm.handleChange}
+                      value={contactForm.values.lastName}
                       required
                     />
                   </div>
@@ -77,15 +103,15 @@ const ContactForm = () => {
                     name="email"
                     placeholder="votremail@gmail.com"
                     type="email"
-                    onChange={formik.handleChange}
-                    value={formik.values.email}
+                    onChange={contactForm.handleChange}
+                    value={contactForm.values.email}
                     required
                   />
                 </div>
 
                 <div className="contact-form-container-right-bottom-input">
                   <label className={'bold'} htmlFor="phone">
-                    Téléphone <span className="red">*</span>
+                    Téléphone
                   </label>
 
                   <input
@@ -93,9 +119,8 @@ const ContactForm = () => {
                     name="phone"
                     placeholder="06 12 34 56 78"
                     type="phone"
-                    onChange={formik.handleChange}
-                    value={formik.values.phone}
-                    required
+                    onChange={contactForm.handleChange}
+                    value={contactForm.values.phone}
                   />
                 </div>
 
@@ -109,8 +134,8 @@ const ContactForm = () => {
                     name="message"
                     placeholder="Votre message"
                     type="text"
-                    onChange={formik.handleChange}
-                    value={formik.values.message}
+                    onChange={contactForm.handleChange}
+                    value={contactForm.values.message}
                     required
                   />
                 </div>
