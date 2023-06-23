@@ -14,24 +14,6 @@ const ProjetDuMois = () => {
       "Avec Un Pour Cent, soutenez des projets qui font du bien. Chaques mois, découvrez et soutenez un nouveau projet et recevez des nouvelles de l'avancement du projet.",
   });
 
-  const [dataSectionThreeKpis, setDataSectionThreeKpis] = useState([
-    {
-      isPrice: false,
-      count: 345,
-      text: 'Collectée pour les différentes associations partenaire de un pour cent',
-    },
-    {
-      isPrice: true,
-      count: 878,
-      text: 'Collectée pour les différentes associations partenaire de un pour cent',
-    },
-    {
-      isPrice: false,
-      count: 12,
-      text: 'Collectée pour les différentes associations partenaire de un pour cent',
-    },
-  ]);
-
   const [dataSectionGrid, setDataSectionGrid] = useState({
     // cta: (
     //   <Link className={'button-secondary'} href={'/association'}>
@@ -79,7 +61,7 @@ const ProjetDuMois = () => {
         <meta name="description" content={seo.description} />
       </Head>
       <HeroAssociation />
-      <SectionThreeKpis color={'green'} data={dataSectionThreeKpis} />
+      <SectionThreeKpis color={'green'} />
       <SectionImagesAndText greyBackground={false} data={dataSectionGrid} />
       <SectionImagesAndText
         inverse={true}
