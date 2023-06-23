@@ -70,6 +70,42 @@ const HomePage = () => {
       <Head>
         <title>{seo.title}</title>
         <meta name="description" content={seo.description} />
+
+        <meta
+          data-n-head="ssr"
+          property="og:title"
+          content="Un Pour Cent - Soutenez des projets qui font du bien"
+        />
+
+        <meta
+          data-n-head="ssr"
+          property="og:image"
+          content="/seo/og-image.png"
+        />
+
+        <meta
+          data-n-head="ssr"
+          property="og:url"
+          content="https://un-pour-cent.org/"
+        />
+
+        <meta
+          data-n-head="ssr"
+          property="og:site"
+          content="https://un-pour-cent.org/"
+        />
+
+        <meta
+          data-n-head="ssr"
+          property="og:site_name"
+          content="Un Pour Cent - Soutenez des projets qui font du bien"
+        />
+
+        <meta
+          data-n-head="ssr"
+          property="og:description"
+          content="Avec Un Pour Cent, soutenez des projets qui font du bien. Chaques mois, découvrez et soutenez un nouveau projet et recevez des nouvelles de l'avancement du projet."
+        />
       </Head>
       <HomeHero />
       <SectionThreeKpis color={'green'} data={dataSectionThreeKpis} />
