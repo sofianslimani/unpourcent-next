@@ -49,23 +49,8 @@ const Footer = () => {
           <h4 className={'text-16 color-black medium'}>Réseaux</h4>
           <ul>
             <li>
-              <Link href="https://www.instagram.com/association_amatullah/?hl=fr">
+              <Link href="https://www.instagram.com/unpourcent_/">
                 Instagram
-              </Link>
-            </li>
-            <li>
-              <Link href="https://twitter.com/amatullah_fr?lang=fr">
-                Twitter
-              </Link>
-            </li>
-            <li>
-              <Link href="https://www.facebook.com/ASSOCIATION.AMATULLAH/?locale=fr_FR">
-                Facebook
-              </Link>
-            </li>
-            <li>
-              <Link href="https://www.linkedin.com/company/amatullah-au-service-de-l-humanité/">
-                Linkedin
               </Link>
             </li>
           </ul>

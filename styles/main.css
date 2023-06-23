@@ -1544,6 +1544,10 @@ span.green {
 .contact-faq-container-bottom .contact-faq-container-bottom-wrapper-content-item-header-title-link {
   color: #252525;
   font-family: "Satoshi-Medium";
+  border: none;
+  background: none;
+  outline: none;
+  padding: 0;
 }
 .contact-faq-container-bottom .contact-faq-container-bottom-wrapper-content-item-header-title-link:hover {
   cursor: pointer;
