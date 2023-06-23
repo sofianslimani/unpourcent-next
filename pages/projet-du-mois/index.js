@@ -1,12 +1,19 @@
-import React, {useEffect, useState} from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 import { HeroAssociation } from '../../components/HeroAssociation';
 import { SocialSection } from '../../components/SocialSection';
 import SectionThreeKpis from '../../layouts/Sections/SectionThreeKpis';
 import SectionImagesAndText from '../../layouts/Sections/SectionImagesAndText';
 import { DonateSection } from '../../components/DonateSection';
+import Head from 'next/head';
 
 const ProjetDuMois = () => {
+  const [seo, setSeo] = useState({
+    title: 'Un Pour Cent - Soutenez des projets qui font du bien',
+    description:
+      "Avec Un Pour Cent, soutenez des projets qui font du bien. Chaques mois, découvrez et soutenez un nouveau projet et recevez des nouvelles de l'avancement du projet.",
+  });
+
   const [dataSectionThreeKpis, setDataSectionThreeKpis] = useState([
     {
       isPrice: false,
@@ -44,7 +51,7 @@ const ProjetDuMois = () => {
       'images/amatullah/amatullah-3.png',
     ],
   });
-  
+
   const [dataSectionGridTwo, setDataSectionGridTwo] = useState({
     cta: (
       <Link className={'button-secondary'} href={'/projet-du-mois'}>
@@ -66,7 +73,11 @@ const ProjetDuMois = () => {
   });
 
   return (
-    <div>
+    <>
+      <Head>
+        <title>{seo.title}</title>
+        <meta name="description" content={seo.description} />
+      </Head>
       <HeroAssociation />
       <SectionThreeKpis color={'green'} data={dataSectionThreeKpis} />
       <SectionImagesAndText greyBackground={false} data={dataSectionGrid} />
@@ -78,13 +89,17 @@ const ProjetDuMois = () => {
       <SocialSection />
       <DonateSection
         title={'Soutenir ce projet maintenant'}
-        description={'Faites une réelle différence en soutenant ce projet associatif. Votre contribution compte et contribuera à changer des vies.'}
-        link={'https://checkout.stripe.com/c/pay/cs_live_a1QkAwlcmDOM3wWJvnaPkrlW1cFmt2Wj2LjlMZRRMcHBwLm6y7CkQhFaul#fidkdWxOYHwnPyd1blppbHNgWjA0SHF%2FXGRCbVNTTjVUT2pNf2BDPFNpQ3ZpNnVVSHA8TmZiRGpEU1c2MjFNVHdsRz1zSk9ccWxLPExOaEFjNUZLY3xnQGxPd3R2YXYySlI2VHJzRl01cnR0NTVQfzEyZ0l2fycpJ3VpbGtuQH11anZgYUxhJz8nZks3YVZqMXNSMTBEM2lsMG5uJ3gl'}
+        description={
+          'Faites une réelle différence en soutenant ce projet associatif. Votre contribution compte et contribuera à changer des vies.'
+        }
+        link={
+          'https://checkout.stripe.com/c/pay/cs_live_a1QkAwlcmDOM3wWJvnaPkrlW1cFmt2Wj2LjlMZRRMcHBwLm6y7CkQhFaul#fidkdWxOYHwnPyd1blppbHNgWjA0SHF%2FXGRCbVNTTjVUT2pNf2BDPFNpQ3ZpNnVVSHA8TmZiRGpEU1c2MjFNVHdsRz1zSk9ccWxLPExOaEFjNUZLY3xnQGxPd3R2YXYySlI2VHJzRl01cnR0NTVQfzEyZ0l2fycpJ3VpbGtuQH11anZgYUxhJz8nZks3YVZqMXNSMTBEM2lsMG5uJ3gl'
+        }
         linkText={'Soutenir le projet'}
         isExternal={true}
       />
-    </div>
+    </>
   );
-} 
+};
 
-export default ProjetDuMois
+export default ProjetDuMois;

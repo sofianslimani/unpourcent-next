@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import HomeHero from './Partials/HomeHero';
 import SectionThreeKpis from '../../layouts/Sections/SectionThreeKpis';
 import SectionImagesAndText from '../../layouts/Sections/SectionImagesAndText';
@@ -6,11 +6,14 @@ import HomeThreeCardsInformations from './Partials/HomeThreeCardsInformations';
 import Link from 'next/link';
 import { DonateSection } from '../../components/DonateSection';
 import ContactFaq from '../contact/Partials/ContactFaq';
+import Head from 'next/head';
 
 const HomePage = () => {
-  useEffect(() => {
-    document.title = 'Un Pour Cent';
-  }, []);
+  const [seo, setSeo] = useState({
+    title: 'Un Pour Cent',
+    description:
+      "Avec Un Pour Cent, soutenez des projets qui font du bien. Chaques mois, découvrez et soutenez un nouveau projet et recevez des nouvelles de l'avancement du projet.",
+  });
 
   const [dataSectionThreeKpis, setDataSectionThreeKpis] = useState([
     {
@@ -54,16 +57,56 @@ const HomePage = () => {
     isGrid: false,
     title: (
       <h2 className="text-30 color-black bold">
-        Comment <span className={'red'}>Un Pour Cent</span> utilise votre <span className={'green'}> donation</span> ?{' '}
+        Comment <span className={'red'}>Un Pour Cent</span> utilise votre{' '}
+        <span className={'green'}> donation</span> ?{' '}
       </h2>
     ),
-    text:
-      "Chaque don effectué à Un Pour Cent est intégralement utilisé pour financer le projet mis en avant. Votre contribution a un impact direct et significatif dans la réalisation des objectifs du projet sélectionné. Votre soutien fait une réelle différence dans la vie des personnes qui ont besoin d'aide. Votre confiance est précieuse pour nous, et nous nous engageons à gérer vos dons de manière responsable et efficiente. Merci de votre précieux soutien !",
+    text: "Chaque don effectué à Un Pour Cent est intégralement utilisé pour financer le projet mis en avant. Votre contribution a un impact direct et significatif dans la réalisation des objectifs du projet sélectionné. Votre soutien fait une réelle différence dans la vie des personnes qui ont besoin d'aide. Votre confiance est précieuse pour nous, et nous nous engageons à gérer vos dons de manière responsable et efficiente. Merci de votre précieux soutien !",
     images: ['images/joel-muniz-A4Ax1ApccfA-unsplash 2.png'],
   });
 
   return (
     <>
+      <Head>
+        <title>{seo.title}</title>
+        <meta name="description" content={seo.description} />
+
+        <meta
+          data-n-head="ssr"
+          property="og:title"
+          content="Un Pour Cent - Soutenez des projets qui font du bien"
+        />
+
+        <meta
+          data-n-head="ssr"
+          property="og:image"
+          content="/seo/og-image.png"
+        />
+
+        <meta
+          data-n-head="ssr"
+          property="og:url"
+          content="https://un-pour-cent.org/"
+        />
+
+        <meta
+          data-n-head="ssr"
+          property="og:site"
+          content="https://un-pour-cent.org/"
+        />
+
+        <meta
+          data-n-head="ssr"
+          property="og:site_name"
+          content="Un Pour Cent - Soutenez des projets qui font du bien"
+        />
+
+        <meta
+          data-n-head="ssr"
+          property="og:description"
+          content="Avec Un Pour Cent, soutenez des projets qui font du bien. Chaques mois, découvrez et soutenez un nouveau projet et recevez des nouvelles de l'avancement du projet."
+        />
+      </Head>
       <HomeHero />
       <SectionThreeKpis color={'green'} dataKpis={dataSectionThreeKpis} />
       <HomeThreeCardsInformations />
@@ -77,7 +120,9 @@ const HomePage = () => {
       <ContactFaq />
       <DonateSection
         title={'Découvrez dès maintenant le projet du moment'}
-        description={'Découvrez dès maintenant le projet associatif mis en avant ce mois-ci sur notre plateforme. Soyez inspiré par son impact et participez à cette belle aventure de solidarité.'}
+        description={
+          'Découvrez dès maintenant le projet associatif mis en avant ce mois-ci sur notre plateforme. Soyez inspiré par son impact et participez à cette belle aventure de solidarité.'
+        }
         link={'/projet-du-mois'}
         linkText={'Découvrir le projet'}
         isExternal={false}
