@@ -8,7 +8,7 @@ const ContactPage = () => {
   const [seo, setSeo] = useState({
     title: 'Un Pour Cent - Contact',
     description:
-      "Avec Un Pour Cent, soutenez des projets qui font du bien. Chaques mois, découvrez et soutenez un nouveau projet et recevez des nouvelles de l'avancement du projet.",
+      "Avec Un Pour Cent, soutenez des projets qui font du bien. N'hésitez pas à nous contacter directement via notre site internet.",
   });
 
   return (
