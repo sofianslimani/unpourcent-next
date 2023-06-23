@@ -330,6 +330,10 @@ html::selection {
   color: #6ab938;
 }
 
+.color-red {
+  color: #FF0000;
+}
+
 .light {
   font-family: "Satoshi-Light";
 }
@@ -1392,6 +1396,7 @@ span.green {
 .contact-form-container-right-bottom form .contact-form-container-right-bottom-inputs .contact-form-container-right-bottom-inputs-input {
   display: flex;
   flex-direction: column;
+  gap: 10px;
   width: 100%;
 }
 .contact-form-container-right-bottom form .contact-form-container-right-bottom-inputs .contact-form-container-right-bottom-inputs-input label {
@@ -1416,6 +1421,7 @@ span.green {
 .contact-form-container-right-bottom form .contact-form-container-right-bottom-input {
   display: flex;
   flex-direction: column;
+  gap: 10px;
   width: 100%;
 }
 .contact-form-container-right-bottom form .contact-form-container-right-bottom-input label {

@@ -4,6 +4,7 @@ $colors: (
   'white': $white,
   'black': $black,
   'green': $green,
+        'red': $red
 );
 
 @each $name, $color in $colors {
