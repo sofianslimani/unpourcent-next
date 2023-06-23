@@ -15,24 +15,6 @@ const HomePage = () => {
       "Avec Un Pour Cent, soutenez des projets qui font du bien. Chaques mois, découvrez et soutenez un nouveau projet et recevez des nouvelles de l'avancement du projet.",
   });
 
-  const [dataSectionThreeKpis, setDataSectionThreeKpis] = useState([
-    {
-      isPrice: false,
-      count: 345,
-      text: 'Collectée pour les différentes associations partenaire de un pour cent',
-    },
-    {
-      isPrice: true,
-      count: 878,
-      text: 'Collectée pour les différentes associations partenaire de un pour cent',
-    },
-    {
-      isPrice: false,
-      count: 12,
-      text: 'Collectée pour les différentes associations partenaire de un pour cent',
-    },
-  ]);
-
   const [dataSectionGrid, setDataSectionGrid] = useState({
     cta: (
       <Link className={'button-secondary'} href={'/projet-du-mois'}>
@@ -108,7 +90,7 @@ const HomePage = () => {
         />
       </Head>
       <HomeHero />
-      <SectionThreeKpis color={'green'} dataKpis={dataSectionThreeKpis} />
+      <SectionThreeKpis color={'green'} />
       <HomeThreeCardsInformations />
       <SectionImagesAndText
         customClasses={'section-how-un-pour-cent-use-donation'}
