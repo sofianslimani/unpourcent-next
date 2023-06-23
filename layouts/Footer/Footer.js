@@ -3,6 +3,9 @@ import React from 'react';
 import { useFormik } from 'formik';
 import Airtable from 'airtable';
 import dotenv from 'dotenv';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import * as Yup from 'yup';
 dotenv.config();
 
 const ICONS = {
@@ -33,6 +36,9 @@ const Footer = () => {
     initialValues: {
       email: '',
     },
+    validationSchema: Yup.object().shape({
+      email: Yup.string().email('Format d\'email invalide').required('L\'email est requis'),
+    }),
     onSubmit: (values) => {
       base(process.env.NEXT_PUBLIC_AIRTABLE_TABLE_NAME_NEWSLETTER).create(
         [
@@ -44,8 +50,10 @@ const Footer = () => {
         ],
         function (err, records) {
           if (err) {
-            console.error(err);
+            toast.error('❌ Une erreur est survenue lors de votre inscription');
             return;
+          }else{
+            toast.success('👍 Votre inscription à bien été pris en compte')
           }
           console.log(records);
         }
@@ -97,14 +105,17 @@ const Footer = () => {
                 type="email"
                 onChange={newsletterForm.handleChange}
                 value={newsletterForm.values.email}
-                required
               />
               <button type="submit">{ICONS.plane}</button>
             </label>
           </form>
+              {newsletterForm.touched.email && newsletterForm.errors.email && (
+                  <p className="error-message text-16 regular color-red">{newsletterForm.errors.email}</p>
+              )}
           <p>Rejoignez notre newsletter pour tout savoir sur Un Pour Cent</p>
         </div>
       </aside>
+      <ToastContainer/>
     </footer>
   );
 };

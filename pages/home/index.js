@@ -108,7 +108,7 @@ const HomePage = () => {
         />
       </Head>
       <HomeHero />
-      <SectionThreeKpis color={'green'} data={dataSectionThreeKpis} />
+      <SectionThreeKpis color={'green'} dataKpis={dataSectionThreeKpis} />
       <HomeThreeCardsInformations />
       <SectionImagesAndText
         customClasses={'section-how-un-pour-cent-use-donation'}
