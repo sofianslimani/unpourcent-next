@@ -310,28 +310,28 @@ html::selection {
   font-style: italic;
 }
 .color-primary {
-  color: #4685ff;
+  color: #4685ff !important;
 }
 
 .color-secondary {
-  color: #ff667a;
+  color: #ff667a !important;
 }
 
 .color-white {
-  color: #ffffff;
+  color: #ffffff !important;
 }
 
 .color-black, .footer-container > div ul li,
 .footer-container > div ul a, .input-custom {
-  color: #252525;
+  color: #252525 !important;
 }
 
 .color-green {
-  color: #6ab938;
+  color: #6ab938 !important;
 }
 
 .color-red {
-  color: #FF0000;
+  color: #FF0000 !important;
 }
 
 .light {
