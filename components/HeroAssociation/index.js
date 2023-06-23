@@ -16,7 +16,7 @@ export const HeroAssociation = () => {
             src="/logos/amatullah.svg"
             alt="amatullah logo"
           />
-          <h1>Association Amatullah</h1>
+          <h1 className={"bold"}>Association Amatullah</h1>
           <p>
             Humanitaire <span>·</span> Depuis 2008 <span>·</span> Association
           </p>
