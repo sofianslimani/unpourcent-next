@@ -102,7 +102,7 @@ const Footer = () => {
               <button type="submit">{ICONS.plane}</button>
             </label>
           </form>
-          <p>Join our newsletter to stay up to date on features and releases</p>
+          <p>Rejoignez notre newsletter pour tout savoir sur Un Pour Cent</p>
         </div>
       </aside>
     </footer>
