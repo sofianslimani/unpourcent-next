@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, { useState } from 'react';
 import HomeHero from './Partials/HomeHero';
 import SectionThreeKpis from '../../layouts/Sections/SectionThreeKpis';
 import SectionImagesAndText from '../../layouts/Sections/SectionImagesAndText';
@@ -6,14 +6,11 @@ import HomeThreeCardsInformations from './Partials/HomeThreeCardsInformations';
 import Link from 'next/link';
 import { DonateSection } from '../../components/DonateSection';
 import ContactFaq from '../contact/Partials/ContactFaq';
+import Head from 'next/head';
 
 const HomePage = () => {
-    
-    useEffect(() => {
-        document.title = "Un Pour Cent";
-    }, []);
-    
-    
+  const [title, setTitle] = useState('Un Pour Cent');
+
   const [dataSectionThreeKpis, setDataSectionThreeKpis] = useState([
     {
       isPrice: false,
@@ -56,16 +53,19 @@ const HomePage = () => {
     isGrid: false,
     title: (
       <h2 className="text-30 color-black bold">
-        Comment <span className={'red'}>Un Pour Cent</span> utilise votre <span className={'green'}> donation</span> ?{' '}
+        Comment <span className={'red'}>Un Pour Cent</span> utilise votre{' '}
+        <span className={'green'}> donation</span> ?{' '}
       </h2>
     ),
-    text:
-      "Chaque don effectué à Un Pour Cent est intégralement utilisé pour financer le projet mis en avant. Votre contribution a un impact direct et significatif dans la réalisation des objectifs du projet sélectionné. Votre soutien fait une réelle différence dans la vie des personnes qui ont besoin d'aide. Votre confiance est précieuse pour nous, et nous nous engageons à gérer vos dons de manière responsable et efficiente. Merci de votre précieux soutien !",
+    text: "Chaque don effectué à Un Pour Cent est intégralement utilisé pour financer le projet mis en avant. Votre contribution a un impact direct et significatif dans la réalisation des objectifs du projet sélectionné. Votre soutien fait une réelle différence dans la vie des personnes qui ont besoin d'aide. Votre confiance est précieuse pour nous, et nous nous engageons à gérer vos dons de manière responsable et efficiente. Merci de votre précieux soutien !",
     images: ['images/joel-muniz-A4Ax1ApccfA-unsplash 2.png'],
   });
 
   return (
     <>
+      <Head>
+        <title>{title}</title>
+      </Head>
       <HomeHero />
       <SectionThreeKpis color={'green'} data={dataSectionThreeKpis} />
       <HomeThreeCardsInformations />
@@ -79,7 +79,9 @@ const HomePage = () => {
       <ContactFaq />
       <DonateSection
         title={'Découvrez dès maintenant le projet du moment'}
-        description={'Découvrez dès maintenant le projet associatif mis en avant ce mois-ci sur notre plateforme. Soyez inspiré par son impact et participez à cette belle aventure de solidarité.'}
+        description={
+          'Découvrez dès maintenant le projet associatif mis en avant ce mois-ci sur notre plateforme. Soyez inspiré par son impact et participez à cette belle aventure de solidarité.'
+        }
         link={'/association'}
         linkText={'Découvrir le projet'}
         isExternal={false}
