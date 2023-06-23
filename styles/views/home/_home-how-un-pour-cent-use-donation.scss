@@ -7,7 +7,7 @@
       top: -20%;
       right: -10%;
 
-      @include mobile {
+      @include tablet{
         display: none;
       }
     }
@@ -16,8 +16,7 @@
       position: absolute;
       bottom: -18%;
       left: -3%;
-
-      @include mobile {
+      @include tablet {
         display: none;
       }
     }

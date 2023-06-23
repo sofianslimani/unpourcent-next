@@ -930,7 +930,7 @@ span.green {
 .section-images-and-text-container-text a {
   width: fit-content;
 }
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
   .section-images-and-text-container-text {
     width: 100%;
   }
@@ -938,7 +938,7 @@ span.green {
 .section-images-and-text-container-img {
   width: 50%;
 }
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
   .section-images-and-text-container-img {
     width: 100%;
   }
@@ -961,7 +961,7 @@ span.green {
   grid-row-gap: 20px;
   position: relative;
 }
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
   .section-images-and-text-container-img.grid {
     width: 100%;
   }
@@ -977,7 +977,7 @@ span.green {
   width: 100%;
   object-position: 0% 31%;
 }
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
   .section-images-and-text-container-img.grid .item-img:nth-child(1) {
     object-position: initial !important;
   }
@@ -1205,7 +1205,7 @@ span.green {
   top: -20%;
   right: -10%;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .section-how-un-pour-cent-use-donation .section-images-and-text-container-img::after {
     display: none;
   }
@@ -1216,7 +1216,7 @@ span.green {
   bottom: -18%;
   left: -3%;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .section-how-un-pour-cent-use-donation .section-images-and-text-container-img::before {
     display: none;
   }
