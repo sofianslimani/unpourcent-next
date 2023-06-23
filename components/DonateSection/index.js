@@ -7,7 +7,9 @@ export const DonateSection = () => {
       <MaxWidth>
         <h2>Aider cette cause maintenant</h2>
         <p>Faites une donation et soyez acteur</p>
-        <a href="">Faire une donnation</a>
+        <a href="https://donate.stripe.com/cN2dSo4vW45A6li5kk">
+          Faire une donnation
+        </a>
       </MaxWidth>
     </section>
   );

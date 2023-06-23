@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 const ICONS = {
@@ -29,8 +30,12 @@ const Footer = () => {
         <div className={'footer-container-plan-du-site'}>
           <h4 className={'text-16 color-black medium'}>Plan du site</h4>
           <ul>
-            <li>Le projet du mois</li>
-            <li>Contact</li>
+            <li>
+              <Link href="/association">Le projet du mois</Link>
+            </li>
+            <li>
+              <Link href="/contact">Contact</Link>
+            </li>
           </ul>
         </div>
         <div className={'footer-container-pages-legales'}>
@@ -44,22 +49,24 @@ const Footer = () => {
           <h4 className={'text-16 color-black medium'}>Réseaux</h4>
           <ul>
             <li>
-              <a href="https://www.instagram.com/association_amatullah/?hl=fr">
+              <Link href="https://www.instagram.com/association_amatullah/?hl=fr">
                 Instagram
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="https://twitter.com/amatullah_fr?lang=fr">Twitter</a>
+              <Link href="https://twitter.com/amatullah_fr?lang=fr">
+                Twitter
+              </Link>
             </li>
             <li>
-              <a href="https://www.facebook.com/ASSOCIATION.AMATULLAH/?locale=fr_FR">
+              <Link href="https://www.facebook.com/ASSOCIATION.AMATULLAH/?locale=fr_FR">
                 Facebook
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="https://www.linkedin.com/company/amatullah-au-service-de-l-humanité/">
+              <Link href="https://www.linkedin.com/company/amatullah-au-service-de-l-humanité/">
                 Linkedin
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
