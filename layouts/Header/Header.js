@@ -45,7 +45,7 @@ const Header = () => {
           <button
             onClick={(e) => handleOpenCloseMenu()}
             className={
-              'header-container-right-button-burgeur ' +
+              'header-container-right-button-burger ' +
               (!mobileMenuOpen ? '' : 'open')
             }
           >
@@ -64,10 +64,10 @@ const Header = () => {
               </Link>
             </li> */}
             <li className={'header-container-right-list-item'}>
-              <Link href="https://donate.stripe.com/cN2dSo4vW45A6li5kk">
-                <div className={'header-container-right-list-item-icon'}>
-                  <img src="/icons/donation.svg" alt="donation" />
-                </div>
+              <Link
+                href="https://donate.stripe.com/cN2dSo4vW45A6li5kk"
+                className="button-secondary"
+              >
                 Soutenir
               </Link>
             </li>
