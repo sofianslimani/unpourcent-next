@@ -54,7 +54,7 @@ const ContactForm = () => {
           <div className={'contact-form-container-right'}>
             <div className="contact-form-container-right-top">
               <h2 className={'bold'}>Nous contacter</h2>
-              <p>
+              <p className={"regular"}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam
                 duis vitae curabitur amet, fermentum lorem.
               </p>

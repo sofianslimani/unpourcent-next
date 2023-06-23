@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {useEffect, useState} from 'react';
 import { HeroAssociation } from '../components/HeroAssociation';
 import { SocialSection } from '../components/SocialSection';
 import SectionThreeKpis from '../layouts/Sections/SectionThreeKpis';
@@ -7,6 +7,12 @@ import Link from 'next/link';
 import { DonateSection } from '../components/DonateSection';
 
 function Association() {
+    
+    useEffect(() => {
+        document.title = "Un Pour Cent - Amatullah";
+    }, []);
+    
+    
   const [dataSectionThreeKpis, setDataSectionThreeKpis] = useState([
     {
       isPrice: false,
@@ -27,7 +33,7 @@ function Association() {
 
   const [dataSectionGrid, setDataSectionGrid] = useState({
     cta: (
-      <Link className={'button-secondary'} href={'/home'}>
+      <Link className={'button-secondary'} href={'/association'}>
         Découvrir le projet
       </Link>
     ),

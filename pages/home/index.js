@@ -1,14 +1,19 @@
-import React, { useState } from 'react';
+import React, {useEffect, useState} from 'react';
 import HomeHero from './Partials/HomeHero';
 import SectionThreeKpis from '../../layouts/Sections/SectionThreeKpis';
 import SectionImgaesAndText from '../../layouts/Sections/SectionImagesAndText';
 import HomeThreeCardsInformations from './Partials/HomeThreeCardsInformations';
 import Link from 'next/link';
-import HomeTabSection from './Partials/HomeTabSection';
 import { DonateSection } from '../../components/DonateSection';
 import ContactFaq from '../contact/Partials/ContactFaq';
 
 const HomePage = () => {
+    
+    useEffect(() => {
+        document.title = "Un Pour Cent";
+    }, []);
+    
+    
   const [dataSectionThreeKpis, setDataSectionThreeKpis] = useState([
     {
       isPrice: false,
@@ -29,7 +34,7 @@ const HomePage = () => {
 
   const [dataSectionGrid, setDataSectionGrid] = useState({
     cta: (
-      <Link className={'button-secondary'} href={'/home'}>
+      <Link className={'button-secondary'} href={'/association'}>
         Découvrir le projet
       </Link>
     ),

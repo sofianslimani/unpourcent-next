@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 import { useFormik } from 'formik';
 import Airtable from 'airtable';
@@ -60,8 +61,12 @@ const Footer = () => {
         <div className={'footer-container-plan-du-site'}>
           <h4 className={'text-16 color-black medium'}>Plan du site</h4>
           <ul>
-            <li>Le projet du mois</li>
-            <li>Contact</li>
+            <li>
+              <Link href="/association">Le projet du mois</Link>
+            </li>
+            <li>
+              <Link href="/contact">Contact</Link>
+            </li>
           </ul>
         </div>
         <div className={'footer-container-pages-legales'}>
@@ -75,22 +80,9 @@ const Footer = () => {
           <h4 className={'text-16 color-black medium'}>Réseaux</h4>
           <ul>
             <li>
-              <a href="https://www.instagram.com/association_amatullah/?hl=fr">
+              <Link href="https://www.instagram.com/unpourcent_/">
                 Instagram
-              </a>
-            </li>
-            <li>
-              <a href="https://twitter.com/amatullah_fr?lang=fr">Twitter</a>
-            </li>
-            <li>
-              <a href="https://www.facebook.com/ASSOCIATION.AMATULLAH/?locale=fr_FR">
-                Facebook
-              </a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/company/amatullah-au-service-de-l-humanité/">
-                Linkedin
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -101,7 +93,7 @@ const Footer = () => {
               <input
                 id="email"
                 name="email"
-                placeholder="email"
+                placeholder="Email"
                 type="email"
                 onChange={newsletterForm.handleChange}
                 value={newsletterForm.values.email}
