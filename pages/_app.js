@@ -1,8 +1,8 @@
-import '../styles/main.scss';
-import Header from '../layouts/Header/Header.js';
-import Footer from '../layouts/Footer/Footer';
-import Head from 'next/head';
-import React, { useState } from 'react';
+import "../styles/main.scss";
+import Header from "../layouts/Header/Header.js";
+import Footer from "../layouts/Footer/Footer";
+import Head from "next/head";
+import React, { useState } from "react";
 
 function MyApp({ Component, pageProps }) {
   return (

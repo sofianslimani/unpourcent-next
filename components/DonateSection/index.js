@@ -1,5 +1,5 @@
-import Link from 'next/link';
-import { MaxWidth } from '../MaxWidth';
+import Link from "next/link";
+import { MaxWidth } from "../MaxWidth";
 
 export const DonateSection = ({
   title,
@@ -10,15 +10,15 @@ export const DonateSection = ({
 }) => {
   return (
     <section className="donate-section">
-        <h2>{title}</h2>
-        <p>{description}</p>
-        {isExternal ? (
-          <a target="_blank" href={link}>
-            {linkText}
-          </a>
-        ) : (
-          <Link href={link}>{linkText}</Link>
-        )}
+      <h2>{title}</h2>
+      <p>{description}</p>
+      {isExternal ? (
+        <a target="_blank" href={link}>
+          {linkText}
+        </a>
+      ) : (
+        <Link href={link}>{linkText}</Link>
+      )}
     </section>
   );
 };
