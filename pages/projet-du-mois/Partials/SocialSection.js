@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 
-export const SocialSection = () => {
+const SocialSection = () => {
   return (
     <section className="social-section container-s">
         <h2>
@@ -37,3 +37,5 @@ export const SocialSection = () => {
     </section>
   );
 };
+
+export default SocialSection;
