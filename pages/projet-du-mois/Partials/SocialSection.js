@@ -33,9 +33,6 @@ const SocialSection = () => {
         >
           <img src="/socials/linkedin.svg" alt="linkedin" /> <h3>Linkedin</h3>
         </Link>
-
-
-
       </div>
     </section>
   );
