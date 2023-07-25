@@ -474,6 +474,7 @@ span.green {
 
 .hero-association {
   --icon-size: 42px;
+  padding-block: 10em;
   position: relative;
   background-color: black;
 }
