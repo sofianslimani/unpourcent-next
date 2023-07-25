@@ -7,7 +7,10 @@
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,css,scss,md}\""
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx,json,css,scss,md}": ["npm run format", "git add"]
+    "*.{js,jsx,ts,tsx,json,css,scss,md}": [
+      "npm run format",
+      "git add"
+    ]
   },
   "husky": {
     "hooks": {
@@ -21,6 +24,7 @@
     "formik": "^2.4.1",
     "framer-motion": "^10.12.16",
     "next": "latest",
+    "prettier": "^3.0.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-toastify": "^9.1.3",

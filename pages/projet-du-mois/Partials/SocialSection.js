@@ -28,6 +28,8 @@ const SocialSection = () => {
                     <h3>Instagram</h3>
                 </Link>
                 <Link
+
+
                     href="https://www.linkedin.com/company/amatullah-au-service-de-l-humanité/"
                     className="socials__card socials__card--linkedin"
                 >
