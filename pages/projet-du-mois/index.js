@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { HeroAssociation } from './Partials/HeroAssociation';
-import { SocialSection } from './Partials/SocialSection';
+import  HeroAssociation  from './Partials/HeroAssociation';
+import  SocialSection  from './Partials/SocialSection';
 import SectionThreeKpis from '../../layouts/Sections/SectionThreeKpis';
 import SectionImagesAndText from '../../layouts/Sections/SectionImagesAndText';
 import { DonateSection } from '../../components/DonateSection';
 import Head from 'next/head';
 
-const ProjetOfTheMonth = () => {
+const ProjectOfTheMonth = () => {
   const [seo, setSeo] = useState({
     title: 'Un Pour Cent - Soutenez des projets qui font du bien',
     description:
@@ -81,4 +81,4 @@ const ProjetOfTheMonth = () => {
   );
 };
 
-export default ProjetOfTheMonth;
+export default ProjectOfTheMonth;
