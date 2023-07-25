@@ -1,37 +1,36 @@
-.home-three-cards-informations{
+.home-three-cards-informations {
   @extend .margin-bottom-section-100;
-  &-container{
+  &-container {
     display: flex;
     justify-content: space-between;
     gap: 40px;
-    @media (max-width: 991px){
+    @media (max-width: 991px) {
       flex-direction: column;
     }
-    .card-item{
-
-      &.secondary{
+    .card-item {
+      &.secondary {
         color: $secondary;
-        .card-item-container-picto{
+        .card-item-container-picto {
           background: rgba(255, 102, 122, 0.3);
-          &::after{
+          &::after {
             background: $secondary;
           }
         }
       }
-      &.primary{
+      &.primary {
         color: $primary;
-        .card-item-container-picto{
+        .card-item-container-picto {
           background: rgba(70, 133, 255, 0.3);
-          &::after{
+          &::after {
             background: $primary;
           }
         }
       }
-      &.green{
+      &.green {
         color: $green;
-        .card-item-container-picto{
+        .card-item-container-picto {
           background: rgba(106, 185, 56, 0.3);
-          &::after{
+          &::after {
             background: $green;
           }
         }
@@ -41,11 +40,11 @@
       background-color: white;
       border-radius: 10px;
       box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.05);
-      @include tablet{
+      @include tablet {
         width: 100%;
         height: auto;
       }
-      &-container{
+      &-container {
         display: flex;
         justify-content: flex-start;
         align-items: center;
@@ -53,14 +52,14 @@
         flex-direction: column;
         gap: 20px;
         padding: 20px;
-        &-picto{
+        &-picto {
           padding: 30px;
           box-sizing: border-box;
           width: fit-content;
           border-radius: 100px;
           z-index: 97;
           position: relative;
-          &::after{
+          &::after {
             content: "";
             width: 54px;
             height: 54px;
@@ -68,10 +67,10 @@
             position: absolute;
             left: 50%;
             top: 50%;
-            transform: translate(-50%,-50%);
+            transform: translate(-50%, -50%);
             border-radius: 57px;
           }
-          img{
+          img {
             line-height: 0;
             z-index: 9999;
             position: relative;

@@ -1,11 +1,11 @@
-import Link from 'next/link';
-import React from 'react';
-import { useFormik } from 'formik';
-import Airtable from 'airtable';
-import dotenv from 'dotenv';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-import * as Yup from 'yup';
+import Link from "next/link";
+import React from "react";
+import { useFormik } from "formik";
+import Airtable from "airtable";
+import dotenv from "dotenv";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import * as Yup from "yup";
 dotenv.config();
 
 const ICONS = {
@@ -34,10 +34,12 @@ const base = new Airtable({
 const Footer = () => {
   const newsletterForm = useFormik({
     initialValues: {
-      email: '',
+      email: "",
     },
     validationSchema: Yup.object().shape({
-      email: Yup.string().email('Format d\'email invalide').required('L\'email est requis'),
+      email: Yup.string()
+        .email("Format d'email invalide")
+        .required("L'email est requis"),
     }),
     onSubmit: (values) => {
       base(process.env.NEXT_PUBLIC_AIRTABLE_TABLE_NAME_NEWSLETTER).create(
@@ -50,24 +52,24 @@ const Footer = () => {
         ],
         function (err, records) {
           if (err) {
-            toast.error('❌ Une erreur est survenue lors de votre inscription');
+            toast.error("❌ Une erreur est survenue lors de votre inscription");
             return;
-          }else{
-            toast.success('👍 Votre inscription à bien été pris en compte')
+          } else {
+            toast.success("👍 Votre inscription à bien été pris en compte");
           }
           console.log(records);
-        }
+        },
       );
     },
   });
   return (
-    <footer className={'footer container-s'}>
-      <aside className={'footer-container'}>
-        <div className={'footer-container-logo'}>
+    <footer className={"footer container-s"}>
+      <aside className={"footer-container"}>
+        <div className={"footer-container-logo"}>
           <img src="/logos/logo.svg" alt="logo" />
         </div>
-        <div className={'footer-container-plan-du-site'}>
-          <h4 className={'text-16 color-black medium'}>Plan du site</h4>
+        <div className={"footer-container-plan-du-site"}>
+          <h4 className={"text-16 color-black medium"}>Plan du site</h4>
           <ul>
             <li>
               <Link href="/prohet-du-mois">Le projet du mois</Link>
@@ -77,15 +79,15 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className={'footer-container-pages-legales'}>
-          <h4 className={'text-16 color-black medium'}>Pages légales</h4>
+        <div className={"footer-container-pages-legales"}>
+          <h4 className={"text-16 color-black medium"}>Pages légales</h4>
           <ul>
             <li>Mentions légales</li>
             <li>Politique de confidentialité</li>
           </ul>
         </div>
-        <div className={'footer-container-social'}>
-          <h4 className={'text-16 color-black medium'}>Réseaux</h4>
+        <div className={"footer-container-social"}>
+          <h4 className={"text-16 color-black medium"}>Réseaux</h4>
           <ul>
             <li>
               <Link href="https://www.instagram.com/unpourcent_/">
@@ -94,8 +96,8 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className={'footer-container-newsletter'}>
-          <h4 className={'text-16 color-black medium'}>Newsletter</h4>
+        <div className={"footer-container-newsletter"}>
+          <h4 className={"text-16 color-black medium"}>Newsletter</h4>
           <form onSubmit={newsletterForm.handleSubmit}>
             <label>
               <input
@@ -109,13 +111,15 @@ const Footer = () => {
               <button type="submit">{ICONS.plane}</button>
             </label>
           </form>
-              {newsletterForm.touched.email && newsletterForm.errors.email && (
-                  <p className="error-message text-16 regular color-red">{newsletterForm.errors.email}</p>
-              )}
+          {newsletterForm.touched.email && newsletterForm.errors.email && (
+            <p className="error-message text-16 regular color-red">
+              {newsletterForm.errors.email}
+            </p>
+          )}
           <p>Rejoignez notre newsletter pour tout savoir sur Un Pour Cent</p>
         </div>
       </aside>
-      <ToastContainer/>
+      <ToastContainer />
     </footer>
   );
 };

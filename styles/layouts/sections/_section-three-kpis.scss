@@ -1,8 +1,8 @@
-.section-three-kpis{
+.section-three-kpis {
   width: 100%;
   @extend .margin-bottom-section-100;
-  &-container{
-    &.green{
+  &-container {
+    &.green {
       background-color: $green;
     }
     border-radius: 8px;
@@ -10,25 +10,25 @@
     padding: 5vw 10vw;
     box-sizing: border-box;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     gap: 30px;
-    @include tablet{
+    @include tablet {
       flex-direction: column;
     }
-    &-item{
+    &-item {
       display: flex;
       flex-direction: column;
       align-items: center;
       gap: 8px;
       width: 15vw;
-      @include desktop-mini{
+      @include desktop-mini {
         width: 20vw;
       }
-      @include tablet{
-        width:60%;
+      @include tablet {
+        width: 60%;
         margin: 0 auto;
       }
-      p{
+      p {
         text-align: center;
       }
     }
