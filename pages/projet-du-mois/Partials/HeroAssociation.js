@@ -1,7 +1,7 @@
 import React from 'react';
 import { MaxWidth } from '../../../components/MaxWidth';
 
-export const HeroAssociation = () => {
+const HeroAssociation = () => {
   return (
     <section className="hero-association">
         <img
@@ -23,3 +23,5 @@ export const HeroAssociation = () => {
     </section>
   );
 };
+
+export default HeroAssociation
