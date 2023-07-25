@@ -597,6 +597,10 @@ span.green {
 .donate-section {
   background-color: #4685ff;
   padding: 110px 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-family: "Satoshi", sans-serif;
   color: white;
 }
@@ -617,7 +621,6 @@ span.green {
   font-weight: 700;
   font-size: 40px;
   line-height: 48px;
-  text-align: center;
   letter-spacing: -0.5px;
 }
 @media (max-width: 768px) {
@@ -629,7 +632,6 @@ span.green {
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-  text-align: center;
   letter-spacing: -0.5px;
 }
 @media (max-width: 768px) {
@@ -649,7 +651,8 @@ span.green {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  display: inline-block;
+  width: fit-content;
+  display: inline-flex;
   letter-spacing: 0.1px;
 }
 * + .donate-section a {
@@ -1462,28 +1465,28 @@ span.green {
   margin-top: 29px;
 }
 
-.contact-faq {
+.faq {
   position: relative;
   width: 100%;
   height: 100%;
   padding-top: 95px;
 }
 @media (max-width: 1024px) {
-  .contact-faq {
+  .faq {
     height: 100%;
     padding-top: 40px;
   }
 }
-.contact-faq-container {
+.faq-container {
   display: flex;
   flex-direction: column;
   height: 100%;
   color: #252525;
 }
-.contact-faq-container-top {
+.faq-container-top {
   text-align: center;
 }
-.contact-faq-container-top h2 {
+.faq-container-top h2 {
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -1492,69 +1495,69 @@ span.green {
   color: #6ab938;
 }
 @media (max-width: 1024px) {
-  .contact-faq-container-top h2 {
+  .faq-container-top h2 {
     font-size: 26px;
   }
 }
-.contact-faq-container-top p {
+.faq-container-top p {
   font-weight: 700;
   font-size: 28px;
   line-height: 24px;
   letter-spacing: 0.1px;
 }
 @media (max-width: 1024px) {
-  .contact-faq-container-top p {
+  .faq-container-top p {
     font-size: 20px;
   }
 }
-.contact-faq-container-top h2 + p {
+.faq-container-top h2 + p {
   margin-top: 20px;
 }
-.contact-faq-container-bottom {
+.faq-container-bottom {
   margin-top: 32px;
 }
-.contact-faq-container-bottom .faq__title + .contact-faq-container-bottom-wrapper-content {
+.faq-container-bottom .faq__title + .faq-container-bottom-wrapper-content {
   margin-top: 20px;
 }
 @media (--tablet) {
-  .contact-faq-container-bottom .faq__title + .contact-faq-container-bottom-wrapper-content {
+  .faq-container-bottom .faq__title + .faq-container-bottom-wrapper-content {
     margin-top: 6px;
   }
 }
-.contact-faq-container-bottom .faq__title + .faq__subtitle {
+.faq-container-bottom .faq__title + .faq__subtitle {
   margin-top: 15px;
 }
 @media (--tablet) {
-  .contact-faq-container-bottom .faq__title + .faq__subtitle {
+  .faq-container-bottom .faq__title + .faq__subtitle {
     margin-top: 10px;
   }
 }
-.contact-faq-container-bottom .faq__subtitle + .faq__button {
+.faq-container-bottom .faq__subtitle + .faq__button {
   margin-top: 20px;
 }
-.contact-faq-container-bottom .contact-faq-container-bottom-wrapper-content {
+.faq-container-bottom .faq-container-bottom-wrapper-content {
   width: 100%;
 }
 @media (--tablet) {
-  .contact-faq-container-bottom .contact-faq-container-bottom-wrapper-content {
+  .faq-container-bottom .faq-container-bottom-wrapper-content {
     width: 100%;
   }
 }
-.contact-faq-container-bottom .contact-faq-container-bottom-wrapper-content-item {
+.faq-container-bottom .faq-container-bottom-wrapper-content-item {
   position: relative;
   user-select: none;
 }
-.contact-faq-container-bottom .contact-faq-container-bottom-wrapper-content-item::after {
+.faq-container-bottom .faq-container-bottom-wrapper-content-item::after {
   position: absolute;
   content: "";
   bottom: 0;
   width: 100%;
   border-bottom: solid 1px rgba(0, 0, 0, 0.1);
 }
-.contact-faq-container-bottom .contact-faq-container-bottom-wrapper-content:last-of-type .contact-faq-container-bottom-wrapper-content-item::after {
+.faq-container-bottom .faq-container-bottom-wrapper-content:last-of-type .faq-container-bottom-wrapper-content-item::after {
   display: none;
 }
-.contact-faq-container-bottom .contact-faq-container-bottom-wrapper-content-item-header {
+.faq-container-bottom .faq-container-bottom-wrapper-content-item-header {
   display: flex;
   width: 100%;
   justify-content: space-between;
@@ -1563,10 +1566,10 @@ span.green {
   padding: 16px 0;
   position: relative;
 }
-.contact-faq-container-bottom .contact-faq-container-bottom-wrapper-content-item-header:hover {
+.faq-container-bottom .faq-container-bottom-wrapper-content-item-header:hover {
   opacity: 0.8;
 }
-.contact-faq-container-bottom .contact-faq-container-bottom-wrapper-content-item-header-title-link {
+.faq-container-bottom .faq-container-bottom-wrapper-content-item-header-title-link {
   color: #252525;
   font-family: "Satoshi-Medium";
   border: none;
@@ -1574,10 +1577,10 @@ span.green {
   outline: none;
   padding: 0;
 }
-.contact-faq-container-bottom .contact-faq-container-bottom-wrapper-content-item-header-title-link:hover {
+.faq-container-bottom .faq-container-bottom-wrapper-content-item-header-title-link:hover {
   cursor: pointer;
 }
-.contact-faq-container-bottom .contact-faq-container-bottom-wrapper-content-item-header-title-link::before {
+.faq-container-bottom .faq-container-bottom-wrapper-content-item-header-title-link::before {
   position: absolute;
   content: "";
   top: 0;
@@ -1587,50 +1590,50 @@ span.green {
   z-index: 3;
   opacity: 0.5;
 }
-.contact-faq-container-bottom .contact-faq-container-bottom-wrapper-content-item-header-title {
+.faq-container-bottom .faq-container-bottom-wrapper-content-item-header-title {
   font-weight: 500;
   font-size: 18px;
   line-height: 28px;
 }
 @media (max-width: 1024px) {
-  .contact-faq-container-bottom .contact-faq-container-bottom-wrapper-content-item-header-title {
+  .faq-container-bottom .faq-container-bottom-wrapper-content-item-header-title {
     font-size: 16px;
   }
 }
-.contact-faq-container-bottom .contact-faq-container-bottom-wrapper-content-item-content p {
+.faq-container-bottom .faq-container-bottom-wrapper-content-item-content p {
   font-family: "Satoshi-Regular";
 }
 @media (max-width: 1024px) {
-  .contact-faq-container-bottom .contact-faq-container-bottom-wrapper-content-item-content p {
+  .faq-container-bottom .faq-container-bottom-wrapper-content-item-content p {
     font-size: 14px;
   }
 }
-.contact-faq-container-bottom .contact-faq-container-bottom-wrapper-content-item-header-icon {
+.faq-container-bottom .faq-container-bottom-wrapper-content-item-header-icon {
   max-width: 36px;
   max-height: 36px;
 }
 @media (--mobile) {
-  .contact-faq-container-bottom .contact-faq-container-bottom-wrapper-content-item-header-icon {
+  .faq-container-bottom .faq-container-bottom-wrapper-content-item-header-icon {
     min-width: 26px;
     min-height: 26px;
   }
 }
-.contact-faq-container-bottom .contact-faq-container-bottom-wrapper-content-item-header-icon svg {
+.faq-container-bottom .faq-container-bottom-wrapper-content-item-header-icon svg {
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
-.contact-faq-container-bottom .contact-faq-container-bottom-wrapper-content-item-content {
+.faq-container-bottom .faq-container-bottom-wrapper-content-item-content {
   overflow-y: hidden;
 }
-.contact-faq-container-bottom .contact-faq-container-bottom-wrapper-content-item-content > p + ul {
+.faq-container-bottom .faq-container-bottom-wrapper-content-item-content > p + ul {
   padding-top: 11px;
 }
-.contact-faq-container-bottom .contact-faq-container-bottom-wrapper-content-item-content > ul > li {
+.faq-container-bottom .faq-container-bottom-wrapper-content-item-content > ul > li {
   margin-left: 20px;
 }
-.contact-faq-container-bottom .contact-faq-container-bottom-wrapper-content-item-content,
-.contact-faq-container-bottom .contact-faq-container-bottom-wrapper-content-item-content p {
+.faq-container-bottom .faq-container-bottom-wrapper-content-item-content,
+.faq-container-bottom .faq-container-bottom-wrapper-content-item-content p {
   line-height: 1.4;
 }
 

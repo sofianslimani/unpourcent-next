@@ -1,4 +1,4 @@
-.contact-faq {
+.faq {
   position: relative;
   width: 100%;
   height: 100%;
@@ -52,12 +52,12 @@
 
     &-bottom {
       margin-top: 32px;
-      .faq__title + .contact-faq-container-bottom-wrapper-content {
+      .faq__title + .faq-container-bottom-wrapper-content {
         margin-top: 20px;
       }
 
       @media (--tablet) {
-        .faq__title + .contact-faq-container-bottom-wrapper-content {
+        .faq__title + .faq-container-bottom-wrapper-content {
           margin-top: 6px;
         }
       }
@@ -76,22 +76,22 @@
         margin-top: 20px;
       }
 
-      .contact-faq-container-bottom-wrapper-content {
+      .faq-container-bottom-wrapper-content {
         width: 100%;
       }
 
       @media (--tablet) {
-        .contact-faq-container-bottom-wrapper-content {
+        .faq-container-bottom-wrapper-content {
           width: 100%;
         }
       }
 
-      .contact-faq-container-bottom-wrapper-content-item {
+      .faq-container-bottom-wrapper-content-item {
         position: relative;
         user-select: none;
       }
 
-      .contact-faq-container-bottom-wrapper-content-item::after {
+      .faq-container-bottom-wrapper-content-item::after {
         position: absolute;
         content: '';
         bottom: 0;
@@ -99,12 +99,12 @@
         border-bottom: solid 1px rgba(0, 0, 0, 0.1);
       }
 
-      .contact-faq-container-bottom-wrapper-content:last-of-type
-        .contact-faq-container-bottom-wrapper-content-item::after {
+      .faq-container-bottom-wrapper-content:last-of-type
+        .faq-container-bottom-wrapper-content-item::after {
         display: none;
       }
 
-      .contact-faq-container-bottom-wrapper-content-item-header {
+      .faq-container-bottom-wrapper-content-item-header {
         display: flex;
         width: 100%;
         justify-content: space-between;
@@ -114,11 +114,11 @@
         position: relative;
       }
 
-      .contact-faq-container-bottom-wrapper-content-item-header:hover {
+      .faq-container-bottom-wrapper-content-item-header:hover {
         opacity: 0.8;
       }
 
-      .contact-faq-container-bottom-wrapper-content-item-header-title-link {
+      .faq-container-bottom-wrapper-content-item-header-title-link {
         color: $black;
         font-family: 'Satoshi-Medium';
         border: none;
@@ -127,11 +127,11 @@
         padding: 0;
       }
 
-      .contact-faq-container-bottom-wrapper-content-item-header-title-link:hover {
+      .faq-container-bottom-wrapper-content-item-header-title-link:hover {
         cursor: pointer;
       }
 
-      .contact-faq-container-bottom-wrapper-content-item-header-title-link::before {
+      .faq-container-bottom-wrapper-content-item-header-title-link::before {
         position: absolute;
         content: '';
         top: 0;
@@ -143,7 +143,7 @@
         opacity: 0.5;
       }
 
-      .contact-faq-container-bottom-wrapper-content-item-header-title {
+      .faq-container-bottom-wrapper-content-item-header-title {
         font-weight: 500;
         font-size: 18px;
         line-height: 28px;
@@ -153,44 +153,44 @@
         }
       }
 
-      .contact-faq-container-bottom-wrapper-content-item-content p {
+      .faq-container-bottom-wrapper-content-item-content p {
         font-family: 'Satoshi-Regular';
         @include tablet {
           font-size: 14px;
         }
       }
 
-      .contact-faq-container-bottom-wrapper-content-item-header-icon {
+      .faq-container-bottom-wrapper-content-item-header-icon {
         max-width: 36px;
         max-height: 36px;
       }
       @media (--mobile) {
-        .contact-faq-container-bottom-wrapper-content-item-header-icon {
+        .faq-container-bottom-wrapper-content-item-header-icon {
           min-width: 26px;
           min-height: 26px;
         }
       }
 
-      .contact-faq-container-bottom-wrapper-content-item-header-icon svg {
+      .faq-container-bottom-wrapper-content-item-header-icon svg {
         width: 100%;
         height: 100%;
         object-fit: contain;
       }
 
-      .contact-faq-container-bottom-wrapper-content-item-content {
+      .faq-container-bottom-wrapper-content-item-content {
         overflow-y: hidden;
       }
 
-      .contact-faq-container-bottom-wrapper-content-item-content > p + ul {
+      .faq-container-bottom-wrapper-content-item-content > p + ul {
         padding-top: 11px;
       }
 
-      .contact-faq-container-bottom-wrapper-content-item-content > ul > li {
+      .faq-container-bottom-wrapper-content-item-content > ul > li {
         margin-left: 20px;
       }
 
-      .contact-faq-container-bottom-wrapper-content-item-content,
-      .contact-faq-container-bottom-wrapper-content-item-content p {
+      .faq-container-bottom-wrapper-content-item-content,
+      .faq-container-bottom-wrapper-content-item-content p {
         line-height: 1.4;
       }
     }

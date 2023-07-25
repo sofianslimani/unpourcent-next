@@ -1,11 +1,9 @@
 import Link from 'next/link';
 import React from 'react';
-import { MaxWidth } from '../MaxWidth';
 
 export const SocialSection = () => {
   return (
-    <section className="social-section">
-      <MaxWidth>
+    <section className="social-section container-s">
         <h2>
           Suivez <span>Amatullah</span> sur les réseaux sociaux !
         </h2>
@@ -36,7 +34,6 @@ export const SocialSection = () => {
             <img src="/socials/linkedin.svg" alt="linkedin" /> <h3>Linkedin</h3>
           </Link>
         </div>
-      </MaxWidth>
     </section>
   );
 };

@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { HeroAssociation } from '../../components/HeroAssociation';
-import { SocialSection } from '../../components/SocialSection';
+import { HeroAssociation } from './Partials/HeroAssociation';
+import { SocialSection } from './Partials/SocialSection';
 import SectionThreeKpis from '../../layouts/Sections/SectionThreeKpis';
 import SectionImagesAndText from '../../layouts/Sections/SectionImagesAndText';
 import { DonateSection } from '../../components/DonateSection';
 import Head from 'next/head';
 
-const ProjetDuMois = () => {
+const ProjetOfTheMonth = () => {
   const [seo, setSeo] = useState({
     title: 'Un Pour Cent - Soutenez des projets qui font du bien',
     description:
@@ -15,11 +15,8 @@ const ProjetDuMois = () => {
   });
 
   const [dataSectionGrid, setDataSectionGrid] = useState({
-    // cta: (
-    //   <Link className={'button-secondary'} href={'/association'}>
-    //     Découvrir le projet
-    //   </Link>
-    // ),
+
+    
     isGrid: true,
     title: (
       <h2 className="text-30 color-black bold">
@@ -84,4 +81,4 @@ const ProjetDuMois = () => {
   );
 };
 
-export default ProjetDuMois;
+export default ProjetOfTheMonth;

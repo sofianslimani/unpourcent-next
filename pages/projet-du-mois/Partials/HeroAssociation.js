@@ -1,10 +1,9 @@
 import React from 'react';
-import { MaxWidth } from '../MaxWidth';
+import { MaxWidth } from '../../../components/MaxWidth';
 
 export const HeroAssociation = () => {
   return (
     <section className="hero-association">
-      <MaxWidth>
         <img
           src="/illustrations/hero-1pourcent-3.png"
           className="hero-association__background"
@@ -21,7 +20,6 @@ export const HeroAssociation = () => {
             Humanitaire <span>·</span> Depuis 2008 <span>·</span> Association
           </p>
         </div>
-      </MaxWidth>
     </section>
   );
 };

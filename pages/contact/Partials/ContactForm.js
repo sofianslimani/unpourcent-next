@@ -57,7 +57,6 @@ const ContactForm = () => {
   });
   return (
     <section className={'contact-form'}>
-      <MaxWidth>
         <div className={'contact-form-container'}>
           <div className={'contact-form-container-left'}>
             <img
@@ -171,7 +170,6 @@ const ContactForm = () => {
             </div>
           </div>
         </div>
-      </MaxWidth>
       <ToastContainer/>
     </section>
   );
