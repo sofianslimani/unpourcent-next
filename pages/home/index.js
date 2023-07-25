@@ -5,8 +5,8 @@ import SectionImagesAndText from '../../layouts/Sections/SectionImagesAndText';
 import HomeThreeCardsInformations from './Partials/HomeThreeCardsInformations';
 import Link from 'next/link';
 import { DonateSection } from '../../components/DonateSection';
-import ContactFaq from '../contact/Partials/ContactFaq';
 import Head from 'next/head';
+import Faq from "../../layouts/Sections/Faq";
 
 const HomePage = () => {
   const [seo, setSeo] = useState({
@@ -99,7 +99,7 @@ const HomePage = () => {
         data={dataSectionClassic}
       />
       <SectionImagesAndText greyBackground={false} data={dataSectionGrid} />
-      <ContactFaq />
+      <Faq />
       <DonateSection
         title={'Découvrez dès maintenant le projet du moment'}
         description={

@@ -10,7 +10,6 @@ export const DonateSection = ({
 }) => {
   return (
     <section className="donate-section">
-      <MaxWidth>
         <h2>{title}</h2>
         <p>{description}</p>
         {isExternal ? (
@@ -20,7 +19,6 @@ export const DonateSection = ({
         ) : (
           <Link href={link}>{linkText}</Link>
         )}
-      </MaxWidth>
     </section>
   );
 };

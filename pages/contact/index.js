@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import ContactHero from './Partials/ContactHero';
 import ContactForm from './Partials/ContactForm';
-import ContactFaq from './Partials/ContactFaq';
 import Head from 'next/head';
 import { DonateSection } from '../../components/DonateSection';
+import Faq from "../../layouts/Sections/Faq";
 const ContactPage = () => {
   const [seo, setSeo] = useState({
     title: 'Un Pour Cent - Contact',
@@ -19,7 +19,7 @@ const ContactPage = () => {
       </Head>
       <ContactHero />
       <ContactForm />
-      <ContactFaq />
+      <Faq/>
       <DonateSection
         title={'Découvrez dès maintenant le projet du moment'}
         description={
