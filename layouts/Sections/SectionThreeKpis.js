@@ -7,7 +7,7 @@ const base = new Airtable({
 
 const SectionThreeKpis = ({ color }) => {
   const [kpis, setKpis] = useState([]);
-
+  const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
     base("Stats")
       .select({ view: "Grid view" })
@@ -15,6 +15,9 @@ const SectionThreeKpis = ({ color }) => {
         if (err) {
           console.error(err);
           return;
+        }
+        if (records) {
+          setIsLoading(false);
         }
         const data = records.map((record) => [
           {
@@ -39,22 +42,34 @@ const SectionThreeKpis = ({ color }) => {
 
   return (
     <section className={`section-three-kpis container-s`}>
-      <aside className={`section-three-kpis-container ${color}`}>
-        {kpis.map((item, index) => {
-          return (
-            <div key={index} className={"section-three-kpis-container-item"}>
-              <h2
-                className={
-                  "section-three-kpis-container-price bold text-38 color-white"
-                }
-              >
-                {item.count}
-                {item.isPrice ? " €" : ""}
-              </h2>
-              <p className={"text-16 color-white regular"}>{item.text}</p>
-            </div>
-          );
-        })}
+      <aside
+        className={
+          `section-three-kpis-container ${color} ` +
+          (isLoading ? "justify-center" : "")
+        }
+      >
+        {isLoading ? (
+          <div className="lds-ripple">
+            <div></div>
+            <div></div>
+          </div>
+        ) : (
+          kpis.map((item, index) => {
+            return (
+              <div key={index} className={"section-three-kpis-container-item"}>
+                <h2
+                  className={
+                    "section-three-kpis-container-price bold text-38 color-white"
+                  }
+                >
+                  {item.count}
+                  {item.isPrice ? " €" : ""}
+                </h2>
+                <p className={"text-16 color-white regular"}>{item.text}</p>
+              </div>
+            );
+          })
+        )}
       </aside>
     </section>
   );
