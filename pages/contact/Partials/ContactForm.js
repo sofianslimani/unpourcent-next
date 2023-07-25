@@ -56,7 +56,7 @@ const ContactForm = () => {
     },
   });
   return (
-    <section className={'contact-form'}>
+    <section className={'contact-form container-l'}>
         <div className={'contact-form-container'}>
           <div className={'contact-form-container-left'}>
             <img
