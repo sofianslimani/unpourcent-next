@@ -1,15 +1,20 @@
 import React from "react";
+import Image from "next/image";
 
 function HeroAssociation() {
   return (
     <section className="hero-association">
-      <img
+      <Image
+        fill={true}
+        alt={"image-background-association"}
         className="hero-association__background"
         src="/illustrations/hero-1pourcent-3.png"
       />
       <div className="hero-association__overlay" />
       <div className="hero-association__content">
-        <img
+        <Image
+          width={40}
+          height={40}
           alt="amatullah logo"
           className="hero-association__content__logo"
           src="/logos/amatullah.svg"

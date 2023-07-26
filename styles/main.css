@@ -674,6 +674,7 @@ span.green {
   }
 }
 .social-section .socials__cards .socials__card {
+  position: relative;
   display: flex;
   justify-content: center;
   padding: 50px;
