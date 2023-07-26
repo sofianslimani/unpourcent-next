@@ -48,7 +48,7 @@ function SocialSection() {
           className="socials__card socials__card--linkedin"
           href="https://www.linkedin.com/company/amatullah-au-service-de-l-humanité/"
         >
-          <Image
+          <img
             width={40}
             height={40}
             alt="linkedin"
