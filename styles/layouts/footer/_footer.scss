@@ -2,6 +2,8 @@
   padding-block: 5%;
   box-sizing: border-box;
   background-color: $white;
+  border-top: 1px solid #ececec;
+
   &-container {
     display: flex;
     gap: 30px;
@@ -11,9 +13,11 @@
       flex-direction: column;
       gap: 30px;
     }
+
     > div {
       &:first-child {
         width: 13%;
+
         img {
           width: 45px;
         }
@@ -38,6 +42,10 @@
           @extend .text-14;
           @extend .color-black;
           @extend .regular;
+          transition: color 0.2s ease-in-out;
+          &:hover {
+            color: $primary !important;
+          }
         }
       }
     }

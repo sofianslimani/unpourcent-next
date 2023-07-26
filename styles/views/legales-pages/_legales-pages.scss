@@ -1,0 +1,19 @@
+.legale-page {
+  &-container {
+    padding-top: 50px;
+    &-item {
+      margin-bottom: 60px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      &-description {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      &:last-child {
+        margin-bottom: 60px;
+      }
+    }
+  }
+}
