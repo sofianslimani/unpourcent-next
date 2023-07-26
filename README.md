@@ -83,5 +83,5 @@ axel/login
 Exemple de commit :
 
 ```bash
-   [axel/login][feature]:Ajout de systeme de connexion par token
+[axel/login][feature]:Ajout de systeme de connexion par token
 ```
