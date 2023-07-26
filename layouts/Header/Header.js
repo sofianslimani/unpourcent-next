@@ -43,7 +43,7 @@ const Header = () => {
         </div>
         <div className={"header-container-right"}>
           <button
-            onClick={(e) => handleOpenCloseMenu()}
+            onClick={() => handleOpenCloseMenu()}
             className={
               "header-container-right-button-burger " +
               (!mobileMenuOpen ? "" : "open")

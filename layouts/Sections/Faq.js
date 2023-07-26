@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import classnames from "classnames";
 
 const FAQ_INDEX_ATTRIBUTE_NAME = "faq-index";

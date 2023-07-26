@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
 
-const HomeTabSection = ({ data, title }) => {
+const HomeTabSection = ({ data }) => {
   const [content, setContent] = useState([]);
-  const [activeItem, setActiveItem] = useState({});
 
   useEffect(() => {
     if (data) {

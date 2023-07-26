@@ -1,15 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
 import ContactHero from "./Partials/ContactHero";
 import ContactForm from "./Partials/ContactForm";
 import Head from "next/head";
 import { DonateSection } from "../../components/DonateSection";
 import Faq from "../../layouts/Sections/Faq";
 const ContactPage = () => {
-  const [seo, setSeo] = useState({
-    title: "Un Pour Cent - Contact",
+  const seo = {
+    title: "Un Pour Cent",
     description:
       "Avec Un Pour Cent, soutenez des projets qui font du bien. N'hésitez pas à nous contacter directement via notre site internet.",
-  });
+  };
 
   return (
     <>

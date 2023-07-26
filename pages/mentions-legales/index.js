@@ -1,15 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
 import Head from "next/head";
 import Link from "next/link";
 import Hero from "./Partials/Hero";
 import ItemLegales from "./Partials/ItemLegales";
 
 const LegalePage = () => {
-  const [seo, setSeo] = useState({
+  const seo = {
     title: "Un Pour Cent - Mentions légales",
     description:
       "Avec Un Pour Cent, soutenez des projets qui font du bien. Chaques mois, découvrez et soutenez un nouveau projet et recevez des nouvelles de l'avancement du projet.",
-  });
+  };
 
   return (
     <>

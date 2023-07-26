@@ -1,5 +1,4 @@
 import React from "react";
-import { MaxWidth } from "../../../components/MaxWidth";
 
 const HeroAssociation = () => {
   return (
