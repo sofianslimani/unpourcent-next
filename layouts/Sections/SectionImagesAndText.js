@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 function SectionImagesAndText({
   data,
@@ -6,13 +6,6 @@ function SectionImagesAndText({
   customClasses,
   inverse,
 }) {
-  const [content, setContent] = useState({});
-  useEffect(() => {
-    if (data) {
-      setContent(data);
-    }
-  }, [data]);
-
   return (
     <section
       className={`section-images-and-text container-l ${
@@ -26,22 +19,22 @@ function SectionImagesAndText({
       >
         <div
           className={`section-images-and-text-container-img ${
-            content.isGrid ? "grid " : " "
+            data.isGrid ? "grid " : " "
           }`}
         >
-          {content.isGrid
-            ? content.images.map((itemImg, index) => {
+          {data.isGrid
+            ? data.images.map((itemImg, index) => {
                 return <img className="item-img" key={index} src={itemImg} />;
               })
-            : content.images &&
-              content.images[0] && (
-                <img className="item-img" src={content.images[0]} />
+            : data.images &&
+              data.images[0] && (
+                <img className="item-img" src={data.images[0]} />
               )}
         </div>
         <div className="section-images-and-text-container-text">
-          {content.title}
-          <p className="text-16 color-black regular">{content.text}</p>
-          {content.cta}
+          {data.title}
+          <p className="text-16 color-black regular">{data.text}</p>
+          {data.cta}
         </div>
       </aside>
     </section>
