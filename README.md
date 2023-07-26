@@ -27,8 +27,61 @@ cd mon_projet_next
 npm install
 ```
 
+4. Variable d'environnement dans le fichier :
+
+Créer le fichier de variable :
+
+```bash
+.env.local
+```
+
+Remplir le fichier avec les variables suivantes :
+
+```bash
+NEXT_PUBLIC_AIRTABLE_API_KEY
+NEXT_PUBLIC_AIRTABLE_BASE_ID
+NEXT_PUBLIC_AIRTABLE_TABLE_NAME_CONTACT
+NEXT_PUBLIC_AIRTABLE_TABLE_NAME_NEWSLETTER
+```
+
 3. Lancer l'application :
 
 ```bash
 npm run dev
+```
+
+## Développement
+
+### Bonnes pratiques
+
+Branche "develop" pour les nouvelles features à merge
+
+Branche "main" pour le déploiement Vercel
+
+### Création de branche
+
+```bash
+prénom/nomfeature
+```
+
+### Commit :
+
+```bash
+[nombranche][fix-design-feature]:description de la tache
+```
+
+#### Exemple :
+
+Je dois crée une branche pour une feature de login :
+
+Nom de la branche :
+
+```bash
+axel/login
+```
+
+Exemple de commit :
+
+```bash
+   [axel/login][feature]:Ajout de systeme de connexion par token
 ```
