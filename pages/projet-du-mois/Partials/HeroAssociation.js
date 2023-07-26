@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const HeroAssociation = () => {
   return (
@@ -14,7 +14,7 @@ const HeroAssociation = () => {
           src="/logos/amatullah.svg"
           alt="amatullah logo"
         />
-        <h1 className={"bold"}>Association Amatullah</h1>
+        <h1 className={'bold'}>Association Amatullah</h1>
         <p>
           Humanitaire <span>·</span> Depuis 2008 <span>·</span> Association
         </p>

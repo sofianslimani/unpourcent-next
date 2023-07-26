@@ -1,8 +1,8 @@
-import "../styles/main.scss";
-import Header from "../layouts/Header/Header.js";
-import Footer from "../layouts/Footer/Footer";
-import Head from "next/head";
-import { motion, AnimatePresence } from "framer-motion";
+import '../styles/main.scss';
+import Header from '../layouts/Header/Header.js';
+import Footer from '../layouts/Footer/Footer';
+import Head from 'next/head';
+import { motion, AnimatePresence } from 'framer-motion';
 
 function MyApp({ Component, pageProps, router }) {
   return (
