@@ -1294,6 +1294,7 @@ span.green {
   background-color: white;
   border-radius: 10px;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.05);
+  position: relative;
 }
 .home-three-cards-informations-container .card-item.secondary {
   color: #ff667a;
@@ -1334,6 +1335,13 @@ span.green {
   .card-item-container-picto::after {
   background: #6ab938;
 }
+.home-three-cards-informations-container .card-item img {
+  width: 25px !important;
+  height: 25px !important;
+  top: 45% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%);
+}
 @media (max-width: 1024px) {
   .home-three-cards-informations-container .card-item {
     width: 100%;
@@ -1350,7 +1358,7 @@ span.green {
   padding: 20px;
 }
 .home-three-cards-informations-container .card-item-container-picto {
-  padding: 30px;
+  padding: 35px;
   box-sizing: border-box;
   width: fit-content;
   border-radius: 100px;

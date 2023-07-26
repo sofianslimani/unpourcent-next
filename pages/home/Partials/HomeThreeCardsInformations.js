@@ -28,7 +28,7 @@ function HomeThreeCardsInformations() {
         <div className="card-item green">
           <div className="card-item-container">
             <div className="card-item-container-picto hearth">
-              <img src="/icons/card.svg" />
+              <Image fill={true} alt={"hearth"} src="/icons/card.svg" />
             </div>
             <div className="cards-item-container-title">
               <h4 className="text-20 color-green bold">
@@ -48,7 +48,7 @@ function HomeThreeCardsInformations() {
         <div className="card-item primary">
           <div className="card-item-container">
             <div className="card-item-container-picto hearth">
-              <img src="/icons/desktop.svg" />
+              <Image fill={true} alt={"hearth"} src="/icons/desktop.svg" />
             </div>
             <div className="cards-item-container-title">
               <h4 className="text-20 color-primary bold">

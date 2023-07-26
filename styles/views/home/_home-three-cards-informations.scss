@@ -40,6 +40,14 @@
       background-color: white;
       border-radius: 10px;
       box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.05);
+      position: relative;
+      img {
+        width: 25px !important;
+        height: 25px !important;
+        top: 45% !important;
+        left: 50% !important;
+        transform: translate(-50%, -50%);
+      }
       @include tablet {
         width: 100%;
         height: auto;
@@ -53,7 +61,7 @@
         gap: 20px;
         padding: 20px;
         &-picto {
-          padding: 30px;
+          padding: 35px;
           box-sizing: border-box;
           width: fit-content;
           border-radius: 100px;
