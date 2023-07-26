@@ -1,5 +1,5 @@
 import React from "react";
 
-export const MaxWidth = ({ children }) => {
+export function MaxWidth({ children }) {
   return <div className="max-width">{children}</div>;
-};
+}

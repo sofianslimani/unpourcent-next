@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
-
-const SocialSection = () => {
+import Image from "next/image";
+function SocialSection() {
   return (
     <section className="social-section container-s">
       <h2>
@@ -9,33 +9,56 @@ const SocialSection = () => {
       </h2>
       <div className="socials__cards">
         <Link
-          href="https://twitter.com/amatullah_fr?lang=fr"
           className="socials__card socials__card--twitter"
+          href="https://twitter.com/amatullah_fr?lang=fr"
         >
-          <img src="/socials/twitter.svg" alt="twitter" /> <h3>Twitter</h3>
+          <Image
+            width={40}
+            height={40}
+            alt="twitter"
+            src="/socials/twitter.svg"
+          />{" "}
+          <h3>Twitter</h3>
         </Link>
         <Link
-          href="https://www.facebook.com/ASSOCIATION.AMATULLAH/?locale=fr_FR"
           className="socials__card socials__card--facebook"
+          href="https://www.facebook.com/ASSOCIATION.AMATULLAH/?locale=fr_FR"
         >
-          <img src="/socials/facebook.svg" alt="facebook" /> <h3>Facebook</h3>
+          <Image
+            width={40}
+            height={40}
+            alt="facebook"
+            src="/socials/facebook.svg"
+          />{" "}
+          <h3>Facebook</h3>
         </Link>
         <Link
-          href="https://www.instagram.com/association_amatullah/?hl=fr"
           className="socials__card socials__card--instagram"
+          href="https://www.instagram.com/association_amatullah/?hl=fr"
         >
-          <img src="/socials/instagram.svg" alt="instagram" />
+          <Image
+            width={40}
+            height={40}
+            alt="instagram"
+            src="/socials/instagram.svg"
+          />{" "}
           <h3>Instagram</h3>
         </Link>
         <Link
-          href="https://www.linkedin.com/company/amatullah-au-service-de-l-humanité/"
           className="socials__card socials__card--linkedin"
+          href="https://www.linkedin.com/company/amatullah-au-service-de-l-humanité/"
         >
-          <img src="/socials/linkedin.svg" alt="linkedin" /> <h3>Linkedin</h3>
+          <Image
+            width={40}
+            height={40}
+            alt="linkedin"
+            src="/socials/linkedin.svg"
+          />
+          <h3>Linkedin</h3>
         </Link>
       </div>
     </section>
   );
-};
+}
 
 export default SocialSection;

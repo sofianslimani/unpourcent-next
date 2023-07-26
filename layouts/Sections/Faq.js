@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import classnames from "classnames";
+import Image from "next/image";
 
 const FAQ_INDEX_ATTRIBUTE_NAME = "faq-index";
 
-const Faq = () => {
+function Faq() {
   const [faqIndex, setFaqIndex] = useState(null);
 
   const handleClick = (index, event) => {
@@ -34,15 +35,11 @@ const Faq = () => {
   const halfLength = Math.ceil(items.length / 2);
 
   const renderFaqItem = (item, index) => (
-    <div className={"faq-container-bottom-wrapper-content-item"} key={index}>
-      <div className={"faq-container-bottom-wrapper-content-item-header"}>
-        <div
-          className={"faq-container-bottom-wrapper-content-item-header-title"}
-        >
+    <div className="faq-container-bottom-wrapper-content-item" key={index}>
+      <div className="faq-container-bottom-wrapper-content-item-header">
+        <div className="faq-container-bottom-wrapper-content-item-header-title">
           <button
-            className={
-              "faq-container-bottom-wrapper-content-item-header-title-link text-16"
-            }
+            className="faq-container-bottom-wrapper-content-item-header-title-link text-16"
             onClick={(event) => handleClick(index, event)}
             {...{
               [FAQ_INDEX_ATTRIBUTE_NAME]: index,
@@ -51,22 +48,28 @@ const Faq = () => {
             {item.question}
           </button>
         </div>
-        <div
-          className={"faq-container-bottom-wrapper-content-item-header-icon"}
-        >
+        <div className="faq-container-bottom-wrapper-content-item-header-icon">
           {index === faqIndex ? (
-            <img src="./icons/arrow-bottom.svg" />
+            <Image
+              width={30}
+              height={30}
+              alt={"arrow-bottom"}
+              src="./icons/arrow-bottom.svg"
+            />
           ) : (
-            <img src="./icons/arrow-right.svg" />
+            <Image
+              width={30}
+              height={30}
+              alt={"arrow-right"}
+              src="./icons/arrow-right.svg"
+            />
           )}
         </div>
       </div>
       <motion.div
-        initial={{ height: 0 }}
         animate={{
           height: index === faqIndex ? "auto" : 0,
         }}
-        transition={{ duration: 0.3, ease: "easeOut" }}
         className={classnames(
           "faq-container-bottom-wrapper-content-item-content",
           {
@@ -74,6 +77,8 @@ const Faq = () => {
               index === faqIndex,
           },
         )}
+        initial={{ height: 0 }}
+        transition={{ duration: 0.3, ease: "easeOut" }}
       >
         <div style={{ paddingBottom: "16px" }}>
           <div>
@@ -85,24 +90,24 @@ const Faq = () => {
   );
 
   return (
-    <section className={"faq container-s"}>
-      <div className={"faq-container"}>
-        <div className={"faq-container-top"}>
-          <h2 className={"bold"}>FAQ</h2>
-          <p className={"bold"}>Nous répondons à toutes vos questions</p>
+    <section className="faq container-s">
+      <div className="faq-container">
+        <div className="faq-container-top">
+          <h2 className="bold">FAQ</h2>
+          <p className="bold">Nous répondons à toutes vos questions</p>
         </div>
-        <div className={"faq-container-bottom"}>
+        <div className="faq-container-bottom">
           <motion.div
-            initial={{ height: 0 }}
             animate={{ height: "auto" }}
+            className="faq-container-bottom-wrapper"
+            initial={{ height: 0 }}
             transition={{ duration: 0.3, ease: "easeOut" }}
-            className={"faq-container-bottom-wrapper"}
           >
-            <div className={"faq-container-bottom-wrapper-content"}>
+            <div className="faq-container-bottom-wrapper-content">
               {items.slice(0, halfLength).map(renderFaqItem)}
             </div>
 
-            <div className={"faq-container-bottom-wrapper-content"}>
+            <div className="faq-container-bottom-wrapper-content">
               {items
                 .slice(halfLength)
                 .map((item, index) => renderFaqItem(item, index + halfLength))}
@@ -112,6 +117,6 @@ const Faq = () => {
       </div>
     </section>
   );
-};
+}
 
 export default Faq;

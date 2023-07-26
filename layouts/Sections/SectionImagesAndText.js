@@ -1,55 +1,57 @@
-import React, { useEffect, useState } from "react";
-
-const SectionImagesAndText = ({
+import React from "react";
+import Image from "next/image";
+function SectionImagesAndText({
   data,
   greyBackground,
   customClasses,
   inverse,
-}) => {
-  const [content, setContent] = useState({});
-
-  useEffect(() => {
-    if (data) {
-      setContent(data);
-    }
-  }, []);
-
+}) {
   return (
     <section
-      className={
-        "section-images-and-text container-l " +
-        (greyBackground ? "grey-background " : "") +
-        (customClasses ? customClasses : " ")
-      }
+      className={`section-images-and-text container-l ${
+        greyBackground ? "grey-background " : ""
+      }${customClasses ? customClasses : " "}`}
     >
       <aside
-        className={
-          "section-images-and-text-container" + (inverse ? " inverse" : " ")
-        }
+        className={`section-images-and-text-container${
+          inverse ? " inverse" : " "
+        }`}
       >
         <div
-          className={
-            `section-images-and-text-container-img ` +
-            (content.isGrid ? "grid " : " ")
-          }
+          className={`section-images-and-text-container-img ${
+            data.isGrid ? "grid " : " "
+          }`}
         >
-          {content.isGrid
-            ? content.images.map((itemImg, index) => {
-                return <img className={"item-img"} key={index} src={itemImg} />;
+          {data.isGrid
+            ? data.images.map((itemImg, index) => {
+                return (
+                  <Image
+                    fill={true}
+                    className="item-img"
+                    key={index}
+                    src={itemImg}
+                    alt={itemImg}
+                  />
+                );
               })
-            : content.images &&
-              content.images[0] && (
-                <img className={"item-img"} src={content.images[0]} />
+            : data.images &&
+              data.images[0] && (
+                <Image
+                  alt={data.images[0]}
+                  fill={true}
+                  className="item-img"
+                  src={data.images[0]}
+                />
               )}
         </div>
-        <div className={"section-images-and-text-container-text"}>
-          {content.title}
-          <p className={"text-16 color-black regular"}>{content.text}</p>
-          {content.cta}
+        <div className="section-images-and-text-container-text">
+          {data.title}
+          <p className="text-16 color-black regular">{data.text}</p>
+          {data.cta}
         </div>
       </aside>
     </section>
   );
-};
+}
 
 export default SectionImagesAndText;

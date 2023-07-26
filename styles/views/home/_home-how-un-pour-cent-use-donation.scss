@@ -6,7 +6,6 @@
       position: absolute;
       top: -20%;
       right: -10%;
-
       @include tablet {
         display: none;
       }
@@ -16,6 +15,7 @@
       position: absolute;
       bottom: -18%;
       left: -3%;
+      z-index: 9999;
       @include tablet {
         display: none;
       }

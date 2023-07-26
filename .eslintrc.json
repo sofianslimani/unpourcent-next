@@ -1,0 +1,16 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": ["next", "eslint:recommended"],
+  "parserOptions": {
+    "ecmaVersion": 2021,
+    "sourceType": "module"
+  },
+  "rules": {
+    "react/react-in-jsx-scope": "off", // Cette règle est inutile avec Next.js
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }] // Permet les dépendances de développement
+    // Ajoutez d'autres règles spécifiques à votre projet si nécessaire
+  }
+}

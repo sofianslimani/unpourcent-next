@@ -50,6 +50,7 @@
           object-fit: cover;
         }
       }
+      height: 50vh;
       &.grid {
         width: 50%;
         @include tablet {
