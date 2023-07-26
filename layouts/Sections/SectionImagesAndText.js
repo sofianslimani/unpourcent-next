@@ -7,12 +7,11 @@ const SectionImagesAndText = ({
   inverse,
 }) => {
   const [content, setContent] = useState({});
-
   useEffect(() => {
     if (data) {
       setContent(data);
     }
-  }, []);
+  }, [data]);
 
   return (
     <section

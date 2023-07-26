@@ -157,6 +157,7 @@
 
     &-left {
       &-logo {
+        position: relative;
         @include tablet {
           img {
             width: 45px;

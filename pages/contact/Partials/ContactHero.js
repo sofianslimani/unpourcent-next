@@ -10,7 +10,7 @@ const ContactHero = () => {
           </h1>
           <p className="text-16 regular color-white">
             Bonjour à toutes les associations et donateurs engagés ! Vous êtes
-            sur la page de contact d'Un Pour Cent, un espace où les cœurs
+            sur la page de contact d&apos;Un Pour Cent, un espace où les cœurs
             généreux se rencontrent. Que vous soyez une association passionnée
             ou un donateur prêt à faire une différence, nous sommes là pour
             vous.

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
-
+import Image from "next/image";
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -17,7 +17,7 @@ const Header = () => {
         <div className={"header-container-left"}>
           <div className={"header-container-left-logo"}>
             <Link href="/">
-              <img src="/logos/logo.svg" alt="logo" />
+              <Image width={40} height={40} src="/logos/logo.svg" alt="logo" />
             </Link>
           </div>
           <nav className={"header-container-left-nav"}>

@@ -18,7 +18,7 @@ const ProjectOfTheMonth = () => {
     isGrid: true,
     title: (
       <h2 className="text-30 color-black bold">
-        L'association du moment <span className="red">Amatullah</span>
+        L&apos;association du moment <span className="red">Amatullah</span>
       </h2>
     ),
     text: "Amatullah, fondée par une jeune femme en quête de justice et d'égalité sociale, est une association humanitaire engagée depuis 2006 pour soutenir les plus démunis en France et à l'international. Depuis sa création, Amatullah s'engage à fournir une assistance aux personnes en situation précaire en offrant des repas, des colis alimentaires aux familles et une présence réconfortante aux personnes touchées par la solitude. Aujourd'hui, l'association étend ses actions à travers le monde grâce à des projets humanitaires visant à combattre la précarité, les injustices et les inégalités.",

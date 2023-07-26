@@ -11,8 +11,8 @@ const HomeHero = () => {
               "home-hero-container-left-title color-white black text-38"
             }
           >
-            Avec un pour cent, soutenez des projets humanitaires jusqu'à leurs
-            réalisations
+            Avec un pour cent, soutenez des projets humanitaires jusqu&apos;à
+            leurs réalisations
           </h1>
           <p className={"text-16 regular color-white"}>
             Bienvenue sur Un Pour Cent, la plateforme qui met en avant chaque

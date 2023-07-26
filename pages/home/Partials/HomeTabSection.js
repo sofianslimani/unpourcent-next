@@ -8,7 +8,7 @@ const HomeTabSection = ({ data, title }) => {
     if (data) {
       setContent(data);
     }
-  }, []);
+  }, [data]);
 
   return (
     <section className={"home-tab"}>

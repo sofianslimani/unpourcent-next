@@ -945,6 +945,9 @@ span.green {
   margin-right: 6px;
   height: 20px;
 }
+.header-container-left-logo {
+  position: relative;
+}
 @media (max-width: 1024px) {
   .header-container-left-logo img {
     width: 45px;

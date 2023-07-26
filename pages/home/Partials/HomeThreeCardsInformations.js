@@ -17,8 +17,9 @@ const HomeThreeCardsInformations = () => {
             <div className={"cards-item-container-paragraph"}>
               <p className={"color-black regular text-16"}>
                 Découvrez chaque mois un nouveau projet associatif. Nous vous
-                présentons l'association et son projet en détail pour que vous
-                puissiez comprendre l'impact que votre donation peut avoir.
+                présentons l&apos;association et son projet en détail pour que
+                vous puissiez comprendre l&apos;impact que votre donation peut
+                avoir.
               </p>
             </div>
           </div>
@@ -50,15 +51,15 @@ const HomeThreeCardsInformations = () => {
             </div>
             <div className={"cards-item-container-title"}>
               <h4 className={"text-20 color-primary bold"}>
-                Suivez l'impact de votre don
+                Suivez l&apos;impact de votre don
               </h4>
             </div>
             <div className={"cards-item-container-paragraph"}>
               <p className={"color-black regular text-16"}>
-                Nous vous informons régulièrement de l'impact positif de votre
-                donation avec des témoignages et des photos des bénéficiaires.
-                Ensemble, nous pouvons faire une différence significative dans
-                la vie de ceux qui ont besoin d'aide.
+                Nous vous informons régulièrement de l&apos;impact positif de
+                votre donation avec des témoignages et des photos des
+                bénéficiaires. Ensemble, nous pouvons faire une différence
+                significative dans la vie de ceux qui ont besoin d&apos;aide.
               </p>
             </div>
           </div>
