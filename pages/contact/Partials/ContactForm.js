@@ -5,6 +5,7 @@ import dotenv from "dotenv";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import * as Yup from "yup";
+import Image from "next/image";
 
 dotenv.config();
 
@@ -61,18 +62,13 @@ function ContactForm() {
     <section className="contact-form container-l">
       <div className="contact-form-container">
         <div className="contact-form-container-left">
-          <img
+          <Image
+            fill={true}
             alt="illustration"
-            src="./illustrations/form-contact-1pourcent-2.png"
+            src="/illustrations/form-contact-1pourcent-2.png"
           />
         </div>
         <div className="contact-form-container-right">
-          {/* <div className="contact-form-container-right-top">
-              <h2 className={'bold'}>Nous contacter</h2>
-              <p>
-              Bonjour à toutes les associations et donateurs engagés ! Vous êtes sur la page de contact d'Un Pour Cent, un espace où les cœurs généreux se rencontrent. Que vous soyez une association passionnée ou un donateur prêt à faire une différence, nous sommes là pour vous.
-              </p>
-            </div> */}
           <div className="contact-form-container-right-bottom">
             <form onSubmit={contactForm.handleSubmit}>
               <div className="contact-form-container-right-bottom-inputs">

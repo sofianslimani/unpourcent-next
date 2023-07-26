@@ -1461,9 +1461,9 @@ span.green {
 .contact-hero-container-right {
   position: absolute;
   right: 0;
-  top: 0;
+  top: 0 !important;
   width: 100%;
-  height: 303px;
+  height: 303px !important;
 }
 @media (max-width: 1356px) {
   .contact-hero-container-right {
@@ -1502,6 +1502,7 @@ span.green {
   }
 }
 .contact-form-container-left {
+  position: relative;
   width: 100%;
   height: 100%;
   text-align: center;

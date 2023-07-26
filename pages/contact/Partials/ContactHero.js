@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 function ContactHero() {
   return (
@@ -17,7 +18,11 @@ function ContactHero() {
           </p>
         </div>
         <div className="contact-hero-container-right">
-          <img alt="hero" src="./illustrations/hero-contact-1pourcent-2.png" />
+          <Image
+            fill={true}
+            alt="hero"
+            src="/illustrations/hero-contact-1pourcent-2.png"
+          />
         </div>
       </div>
     </section>

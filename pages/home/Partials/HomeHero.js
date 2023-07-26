@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import Image from "next/image";
 
 function HomeHero() {
   return (
@@ -27,7 +28,11 @@ function HomeHero() {
           </div>
         </div>
         <div className="home-hero-container-right">
-          <img alt="hero" src="./illustrations/hero-1pourcent.svg" />
+          <Image
+            fill={true}
+            alt="hero"
+            src="./illustrations/hero-1pourcent.svg"
+          />
         </div>
       </div>
     </section>

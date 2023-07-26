@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 function HomeThreeCardsInformations() {
   return (
@@ -7,7 +8,7 @@ function HomeThreeCardsInformations() {
         <div className="card-item secondary">
           <div className="card-item-container">
             <div className="card-item-container-picto hearth">
-              <img src="/icons/hearth.svg" />
+              <Image fill={true} alt={"hearth"} src="/icons/hearth.svg" />
             </div>
             <div className="cards-item-container-title">
               <h4 className="text-20 color-secondary bold">

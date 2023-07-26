@@ -26,9 +26,9 @@ function ProjectOfTheMonth() {
       ),
       text: "Amatullah, fondée par une jeune femme en quête de justice et d'égalité sociale, est une association humanitaire engagée depuis 2006 pour soutenir les plus démunis en France et à l'international. Depuis sa création, Amatullah s'engage à fournir une assistance aux personnes en situation précaire en offrant des repas, des colis alimentaires aux familles et une présence réconfortante aux personnes touchées par la solitude. Aujourd'hui, l'association étend ses actions à travers le monde grâce à des projets humanitaires visant à combattre la précarité, les injustices et les inégalités.",
       images: [
-        "images/amatullah/amatullah-1.png",
-        "images/amatullah/amatullah-2.png",
-        "images/amatullah/amatullah-3.png",
+        "/images/amatullah/amatullah-1.png",
+        "/images/amatullah/amatullah-2.png",
+        "/images/amatullah/amatullah-3.png",
       ],
     });
   }, []);
@@ -50,9 +50,9 @@ function ProjectOfTheMonth() {
       ),
       text: "Amatullah en 2022 c'est 47 566 repas distribués, 4 943 colis alimentaires distribués dans le but de venir en aide aux plus démunis en leur offrant notamment des repas de qualité, des colis alimentaires ainsi qu’une présence bienveillante et une oreille attentive. Tous les fonds récoltés durant cette période permettront de financer ce projet et de nourrir des familles.",
       images: [
-        "images/amatullah/amatullah-4.jpg",
-        "images/amatullah/amatullah-5.jpg",
-        "images/amatullah/amatullah-6.jpg",
+        "/images/amatullah/amatullah-4.jpg",
+        "/images/amatullah/amatullah-5.jpg",
+        "/images/amatullah/amatullah-6.jpg",
       ],
     });
   }, []);
