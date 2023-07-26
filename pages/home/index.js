@@ -37,7 +37,7 @@ function HomePage() {
         "images/amatullah/amatullah-3.png",
       ],
     });
-  }, [dataSectionGrid]);
+  }, []);
 
   const [dataSectionClassic, setDataSectionClassic] = useState({});
 
@@ -53,7 +53,7 @@ function HomePage() {
       text: "Chaque don effectué à Un Pour Cent est intégralement utilisé pour financer le projet mis en avant. Votre contribution a un impact direct et significatif dans la réalisation des objectifs du projet sélectionné. Votre soutien fait une réelle différence dans la vie des personnes qui ont besoin d'aide. Votre confiance est précieuse pour nous, et nous nous engageons à gérer vos dons de manière responsable et efficiente. Merci de votre précieux soutien !",
       images: ["images/joel-muniz-A4Ax1ApccfA-unsplash 2.png"],
     });
-  }, [setDataSectionClassic]);
+  }, []);
 
   return (
     <>

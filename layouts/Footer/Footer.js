@@ -8,7 +8,6 @@ import "react-toastify/dist/ReactToastify.css";
 import * as Yup from "yup";
 
 dotenv.config();
-
 const ICONS = {
   plane: (
     <svg

@@ -31,7 +31,7 @@ function ProjectOfTheMonth() {
         "images/amatullah/amatullah-3.png",
       ],
     });
-  }, [dataSectionGrid]);
+  }, []);
 
   const [dataSectionGridTwo, setDataSectionGridTwo] = useState({});
 
@@ -55,7 +55,7 @@ function ProjectOfTheMonth() {
         "images/amatullah/amatullah-6.jpg",
       ],
     });
-  }, [dataSectionGridTwo]);
+  }, []);
 
   return (
     <>
