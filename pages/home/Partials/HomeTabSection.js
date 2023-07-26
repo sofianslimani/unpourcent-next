@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
 
-const HomeTabSection = ({ data }) => {
+function HomeTabSection({ data }) {
   const [content, setContent] = useState([]);
 
   useEffect(() => {
@@ -10,10 +10,10 @@ const HomeTabSection = ({ data }) => {
   }, [data]);
 
   return (
-    <section className={'home-tab'}>
-      <aside className={'home-tab-container'}>
-        <div className={'home-tab-container-text'}></div>
-        <div className={'home-tab-container-listing'}>
+    <section className="home-tab">
+      <aside className="home-tab-container">
+        <div className="home-tab-container-text" />
+        <div className="home-tab-container-listing">
           {content.map((item, index) => {
             return <div key={index}>{item.title}</div>;
           })}
@@ -21,6 +21,6 @@ const HomeTabSection = ({ data }) => {
       </aside>
     </section>
   );
-};
+}
 
 export default HomeTabSection;

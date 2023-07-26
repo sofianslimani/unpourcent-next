@@ -1,16 +1,14 @@
 {
   "private": true,
   "scripts": {
-    "build": "next build",
     "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,css,scss,md}\"",
-    "lint": "eslint . --fix --ext .js",
     "prepare": "husky install",
-    "start": "next start"
+    "lint": "eslint . --fix --ext .js"
   },
-  "prettier": "@vercel/style-guide/prettier",
   "dependencies": {
-    "@vercel/style-guide": "^4.0.2",
     "airtable": "^0.12.1",
     "classnames": "^2.3.2",
     "dotenv": "^16.3.1",

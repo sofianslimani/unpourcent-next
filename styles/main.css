@@ -125,7 +125,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 
@@ -239,11 +239,11 @@ html::selection {
 
 */
 @font-face {
-  font-family: 'Satoshi-Variable';
+  font-family: "Satoshi-Variable";
   src:
-    url('../../public/font-faces/Satoshi-Variable.woff2') format('woff2'),
-    url('../../public/font-faces/Satoshi-Variable.woff') format('woff'),
-    url('../../public/font-faces/Satoshi-Variable.ttf') format('truetype');
+    url("../../public/font-faces/Satoshi-Variable.woff2") format("woff2"),
+    url("../../public/font-faces/Satoshi-Variable.woff") format("woff"),
+    url("../../public/font-faces/Satoshi-Variable.ttf") format("truetype");
   font-weight: 300 900;
   font-display: swap;
   font-style: normal;
@@ -259,111 +259,111 @@ html::selection {
 
 */
 @font-face {
-  font-family: 'Satoshi-VariableItalic';
+  font-family: "Satoshi-VariableItalic";
   src:
-    url('../../public/font-faces/Satoshi-VariableItalic.woff2') format('woff2'),
-    url('../../public/font-faces/Satoshi-VariableItalic.woff') format('woff'),
-    url('../../public/font-faces/Satoshi-VariableItalic.ttf') format('truetype');
+    url("../../public/font-faces/Satoshi-VariableItalic.woff2") format("woff2"),
+    url("../../public/font-faces/Satoshi-VariableItalic.woff") format("woff"),
+    url("../../public/font-faces/Satoshi-VariableItalic.ttf") format("truetype");
   font-weight: 300 900;
   font-display: swap;
   font-style: italic;
 }
 @font-face {
-  font-family: 'Satoshi-Light';
+  font-family: "Satoshi-Light";
   src:
-    url('../../public/font-faces/Satoshi-Light.woff2') format('woff2'),
-    url('../../public/font-faces/Satoshi-Light.woff') format('woff'),
-    url('../../public/font-faces/Satoshi-Light.ttf') format('truetype');
+    url("../../public/font-faces/Satoshi-Light.woff2") format("woff2"),
+    url("../../public/font-faces/Satoshi-Light.woff") format("woff"),
+    url("../../public/font-faces/Satoshi-Light.ttf") format("truetype");
   font-weight: 300;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Satoshi-LightItalic';
+  font-family: "Satoshi-LightItalic";
   src:
-    url('../../public/font-faces/Satoshi-LightItalic.woff2') format('woff2'),
-    url('../../public/font-faces/Satoshi-LightItalic.woff') format('woff'),
-    url('../../public/font-faces/Satoshi-LightItalic.ttf') format('truetype');
+    url("../../public/font-faces/Satoshi-LightItalic.woff2") format("woff2"),
+    url("../../public/font-faces/Satoshi-LightItalic.woff") format("woff"),
+    url("../../public/font-faces/Satoshi-LightItalic.ttf") format("truetype");
   font-weight: 300;
   font-display: swap;
   font-style: italic;
 }
 @font-face {
-  font-family: 'Satoshi-Regular';
+  font-family: "Satoshi-Regular";
   src:
-    url('../../public/font-faces/Satoshi-Regular.woff2') format('woff2'),
-    url('../../public/font-faces/Satoshi-Regular.woff') format('woff'),
-    url('../../public/font-faces/Satoshi-Regular.ttf') format('truetype');
+    url("../../public/font-faces/Satoshi-Regular.woff2") format("woff2"),
+    url("../../public/font-faces/Satoshi-Regular.woff") format("woff"),
+    url("../../public/font-faces/Satoshi-Regular.ttf") format("truetype");
   font-weight: 400;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Satoshi-Italic';
+  font-family: "Satoshi-Italic";
   src:
-    url('../../public/font-faces/Satoshi-Italic.woff2') format('woff2'),
-    url('../../public/font-faces/Satoshi-Italic.woff') format('woff'),
-    url('../../public/font-faces/Satoshi-Italic.ttf') format('truetype');
+    url("../../public/font-faces/Satoshi-Italic.woff2") format("woff2"),
+    url("../../public/font-faces/Satoshi-Italic.woff") format("woff"),
+    url("../../public/font-faces/Satoshi-Italic.ttf") format("truetype");
   font-weight: 400;
   font-display: swap;
   font-style: italic;
 }
 @font-face {
-  font-family: 'Satoshi-Medium';
+  font-family: "Satoshi-Medium";
   src:
-    url('../../public/font-faces/Satoshi-Medium.woff2') format('woff2'),
-    url('../../public/font-faces/Satoshi-Medium.woff') format('woff'),
-    url('../../public/font-faces/Satoshi-Medium.ttf') format('truetype');
+    url("../../public/font-faces/Satoshi-Medium.woff2") format("woff2"),
+    url("../../public/font-faces/Satoshi-Medium.woff") format("woff"),
+    url("../../public/font-faces/Satoshi-Medium.ttf") format("truetype");
   font-weight: 500;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Satoshi-MediumItalic';
+  font-family: "Satoshi-MediumItalic";
   src:
-    url('../../public/font-faces/Satoshi-MediumItalic.woff2') format('woff2'),
-    url('../../public/font-faces/Satoshi-MediumItalic.woff') format('woff'),
-    url('../../public/font-faces/Satoshi-MediumItalic.ttf') format('truetype');
+    url("../../public/font-faces/Satoshi-MediumItalic.woff2") format("woff2"),
+    url("../../public/font-faces/Satoshi-MediumItalic.woff") format("woff"),
+    url("../../public/font-faces/Satoshi-MediumItalic.ttf") format("truetype");
   font-weight: 500;
   font-display: swap;
   font-style: italic;
 }
 @font-face {
-  font-family: 'Satoshi-Bold';
+  font-family: "Satoshi-Bold";
   src:
-    url('../../public/font-faces/Satoshi-Bold.woff2') format('woff2'),
-    url('../../public/font-faces/Satoshi-Bold.woff') format('woff'),
-    url('../../public/font-faces/Satoshi-Bold.ttf') format('truetype');
+    url("../../public/font-faces/Satoshi-Bold.woff2") format("woff2"),
+    url("../../public/font-faces/Satoshi-Bold.woff") format("woff"),
+    url("../../public/font-faces/Satoshi-Bold.ttf") format("truetype");
   font-weight: 700;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Satoshi-BoldItalic';
+  font-family: "Satoshi-BoldItalic";
   src:
-    url('../../public/font-faces/Satoshi-BoldItalic.woff2') format('woff2'),
-    url('../../public/font-faces/Satoshi-BoldItalic.woff') format('woff'),
-    url('../../public/font-faces/Satoshi-BoldItalic.ttf') format('truetype');
+    url("../../public/font-faces/Satoshi-BoldItalic.woff2") format("woff2"),
+    url("../../public/font-faces/Satoshi-BoldItalic.woff") format("woff"),
+    url("../../public/font-faces/Satoshi-BoldItalic.ttf") format("truetype");
   font-weight: 700;
   font-display: swap;
   font-style: italic;
 }
 @font-face {
-  font-family: 'Satoshi-Black';
+  font-family: "Satoshi-Black";
   src:
-    url('../../public/font-faces/Satoshi-Black.woff2') format('woff2'),
-    url('../../public/font-faces/Satoshi-Black.woff') format('woff'),
-    url('../../public/font-faces/Satoshi-Black.ttf') format('truetype');
+    url("../../public/font-faces/Satoshi-Black.woff2") format("woff2"),
+    url("../../public/font-faces/Satoshi-Black.woff") format("woff"),
+    url("../../public/font-faces/Satoshi-Black.ttf") format("truetype");
   font-weight: 900;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Satoshi-BlackItalic';
+  font-family: "Satoshi-BlackItalic";
   src:
-    url('../../public/font-faces/Satoshi-BlackItalic.woff2') format('woff2'),
-    url('../../public/font-faces/Satoshi-BlackItalic.woff') format('woff'),
-    url('../../public/font-faces/Satoshi-BlackItalic.ttf') format('truetype');
+    url("../../public/font-faces/Satoshi-BlackItalic.woff2") format("woff2"),
+    url("../../public/font-faces/Satoshi-BlackItalic.woff") format("woff"),
+    url("../../public/font-faces/Satoshi-BlackItalic.ttf") format("truetype");
   font-weight: 900;
   font-display: swap;
   font-style: italic;
@@ -396,31 +396,31 @@ html::selection {
 }
 
 .light {
-  font-family: 'Satoshi-Light';
+  font-family: "Satoshi-Light";
 }
 
 .medium {
-  font-family: 'Satoshi-Medium';
+  font-family: "Satoshi-Medium";
 }
 
 .regular,
 .footer-container > div ul li,
 .footer-container > div ul a,
 .input-custom {
-  font-family: 'Satoshi-Regular';
+  font-family: "Satoshi-Regular";
 }
 
 .italic {
-  font-family: 'Satoshi-Italic';
+  font-family: "Satoshi-Italic";
 }
 
 .bold,
 .header .mobile-menu-container-nav-list-item a {
-  font-family: 'Satoshi-Bold';
+  font-family: "Satoshi-Bold";
 }
 
 .black {
-  font-family: 'Satoshi-Black';
+  font-family: "Satoshi-Black";
 }
 
 .text-38 {
@@ -474,7 +474,7 @@ span.green {
   background: #ffffff;
   color: #4685ff;
   font-size: 16px;
-  font-family: 'Satoshi-Bold';
+  font-family: "Satoshi-Bold";
   border: none;
   border-radius: 100px;
 }
@@ -484,7 +484,7 @@ span.green {
   background-color: #ff667a;
   color: #ffffff;
   font-size: 16px;
-  font-family: 'Satoshi-Bold';
+  font-family: "Satoshi-Bold";
   border: none;
   border-radius: 100px;
   color: white !important;
@@ -499,7 +499,7 @@ span.green {
   background: #4685ff;
   color: #ffffff;
   font-size: 16px;
-  font-family: 'Satoshi-Bold';
+  font-family: "Satoshi-Bold";
   border: none;
   border-radius: 8.44211px;
 }
@@ -622,13 +622,13 @@ span.green {
   line-height: 47px;
 }
 .hero-association .hero-association__content p {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: white;
   font-weight: 400;
   font-size: 13px;
 }
 .hero-association .hero-association__content p span {
-  font-family: 'Satoshi-Black', sans-serif;
+  font-family: "Satoshi-Black", sans-serif;
   font-weight: 700;
   padding: 0 12px;
 }
@@ -642,7 +642,7 @@ span.green {
 .social-section h2 {
   text-align: center;
   color: #252525;
-  font-family: 'Satoshi', sans-serif;
+  font-family: "Satoshi", sans-serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 52px;
@@ -698,7 +698,7 @@ span.green {
   background: #007ebb;
 }
 .social-section .socials__cards .socials__card h3 {
-  font-family: 'Satoshi', sans-serif;
+  font-family: "Satoshi", sans-serif;
   color: white;
   font-weight: 700;
   font-size: 30px;
@@ -717,7 +717,7 @@ span.green {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: 'Satoshi', sans-serif;
+  font-family: "Satoshi", sans-serif;
   color: white;
 }
 @media (max-width: 768px) {
@@ -763,7 +763,7 @@ span.green {
   color: #4685ff;
   padding: 12px 30px;
   border-radius: 50px;
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
@@ -849,7 +849,7 @@ span.green {
 }
 .header-container-left-nav-list-item a::after,
 .header-container-right-nav-list-item a::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   right: 0;
@@ -889,7 +889,7 @@ span.green {
 }
 .header-container-left-list-item a::after,
 .header-container-right-list-item a::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   right: 0;
@@ -1213,7 +1213,7 @@ span.green {
   cursor: pointer;
 }
 .footer-container .footer-container-newsletter p {
-  font-family: 'Satoshi', sans-serif;
+  font-family: "Satoshi", sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
@@ -1358,7 +1358,7 @@ span.green {
   position: relative;
 }
 .home-three-cards-informations-container .card-item-container-picto::after {
-  content: '';
+  content: "";
   width: 54px;
   height: 54px;
   z-index: 98;
@@ -1380,7 +1380,7 @@ span.green {
 }
 .section-how-un-pour-cent-use-donation
   .section-images-and-text-container-img::after {
-  content: url('../../../public/illustrations/decoration-gift-green.svg');
+  content: url("../../../public/illustrations/decoration-gift-green.svg");
   position: absolute;
   top: -20%;
   right: -10%;
@@ -1393,7 +1393,7 @@ span.green {
 }
 .section-how-un-pour-cent-use-donation
   .section-images-and-text-container-img::before {
-  content: url('../../../public/illustrations/decoration-gift-red.svg');
+  content: url("../../../public/illustrations/decoration-gift-red.svg");
   position: absolute;
   bottom: -18%;
   left: -3%;
@@ -1639,7 +1639,7 @@ span.green {
   line-height: 18px;
   border: 1.05526px solid #d2d5da;
   border-radius: 8.44211px;
-  font-family: 'Satoshi-Regular';
+  font-family: "Satoshi-Regular";
 }
 .contact-form-container-right-bottom
   form
@@ -1749,7 +1749,7 @@ span.green {
 }
 .faq-container-bottom .faq-container-bottom-wrapper-content-item::after {
   position: absolute;
-  content: '';
+  content: "";
   bottom: 0;
   width: 100%;
   border-bottom: solid 1px rgba(0, 0, 0, 0.1);
@@ -1774,7 +1774,7 @@ span.green {
 .faq-container-bottom
   .faq-container-bottom-wrapper-content-item-header-title-link {
   color: #252525;
-  font-family: 'Satoshi-Medium';
+  font-family: "Satoshi-Medium";
   border: none;
   background: none;
   outline: none;
@@ -1787,7 +1787,7 @@ span.green {
 .faq-container-bottom
   .faq-container-bottom-wrapper-content-item-header-title-link::before {
   position: absolute;
-  content: '';
+  content: "";
   top: 0;
   left: 0;
   bottom: 0;
@@ -1807,7 +1807,7 @@ span.green {
   }
 }
 .faq-container-bottom .faq-container-bottom-wrapper-content-item-content p {
-  font-family: 'Satoshi-Regular';
+  font-family: "Satoshi-Regular";
 }
 @media (max-width: 1024px) {
   .faq-container-bottom .faq-container-bottom-wrapper-content-item-content p {

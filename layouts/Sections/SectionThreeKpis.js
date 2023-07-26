@@ -1,16 +1,16 @@
-import React, { useEffect, useState } from 'react';
-import Airtable from 'airtable';
+import React, { useEffect, useState } from "react";
+import Airtable from "airtable";
 
 const base = new Airtable({
   apiKey: process.env.NEXT_PUBLIC_AIRTABLE_API_KEY,
 }).base(process.env.NEXT_PUBLIC_AIRTABLE_BASE_ID);
 
-const SectionThreeKpis = ({ color }) => {
+function SectionThreeKpis({ color }) {
   const [kpis, setKpis] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
-    base('Stats')
-      .select({ view: 'Grid view' })
+    base("Stats")
+      .select({ view: "Grid view" })
       .firstPage((err, records) => {
         if (err) {
           console.error(err);
@@ -23,17 +23,17 @@ const SectionThreeKpis = ({ color }) => {
           {
             isPrice: false,
             count: record.fields.donations_number,
-            text: 'Donations collectées pour les différentes associations partenaire de un pour cent',
+            text: "Donations collectées pour les différentes associations partenaire de un pour cent",
           },
           {
             isPrice: true,
             count: record.fields.donations_amount,
-            text: 'Somme collectée pour les différentes associations partenaire de un pour cent',
+            text: "Somme collectée pour les différentes associations partenaire de un pour cent",
           },
           {
             isPrice: false,
             count: record.fields.projects_number,
-            text: 'Projet collecté pour les différentes associations partenaire de un pour cent',
+            text: "Projet collecté pour les différentes associations partenaire de un pour cent",
           },
         ]);
         setKpis(data[0]);
@@ -41,31 +41,26 @@ const SectionThreeKpis = ({ color }) => {
   }, []);
 
   return (
-    <section className={`section-three-kpis container-s`}>
+    <section className="section-three-kpis container-s">
       <aside
-        className={
-          `section-three-kpis-container ${color} ` +
-          (isLoading ? 'justify-center' : '')
-        }
+        className={`section-three-kpis-container ${color} ${
+          isLoading ? "justify-center" : ""
+        }`}
       >
         {isLoading ? (
           <div className="lds-ripple">
-            <div></div>
-            <div></div>
+            <div />
+            <div />
           </div>
         ) : (
           kpis.map((item, index) => {
             return (
-              <div key={index} className={'section-three-kpis-container-item'}>
-                <h2
-                  className={
-                    'section-three-kpis-container-price bold text-38 color-white'
-                  }
-                >
+              <div className="section-three-kpis-container-item" key={index}>
+                <h2 className="section-three-kpis-container-price bold text-38 color-white">
                   {item.count}
-                  {item.isPrice ? ' €' : ''}
+                  {item.isPrice ? " €" : ""}
                 </h2>
-                <p className={'text-16 color-white regular'}>{item.text}</p>
+                <p className="text-16 color-white regular">{item.text}</p>
               </div>
             );
           })
@@ -73,6 +68,6 @@ const SectionThreeKpis = ({ color }) => {
       </aside>
     </section>
   );
-};
+}
 
 export default SectionThreeKpis;

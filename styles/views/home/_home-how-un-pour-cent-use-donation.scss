@@ -2,7 +2,7 @@
   .section-images-and-text-container-img {
     position: relative;
     &::after {
-      content: url('../../../public/illustrations/decoration-gift-green.svg');
+      content: url("../../../public/illustrations/decoration-gift-green.svg");
       position: absolute;
       top: -20%;
       right: -10%;
@@ -12,7 +12,7 @@
       }
     }
     &::before {
-      content: url('../../../public/illustrations/decoration-gift-red.svg');
+      content: url("../../../public/illustrations/decoration-gift-red.svg");
       position: absolute;
       bottom: -18%;
       left: -3%;

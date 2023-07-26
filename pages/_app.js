@@ -1,8 +1,8 @@
-import '../styles/main.scss';
-import Header from '../layouts/Header/Header.js';
-import Footer from '../layouts/Footer/Footer';
-import Head from 'next/head';
-import { motion, AnimatePresence } from 'framer-motion';
+import "../styles/main.scss";
+import Head from "next/head";
+import { motion, AnimatePresence } from "framer-motion";
+import Header from "../layouts/Header/Header.js";
+import Footer from "../layouts/Footer/Footer";
 
 function MyApp({ Component, pageProps, router }) {
   return (
@@ -10,20 +10,20 @@ function MyApp({ Component, pageProps, router }) {
       <Head>
         <meta charSet="utf-8" />
         <meta
-          name="viewport"
           content="width=device-width,initial-scale=1,viewport-fit=cover"
+          name="viewport"
         />
 
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+        <link href="/favicon.ico" rel="icon" sizes="any" />
+        <link href="/favicon.svg" rel="icon" type="image/svg+xml" />
       </Head>
       <Header />
       <AnimatePresence mode="wait">
         <motion.div
-          key={router.route}
-          initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
+          initial={{ opacity: 0 }}
+          key={router.route}
           transition={{ duration: 0.4 }}
         >
           <Component {...pageProps} />

@@ -93,7 +93,7 @@
 
       .faq-container-bottom-wrapper-content-item::after {
         position: absolute;
-        content: '';
+        content: "";
         bottom: 0;
         width: 100%;
         border-bottom: solid 1px rgba(0, 0, 0, 0.1);
@@ -120,7 +120,7 @@
 
       .faq-container-bottom-wrapper-content-item-header-title-link {
         color: $black;
-        font-family: 'Satoshi-Medium';
+        font-family: "Satoshi-Medium";
         border: none;
         background: none;
         outline: none;
@@ -133,7 +133,7 @@
 
       .faq-container-bottom-wrapper-content-item-header-title-link::before {
         position: absolute;
-        content: '';
+        content: "";
         top: 0;
         left: 0;
         bottom: 0;
@@ -154,7 +154,7 @@
       }
 
       .faq-container-bottom-wrapper-content-item-content p {
-        font-family: 'Satoshi-Regular';
+        font-family: "Satoshi-Regular";
         @include tablet {
           font-size: 14px;
         }
