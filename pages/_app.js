@@ -25,7 +25,7 @@ function MyApp({ Component, pageProps, router }) {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.4 }}
         >
           <Component {...pageProps} />
         </motion.div>

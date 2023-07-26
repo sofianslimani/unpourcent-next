@@ -1141,6 +1141,7 @@ span.green {
   padding-block: 5%;
   box-sizing: border-box;
   background-color: #ffffff;
+  border-top: 1px solid #ececec;
 }
 .footer-container {
   display: flex;
@@ -1174,6 +1175,14 @@ span.green {
   display: flex;
   flex-direction: column;
   gap: 8px;
+}
+.footer-container > div ul li,
+.footer-container > div ul a {
+  transition: color 0.2s ease-in-out;
+}
+.footer-container > div ul li:hover,
+.footer-container > div ul a:hover {
+  color: #4685ff !important;
 }
 .footer-container .footer-container-newsletter form {
   display: flex;
@@ -1890,6 +1899,24 @@ span.green {
 }
 .contact-banner-container-cta {
   margin: 14px 0;
+}
+
+.legale-page-container {
+  padding-top: 50px;
+}
+.legale-page-container-item {
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.legale-page-container-item-description {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.legale-page-container-item:last-child {
+  margin-bottom: 60px;
 }
 
 /*# sourceMappingURL=main.css.map */
