@@ -82,8 +82,9 @@ const Footer = () => {
         <div className={"footer-container-pages-legales"}>
           <h4 className={"text-16 color-black medium"}>Pages légales</h4>
           <ul>
-            <li>Mentions légales</li>
-            <li>Politique de confidentialité</li>
+            <li>
+              <Link href={"/mentions-legales"}>Mentions légales</Link>
+            </li>
           </ul>
         </div>
         <div className={"footer-container-social"}>
