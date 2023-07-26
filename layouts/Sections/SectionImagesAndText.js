@@ -1,5 +1,5 @@
 import React from "react";
-
+import Image from "next/image";
 function SectionImagesAndText({
   data,
   greyBackground,
@@ -24,11 +24,24 @@ function SectionImagesAndText({
         >
           {data.isGrid
             ? data.images.map((itemImg, index) => {
-                return <img className="item-img" key={index} src={itemImg} />;
+                return (
+                  <Image
+                    fill={true}
+                    className="item-img"
+                    key={index}
+                    src={itemImg}
+                    alt={itemImg}
+                  />
+                );
               })
             : data.images &&
               data.images[0] && (
-                <img className="item-img" src={data.images[0]} />
+                <Image
+                  alt={data.images[0]}
+                  fill={true}
+                  className="item-img"
+                  src={data.images[0]}
+                />
               )}
         </div>
         <div className="section-images-and-text-container-text">

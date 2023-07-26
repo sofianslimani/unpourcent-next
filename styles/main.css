@@ -1086,6 +1086,7 @@ span.green {
 }
 .section-images-and-text-container-img {
   width: 50%;
+  height: 50vh;
 }
 @media (max-width: 1024px) {
   .section-images-and-text-container-img {
@@ -1165,9 +1166,8 @@ span.green {
 }
 .footer-container > div:first-child {
   width: 13%;
-}
-.footer-container > div:first-child img {
-  width: 45px;
+  position: relative;
+  height: 45px;
 }
 @media (max-width: 768px) {
   .footer-container > div {
@@ -1397,6 +1397,7 @@ span.green {
   position: absolute;
   bottom: -18%;
   left: -3%;
+  z-index: 9999;
 }
 @media (max-width: 1024px) {
   .section-how-un-pour-cent-use-donation

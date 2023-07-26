@@ -50,7 +50,7 @@ function Header() {
             <div />
             <div />
             <div />
-            <img alt="close" src="./icons/close.svg" />
+            <Image fill={true} alt="close" src="./icons/close.svg" />
           </button>
           <ul className="header-container-right-list">
             {/*  <li className={'header-container-right-list-item'}>
@@ -85,7 +85,12 @@ function Header() {
               <li className="mobile-menu-container-nav-list-item icon">
                 <Link href="https://donate.stripe.com/cN2dSo4vW45A6li5kk">
                   <div className="mobile-menu-container-nav-list-item-icon">
-                    <img alt="donation" src="/icons/donation.svg" />
+                    <Image
+                      width={20}
+                      height={20}
+                      alt="donation"
+                      src="/icons/donation.svg"
+                    />
                   </div>
                   Faire un don
                 </Link>

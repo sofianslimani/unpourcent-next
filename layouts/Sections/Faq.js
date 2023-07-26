@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import classnames from "classnames";
+import Image from "next/image";
 
 const FAQ_INDEX_ATTRIBUTE_NAME = "faq-index";
 
@@ -49,9 +50,19 @@ function Faq() {
         </div>
         <div className="faq-container-bottom-wrapper-content-item-header-icon">
           {index === faqIndex ? (
-            <img src="./icons/arrow-bottom.svg" />
+            <Image
+              width={30}
+              height={30}
+              alt={"arrow-bottom"}
+              src="./icons/arrow-bottom.svg"
+            />
           ) : (
-            <img src="./icons/arrow-right.svg" />
+            <Image
+              width={30}
+              height={30}
+              alt={"arrow-right"}
+              src="./icons/arrow-right.svg"
+            />
           )}
         </div>
       </div>

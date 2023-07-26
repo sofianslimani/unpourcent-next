@@ -6,6 +6,7 @@ import dotenv from "dotenv";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import * as Yup from "yup";
+import Image from "next/image";
 
 dotenv.config();
 const ICONS = {
@@ -66,7 +67,7 @@ function Footer() {
     <footer className="footer container-s">
       <aside className="footer-container">
         <div className="footer-container-logo">
-          <img alt="logo" src="/logos/logo.svg" />
+          <Image fill={true} alt="logo" src="/logos/logo.svg" />
         </div>
         <div className="footer-container-plan-du-site">
           <h4 className="text-16 color-black medium">Plan du site</h4>
