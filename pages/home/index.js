@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import HomeHero from "./Partials/HomeHero";
-import SectionThreeKpis from "../../layouts/Sections/SectionThreeKpis";
-import SectionImagesAndText from "../../layouts/Sections/SectionImagesAndText";
+import SectionThreeKpis from "../../components/Sections/SectionThreeKpis/SectionThreeKpis";
+import SectionImagesAndText from "../../components/Sections/SectionImagesAndText/SectionImagesAndText";
 import HomeThreeCardsInformations from "./Partials/HomeThreeCardsInformations";
 import Link from "next/link";
-import { DonateSection } from "../../components/DonateSection";
+import { DonateSection } from "../../components/Sections/DonateSection";
 import Head from "next/head";
-import Faq from "../../layouts/Sections/Faq";
+import Faq from "../../components/Sections/Faq Section/Faq";
 
 const HomePage = () => {
   const [seo, setSeo] = useState({

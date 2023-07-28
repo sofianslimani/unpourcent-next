@@ -1,5 +1,4 @@
 import React from "react";
-import { MaxWidth } from "../../../components/MaxWidth";
 import { useFormik } from "formik";
 import Airtable from "airtable";
 import dotenv from "dotenv";

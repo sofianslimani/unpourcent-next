@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import Link from "next/link";
 import HeroAssociation from "./Partials/HeroAssociation";
 import SocialSection from "./Partials/SocialSection";
-import SectionThreeKpis from "../../layouts/Sections/SectionThreeKpis";
-import SectionImagesAndText from "../../layouts/Sections/SectionImagesAndText";
-import { DonateSection } from "../../components/DonateSection";
+import SectionThreeKpis from "../../components/Sections/SectionThreeKpis/SectionThreeKpis";
+import SectionImagesAndText from "../../components/Sections/SectionImagesAndText/SectionImagesAndText";
+import { DonateSection } from "../../components/Sections/DonateSection";
 import Head from "next/head";
 
 const ProjectOfTheMonth = () => {

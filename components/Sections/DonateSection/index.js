@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { MaxWidth } from "../MaxWidth";
 
 export const DonateSection = ({
   title,
